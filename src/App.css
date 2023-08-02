@@ -3,7 +3,7 @@
 
 :root{
   --primary: #00A97F;
-  --light:rgba(133,198,218,255);
+  --light:#b9d6f2;
   --dark:rgba(13,13,10,255);
   --darker:rgba(234,157,90,255);
   --lighter:#cbd6cf;
@@ -12,30 +12,38 @@
   --darken: #cca27e;
   --color: orangered;
   --search: #FF6000;
-  /* --primary1: #2b3d4c;
-  --primary2: #354d61; */
-  --primary1: #7364d2;
+  --primary1: #b9d6f2;
   --primary2: #7364d2;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 a {
   text-decoration: none;
   font-size: 14px;
+  color: black;
 }
 
 p {
+  margin-top: 13px;
   font-size: 14px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em #013a63);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1em #013a63);
+}
+
+/* ------------------------------------------------ Header -------------------------------------------------- */
+
+.header-top-strip {
+  background-color: var(--light);
 }
