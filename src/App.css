@@ -23,15 +23,14 @@ a {
 }
 
 p {
-  margin-top: 13px;
+  margin: auto;
   font-size: 14px;
 }
 
+
 .logo {
-  height: 6em;
-  padding: 1em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 40px;
+  max-width: 100%;
 }
 
 .logo:hover {
@@ -45,5 +44,22 @@ p {
 /* ------------------------------------------------ Header -------------------------------------------------- */
 
 .header-top-strip {
-  background-color: var(--light);
+  background-color: #fff;
+}
+button {
+  padding: 12px 10px;
+  font-size: 14px;
+  /* background-color: var(--primary2); */
+}
+.input-group button {
+  background: transparent;
+  font-size: 14px;
+  color: #a51c30;
+}
+.nav-links {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header-upper {
+  background-color: #f8f3f3;
 }
