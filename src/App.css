@@ -13,7 +13,8 @@
   --color: orangered;
   --search: #FF6000;
   --primary1: #b9d6f2;
-  --primary2: #7364d2;
+  --primary2: #ddb892;
+  --text: #a67b5b;
 }
 
 a {
@@ -60,6 +61,26 @@ button {
   font-size: 16px;
   text-transform: uppercase;
 }
+.nav-links-nav a {
+  color: var(--primary2);
+}
+
+.social-icons a{
+  color: var(--primary2);
+
+}
+
 .header-upper {
   background-color: #f8f3f3;
 }
+
+/* ------------------------------------------------ Footer -------------------------------------------------- */
+
+footer {
+  background-color: #f8f3f3;
+}
+
+.policy {
+  color: var(--text);
+}
+

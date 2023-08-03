@@ -1,6 +1,6 @@
 import React from "react"
 import { BiSolidPhoneCall } from 'react-icons/bi'
-import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { RiFacebookCircleFill } from 'react-icons/ri'
 import { BiLogoGmail } from 'react-icons/bi'
 import { Link } from "react-router-dom"
@@ -22,8 +22,8 @@ const header = () => {
               <div>
                 <a href="tel:+212661085174" color="black"> <BiSolidPhoneCall /> Call us +212661085174 </a>
               </div>
-              <div>
-                <Link><AiOutlineInstagram className="fs-3 mx-2" size={20} /></Link>
+              <div className="social-icons">
+                <Link><AiFillInstagram className="fs-3 mx-2" size={20} /></Link>
                 <Link><RiFacebookCircleFill className="fs-3 mx-2" size={20}  /></Link>
                 <Link><AiOutlineTwitter className="fs-3 mx-2" size={20}  /></Link>
                 <Link><BiLogoGmail className="fs-3 mx-2" size={20} /></Link>
@@ -55,13 +55,13 @@ const header = () => {
             <Link to={'contact'}>Contact</Link>
           </div>
           <div className="col-3 d-flex align-items-center justify-content-around">
-                <Link className="d-flex"><FaClipboardList className="mx-2 m-auto"/>
+                <Link to={'wishlist'} className="d-flex"><FaClipboardList className="mx-2 m-auto"/>
                 <p>WishList</p>
                 </Link>
-                <Link className="d-flex"><MdAccountCircle className=" mx-2 m-auto"/>
+                <Link to={'login'} className="d-flex"><MdAccountCircle className=" mx-2 m-auto"/>
                 <p>Account</p>
                 </Link>
-                <Link className="d-flex"><PiShoppingCartSimpleFill className=" mx-2 m-auto"/>
+                <Link to={'cart'} className="d-flex"><PiShoppingCartSimpleFill className=" mx-2 m-auto"/>
                 <p>Cart</p>
                 </Link>
           </div>

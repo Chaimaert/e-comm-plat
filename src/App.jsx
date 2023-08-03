@@ -6,6 +6,9 @@ import Shop from './pages/shop'
 import Contact from './pages/contact'
 import Blog from './pages/blog'
 import About from './pages/about'
+import Cart from './pages/cart'
+import Login from './pages/login'
+import Wishlist from './pages/wishlist'
 
 
 
@@ -19,12 +22,13 @@ function App() {
             <Route path='shop' element={<Shop />} />
             <Route path='contact' element={<Contact />} />
             <Route path='blog' element={<Blog />} />
-            <Route path='About' element={<About />} />
+            <Route path='about' element={<About />} />
+            <Route path='cart' element={<Cart />} />
+            <Route path='login' element={<Login />} />
+            <Route path='wishlist' element={<Wishlist />} />
           </Route>
         </Routes>
       </BrowserRouter>
-
-
     </>
 }
 
