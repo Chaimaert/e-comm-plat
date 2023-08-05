@@ -15,6 +15,8 @@
   --primary1: #b9d6f2;
   --primary2: #ddb892;
   --text: #a67b5b;
+  --active: #a51c30;
+  --header: #f8f3f3;
 }
 
 a {
@@ -24,22 +26,33 @@ a {
 }
 
 p {
-  margin: auto;
   font-size: 14px;
+  margin: 10px;
 }
 
 
 .logo {
-  height: 40px;
+  height: 70px;
   max-width: 100%;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 1em #013a63);
+  filter: drop-shadow(0 0 1em #ddb892);
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 1em #013a63);
+  filter: drop-shadow(0 0 1em #ddb892);
+}
+
+.active{
+  font-weight: 600;
+  text-decoration: wavy;
+  color: var(--active);
+}
+
+.inactive {
+  color: black;
+  font-size: 400;
 }
 
 /* ------------------------------------------------ Header -------------------------------------------------- */
@@ -57,7 +70,7 @@ button {
   font-size: 14px;
   color: #a51c30;
 }
-.nav-links {
+.nav-links a{
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -71,7 +84,7 @@ button {
 }
 
 .header-upper {
-  background-color: #f8f3f3;
+  background-color: var(--header);
 }
 
 /* ------------------------------------------------ Footer -------------------------------------------------- */
@@ -82,5 +95,65 @@ footer {
 
 .policy {
   color: var(--text);
+}
+
+.pay img {
+  transition: 0.5s ease;
+}
+
+.pay img:hover {
+  transform: translateY(-8px);
+}
+
+/* ------------------------------------------------ Home Page -------------------------------------------------- */
+
+.banner-details {
+  background: url(/src/assets/images/backkk.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 600;
+  color: #d68281;
+  margin: 0 10px;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 10px;
+  margin-left: 40px;
+  font-style: italic;
+}
+
+.button-link {
+  padding: 12px 5px;
+  font-size: 15px;
+  border-radius: 20px 5px;
+  background: var(--lighter);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+  margin-left: 93px;
+  margin-top: 5px;
+}
+
+.button-link:hover {
+  background: transparent;
+  color: #f28482;
+  border: 1px solid #f8f3f3;
+}
+
+.spend {
+  margin-left: 65px;
+}
+
+.hero-details img {
+  width: 100%;
+  height: 80px;
 }
 

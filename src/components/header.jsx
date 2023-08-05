@@ -1,16 +1,16 @@
-import React from "react"
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { RiFacebookCircleFill } from 'react-icons/ri'
 import { BiLogoGmail } from 'react-icons/bi'
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { FaClipboardList } from 'react-icons/fa'
 import { MdAccountCircle } from 'react-icons/md'
 import { PiShoppingCartSimpleFill } from 'react-icons/pi'
-import logo from '../assets/images/apneck.png'
+import Mylogo from '../assets/images/Mylogo.png'
 
 
 const header = () => {
+  const location = useLocation();
   return <>
     <header className="header-top-strip px-4 p-1 shadow-sm">
       <div className="container-xxl">
@@ -20,7 +20,7 @@ const header = () => {
           </div>
           <div className="col-6 d-flex justify-content-between">
               <div>
-                <a href="tel:+212661085174" color="black"> <BiSolidPhoneCall /> Call us +212661085174 </a>
+                <a href="tel:+212661085174" color="black"> <BiSolidPhoneCall /> Call us +212661975556 </a>
               </div>
               <div className="social-icons">
                 <Link><AiFillInstagram className="fs-3 mx-2" size={20} /></Link>
@@ -38,7 +38,7 @@ const header = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-2 text-center m-auto">
-          <Link to='/'><img src={logo} className="img-fluid logo" /></Link>
+          <Link to='/'><img src={Mylogo} className="img-fluid logo" /></Link>
           </div>
           <div className="col-3 d-flex align-items-center mt-3">
               <div className="input-group mb-3">
@@ -48,21 +48,30 @@ const header = () => {
               </div>
           </div>
           <div className="nav-links col-4 d-flex align-items-center justify-content-between text-center m-auto">
-            <Link to={'/'}>Home</Link>
-            <Link to={'shop'}>Shop</Link>
-            <Link to={'blog'}>Blog</Link>
-            <Link to={'about'}>About</Link>
-            <Link to={'contact'}>Contact</Link>
+            <Link to={'/'} className={location.pathname === '/' ? 'active' : 'inactive'}>Home</Link>
+            <Link to={'shop'} className={location.pathname === '/shop' ? 'active' : 'inactive'}>Shop</Link>
+            <Link to={'blog'} className={location.pathname === '/blog' ? 'active' : 'inactive'}>Blog</Link>
+            <Link to={'about'} className={location.pathname === '/about' ? 'active' : 'inactive'}>About</Link>
+            <Link to={'contact'} className={location.pathname === '/contact' ? 'active' : 'inactive'}>Contact</Link>
           </div>
           <div className="col-3 d-flex align-items-center justify-content-around">
-                <Link to={'wishlist'} className="d-flex"><FaClipboardList className="mx-2 m-auto"/>
-                <p>WishList</p>
+                <Link to={'wishlist'} className={location.pathname === '/wishlist' ? 'active' : 'inactive'}>
+                  <div className="d-flex">
+                      <FaClipboardList className="mx-2 m-auto"/>
+                      <p>WishList</p>
+                  </div>
                 </Link>
-                <Link to={'login'} className="d-flex"><MdAccountCircle className=" mx-2 m-auto"/>
-                <p>Account</p>
+                <Link to={'login'} className={location.pathname === '/login' ? 'active' : 'inactive'}>
+                  <div className="d-flex">
+                      <MdAccountCircle className=" mx-2 m-auto"/>
+                      <p>Account</p>
+                  </div>
                 </Link>
-                <Link to={'cart'} className="d-flex"><PiShoppingCartSimpleFill className=" mx-2 m-auto"/>
-                <p>Cart</p>
+                <Link to={'cart'} className={location.pathname === '/cart' ? 'active' : 'inactive'}>
+                  <div className="d-flex">
+                      <PiShoppingCartSimpleFill className=" mx-2 m-auto"/>
+                      <p>Cart</p>
+                  </div>  
                 </Link>
           </div>
         </div>

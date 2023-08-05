@@ -1,8 +1,10 @@
-import React from "react"
 import { Link } from "react-router-dom"
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { RiFacebookCircleFill } from 'react-icons/ri'
 import { BiLogoLinkedin } from 'react-icons/bi'
+import google from '../assets/images/pay/play.jpg'
+import app from '../assets/images/pay/app.jpg'
+import pay from '../assets/images/pay/pay.png'
 
 const footer = () => {
   return  <>
@@ -15,8 +17,8 @@ const footer = () => {
 
             <div className="footer-details">
               <p className="mb-3"><b>Address : </b>IDAR EL KARMA, Rte de Safi, Marrakech</p>
-              <p className="mb-3"><b>Phone : </b> Call us +212661085174</p>
-              <p className="mb-4"><b>Hours : </b> From 8 to A.m to 10 P.m</p>
+              <p className="mb-3"><b>Phone : </b> Call us +212661975556</p>
+              <p className="mb-4"><b>Hours : </b> From 8 A.m to 10 P.m</p>
               <p className="mb-3"><b>Follow Us</b></p>
 
               <div className="col-4 mb-3 social-icons d-flex justify-content-around">
@@ -52,6 +54,21 @@ const footer = () => {
           </div>
           <div className="col-4">
             <h3 className="mb-3">Install App</h3>
+            <div className="footer-details">
+              <p>Available on Google Play Services & App store</p>
+              <div className="pay">
+                <Link>
+                    <img src={google} alt="" className="img-fluid p-2 my-2" />
+                </Link>
+                <Link>
+                    <img src={app} alt="" className="img-fluid p-2 my-2" />
+                </Link>
+              </div>
+              <p className="mb-3">Payment Methods</p>
+              <Link className="pay">
+                    <img src={pay} alt="" className="img-fluid p-1 " />
+                </Link>
+            </div>
           </div>
         </div>
           <hr />
@@ -69,15 +86,6 @@ const footer = () => {
 
 
     </footer>
-  
-  
-  
-  
-  
-  
-  
-  
-  
   </>
 }
 
