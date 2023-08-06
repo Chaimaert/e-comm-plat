@@ -158,5 +158,14 @@ h2 {
   border-radius: 10px;
 }
 
+.featured-products .card img {
+  border-radius: 20px;
+}
+
+.featured-products .card {
+  border-radius: 20px;
+  max-width: 250px;
+}
+
 
 

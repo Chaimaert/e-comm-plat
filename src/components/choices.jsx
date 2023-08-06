@@ -4,10 +4,12 @@ import saving from '../assets/images/icons/save-money.png'
 import support from '../assets/images/icons/support.png'
 import discount from '../assets/images/icons/gift-box.png'
 
+
+
 const choices = () => {
   return <>
   
-  <section className="hero p-2">
+  <section className="hero p-2 mt-3">
     <div className="container-xxl">
       <div className="row">
         <div className="hero-details">

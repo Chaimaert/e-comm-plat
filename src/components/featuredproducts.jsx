@@ -5,14 +5,16 @@ const featuredproducts = () => {
   
   <div className="row">
       {PRODUCTS.slice(2,6).map(product => (
-        <div className="col-3">
+        <div className="col-3 mt-3">
             <div key={product.id}>
-            <div className="card text-center">
-            <img src={product.image} alt="" className='card-img-top img-fluid m-auto' />
-            <div className="card-details">
+            <div className="card h-100 m-auto p-3">
+            <img src={product.image} alt="" className='card-img-top img-fluid m-auto p-3' />
+            <div className="card-details ">
+            <div className="title">
                 <span> {product.brand} </span>
-                <h4> {product.name} </h4>
-                <div className="card-bottom">
+                <h5> {product.name} </h5>
+            </div>
+                <div className="card-bottom text-center">
                     <p> {product.status} </p>
                     <p> {product.rate} </p>
                 </div>
