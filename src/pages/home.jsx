@@ -17,6 +17,18 @@ const home = () => {
     </section>
     
     <Choices />
+
+
+    <section className="featured-products p-5">
+        <div className="cintainer-xxl">
+          <div className="row">
+            <div className="text-center">
+              <h1>Our Featured Products</h1>
+              <p>Modern Designs</p>
+            </div>
+          </div>
+        </div>
+    </section>
   </>
 };
 
