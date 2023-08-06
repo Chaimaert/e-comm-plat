@@ -62,7 +62,7 @@ export const PRODUCTS = [
         {
         id: 4,
         image: pr5,
-        name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+        name: "Men's Tech 2.0 Short Sleeve",
         price: 49.90,
         brand: 'Under Armour',
         status:'in stock',
@@ -71,7 +71,7 @@ export const PRODUCTS = [
         {
         id: 5,
         image: pr6,
-        name: "Women's Basic Tee, Men's Rebel Bold Tee",
+        name: "Women's Basic Tee, Men's Rebel",
         price: 9.90,
         brand: 'H&M',
         status:'in stock',
