@@ -171,9 +171,6 @@ h5{
   font-size: 14px;
 }
 
-span {
-  margin-bottom: 15px;
-}
 
 .featured-products .card span {
   color: var(--darken);
