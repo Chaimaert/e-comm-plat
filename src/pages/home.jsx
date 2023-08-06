@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Choices from "../components/choices";
+import Featuredproducts from "../components/featuredproducts";
 
 const home = () => {
   return <>
@@ -26,6 +27,7 @@ const home = () => {
               <h1>Our Featured Products</h1>
               <p>Modern Designs</p>
             </div>
+            <Featuredproducts  />
           </div>
         </div>
     </section>
