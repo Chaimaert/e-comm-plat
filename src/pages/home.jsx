@@ -31,6 +31,16 @@ const home = () => {
           </div>
         </div>
     </section>
+
+    <section className="repair">
+      <div className="container-xxl">
+        <div className="row">
+          <div className="repair-details text-center">
+              
+          </div>
+        </div>
+      </div>
+    </section>
   </>
 };
 
