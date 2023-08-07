@@ -35,8 +35,12 @@ const home = () => {
     <section className="repair">
       <div className="container-xxl">
         <div className="row">
-          <div className="repair-details text-center">
-              
+          <div className="repair-details text-center d-flex flex-column align-items-center p-3">
+              <span>Repair services</span>
+              <h2>Find out our big <span className="text-danger">Discounts</span></h2>
+              <div className="mt-3">
+                <button className="btn-repair">Explore Now</button>
+              </div>
           </div>
         </div>
       </div>
