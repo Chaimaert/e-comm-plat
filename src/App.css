@@ -203,6 +203,19 @@ h5{
   border: 1px solid #f8f3f3;
 }
 
+.new-products .card img {
+  border-radius: 20px;
+}
+
+.new-products .card {
+  border-radius: 20px;
+  max-width: 250px;
+}
+
+.new-products .card span {
+  color: var(--darken);
+}
+
 
 
 
