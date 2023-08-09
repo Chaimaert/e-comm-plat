@@ -1,11 +1,11 @@
-import pr1 from '../assets/images/products/f1.jpg'
+import pr1 from '../assets/images/products/black-shirt.avif'
 import pr2 from '../assets/images/products/f2.jpg'
 import pr3 from '../assets/images/products/f3.jpg'
-import pr4 from '../assets/images/products/f4.jpg'
+import pr4 from '../assets/images/products/shoes1.avif'
 import pr5 from '../assets/images/products/f5.jpg'
-import pr6 from '../assets/images/products/f6.jpg'
+import pr6 from '../assets/images/products/crew-tsgirt.avif'
 import pr7 from '../assets/images/products/f7.jpg'
-import pr8 from '../assets/images/products/f8.jpg'
+import pr8 from '../assets/images/products/shorts.avif'
 import pro1 from '../assets/images/products/n1.jpg'
 import pro2 from '../assets/images/products/n2.jpg'
 import pro3 from '../assets/images/products/n3.jpg'
@@ -22,6 +22,7 @@ import img5 from '../assets/images/products/img5.png'
 import img6 from '../assets/images/products/img6.png'
 import img7 from '../assets/images/products/img7.png'
 import img8 from '../assets/images/products/img8.png'
+import img9 from '../assets/images/products/bott.jpg'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const PRODUCTS = [
@@ -43,39 +44,39 @@ export const PRODUCTS = [
         },
         {
         id: 2,
-        image: pr3,
-        name: "Women's Badge of Sport Tee",
+        image: img7,
+        name: "Wome's little Black dress",
         price: 39.90,
-        brand: 'Adidas',
+        brand: 'Polly',
         status:'in stock',
         rate: '50% Off'
         },
         {
         id: 3,
         image: pr4,
-        name: "Men's 1950s Sportswear T-Shirt",
+        name: "Men's Sportswear Shoes",
         price: 49.90,
-        brand: 'Levi s',
+        brand: 'Nike',
         status:'in stock',
-        rate: '50% Off'
+        rate: '30% Off'
         },
         {
         id: 4,
         image: pr5,
         name: "Men's Tech 2.0 Short Sleeve",
         price: 49.90,
-        brand: 'Under Armour',
+        brand: 'Sfera',
         status:'in stock',
-        rate: '50% Off'
+        rate: '60% Off'
         },
         {
         id: 5,
-        image: pr6,
-        name: "Women's Basic Tee, Men's Rebel",
-        price: 9.90,
-        brand: 'H&M',
+        image: img9,
+        name: "Motivational Water Bottle",
+        price: 10.90,
+        brand: 'GymShark',
         status:'in stock',
-        rate: '50% Off'
+        rate: '20% Off'
         },
         {
         id: 6,
