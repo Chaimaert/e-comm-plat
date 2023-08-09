@@ -1,6 +1,6 @@
 import pr1 from '../assets/images/products/black-shirt.avif'
 import pr2 from '../assets/images/products/f2.jpg'
-import pr3 from '../assets/images/products/f3.jpg'
+// import pr3 from '../assets/images/products/f3.jpg'
 import pr4 from '../assets/images/products/shoes1.avif'
 import pr5 from '../assets/images/products/f5.jpg'
 import pr6 from '../assets/images/products/crew-tsgirt.avif'
@@ -15,10 +15,9 @@ import pro6 from '../assets/images/products/n6.jpg'
 import pro7 from '../assets/images/products/n7.jpg'
 import pro8 from '../assets/images/products/n8.jpg'
 import img1 from '../assets/images/products/img1.png'
-import img2 from '../assets/images/products/img2.png'
-import img3 from '../assets/images/products/img3.png'
-import img4 from '../assets/images/products/img4.png'
-import img5 from '../assets/images/products/img5.png'
+import img2 from '../assets/images/products/massage.avif'
+import img3 from '../assets/images/products/mug.jpg'
+import img5 from '../assets/images/products/watch.jpg'
 import img6 from '../assets/images/products/img6.png'
 import img7 from '../assets/images/products/img7.png'
 import img8 from '../assets/images/products/img8.png'
@@ -161,43 +160,38 @@ export const  PRODUCTS1 = [
         price: 49.90,
         brand: 'Calvin Klein',
         status: 'in stock',
-        rate: '60% off'
         },
         {
         id: 17,
         image: img2,
+        name: "Beauty Jade Fcaial Roller",
+        price: 40.90,
+        brand: 'Elle',
+        status: 'in stock',
+        },
+        {
+        id: 18,
+        image: pr6,
         name: "Men's Dri-FIT T-Shirt",
         price: 24.90,
         brand: 'Nike',
         status: 'in stock',
-        rate: '60% off'
-        },
-        {
-        id: 18,
-        image: img3,
-        name: "Women's Badge of Sport Tee",
-        price: 39.90,
-        brand: 'Adidas',
-        status: 'in stock',
-        rate: '60% off'
         },
         {
         id: 19,
-        image: img4,
-        name: "Men's 1950s Sportswear T-Shirt",
-        price: 49.90,
-        brand: 'Levi s',
-        status: 'out of stock',
-        rate: 'normal rates'
+        image: img5,
+        name: "Elite Modern Smart Watches for Unisex",
+        price: 50.99,
+        brand: 'Fila',
+        status: 'in stock',
         },
         {
         id: 20,
-        image: img5,
-        name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+        image: img3,
+        name: "Modern Mugs with Thick Handle",
         price: 49.90,
-        brand: 'Under Armour',
-        status: 'out of stock',
-        rate: 'normal rates'
+        brand: 'Tortuna',
+        status: 'in stock',
         },
         {
         id: 21,
@@ -205,8 +199,7 @@ export const  PRODUCTS1 = [
         name: "Women's Basic Tee, Men's Rebel Bold Tee",
         price: 9.90,
         brand: 'H&M',
-        status: 'out of stock',
-        rate: 'normal rates'
+        status: 'in stock',
         },
         {
         id: 22,
@@ -214,8 +207,7 @@ export const  PRODUCTS1 = [
         name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
         price: 39.50,
         brand: 'Puma',
-        status: 'out of stock',
-        rate: 'normal rates'
+        status: 'in stock',
         },
         {
         id: 23,
@@ -223,7 +215,6 @@ export const  PRODUCTS1 = [
         name: "Women's Classic Fit Crewneck T-Shirt",
         price: 29.50,
         brand: 'Ralph Lauren',
-        status: 'out of stock',
-        rate: 'normal rates'
+        status: 'in stock',
         }
 ];

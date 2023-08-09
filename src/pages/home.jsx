@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Choices from "../components/choices";
 import Featuredproducts from "../components/featuredproducts";
+import NewArrival from "../components/newArrival";
 
 const home = () => {
   return <>
@@ -53,7 +54,7 @@ const home = () => {
               <h1 className="disc">New Arrivals</h1>
               <p className="md-design">Your New Favourites</p>
             </div>
-            <Featuredproducts  />
+            <NewArrival  />
           </div>
         </div>
     </section>

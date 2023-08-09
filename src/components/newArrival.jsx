@@ -1,9 +1,9 @@
-import { PRODUCTS } from './products';
+import { PRODUCTS1 } from './products';
 
 const newArrival = () => {
   return <>
       <div className="row mt-4">
-      {PRODUCTS.slice(2, 6).map((product) => (
+      {PRODUCTS1.slice(1, 5).map((product) => (
         <div className="col-3" key={product.id}>
           <div className="card h-100 m-auto p-3">
             <img src={product.image} alt="" className="card-img-top img-fluid m-auto p-3" />
