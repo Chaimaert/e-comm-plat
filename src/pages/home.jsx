@@ -51,7 +51,7 @@ const home = () => {
           <div className="row">
             <div className="text-center">
               <h1 className="disc">New Arrivals</h1>
-              <p className="md-design">Modern and Latests Designs</p>
+              <p className="md-design">Your New Favourites</p>
             </div>
             <Featuredproducts  />
           </div>

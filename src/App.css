@@ -27,7 +27,7 @@ a {
 
 p {
   font-size: 14px;
-  /* margin: 10px; */
+  margin: 10px;
 }
 
 
@@ -203,9 +203,6 @@ h5{
   border: 1px solid #f8f3f3;
 }
 
-.disc {
-  font-style: italic;
-}
 
 
 
