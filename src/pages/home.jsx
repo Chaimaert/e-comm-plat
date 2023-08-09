@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Choices from "../components/choices";
 import Featuredproducts from "../components/featuredproducts";
 import NewArrival from "../components/newArrival";
-import Sale from '../assets/images/blog/hot-sale.avif'
+import Sale from '../assets/images/blog/hot-sale.avif';
+import clothes from '../assets/images/blog/clooo.avif';
 
 const home = () => {
   return <>
@@ -76,7 +77,7 @@ const home = () => {
           <div className="col-6">
             <div className="card">
                 <div className="col-md-4">
-                  <img src="" alt="" className="img-fluid rounded-start" />
+                  <img src={clothes}  alt="" className="img-fluid rounded-start" />
                 </div>
               <div className="col-md-8">
               </div>
