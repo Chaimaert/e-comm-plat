@@ -70,6 +70,13 @@ const home = () => {
                   <img src={Sale} alt="" className="img-fluid rounded-start" />
                 </div>
               <div className="col-md-8">
+                <div className="card-body">
+                  <span>Hot Deals</span>
+                  <h3 className="card-title">
+                    Buy 2 items and get the third one free
+                  </h3>
+                  <p>Modern and latests products</p>
+                </div>
               </div>
             </div>
           </div>
