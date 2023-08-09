@@ -183,7 +183,7 @@ export const  PRODUCTS1 = [
         name: "Elite Modern Smart Watche",
         price: 50.99,
         brand: 'Fila',
-        status: 'in stock',
+        status: 'Out of stock',
         },
         {
         id: 20,

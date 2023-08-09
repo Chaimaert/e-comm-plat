@@ -5,7 +5,7 @@ import NewArrival from "../components/newArrival";
 
 const home = () => {
   return <>
-    <section className="banner">
+    <section className="banner mb-4">
       <div className="container-xxl">
         <div className="row">
           <div className="banner-details d-flex flex-column align-items-start justify-content-center">
@@ -57,6 +57,30 @@ const home = () => {
             <NewArrival  />
           </div>
         </div>
+    </section>
+
+    <section className="deals p-5">
+      <div className="container-xxl">
+        <div className="row">
+          <div className="col-6">
+            <div className="card">
+                <div className="col-md-4">
+                  <img src="" alt="" className="img-fluid rounded-start" />
+                </div>
+              <div className="col-md-8">
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="col-md-4">
+              <img src="" alt="" className="img-fluid rounded-start" />
+            </div>
+            <div className="col-md-8">
+            </div>
+          </div>        
+        </div>
+      </div>
     </section>
   </>
 };
