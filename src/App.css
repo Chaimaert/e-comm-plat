@@ -27,7 +27,7 @@ a {
 
 p {
   font-size: 14px;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 
@@ -171,6 +171,10 @@ h5{
   font-size: 14px;
 }
 
+.md-design {
+  margin: 10px;
+}
+
 
 .featured-products .card span {
   color: var(--darken);
@@ -185,7 +189,22 @@ h5{
 }
 
 .btn-repair {
-  
+  padding: 10px 5px;
+  font-size: 15px;
+  border-radius: 20px 5px;
+  background: var(--lighter);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.btn-repair:hover {
+  background: var(--lighter2);
+  color: #f28482;
+  border: 1px solid #f8f3f3;
+}
+
+.disc {
+  font-style: italic;
 }
 
 
