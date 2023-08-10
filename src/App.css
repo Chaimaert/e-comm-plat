@@ -216,21 +216,25 @@ h5{
   color: var(--darken);
 }
 
-.btn-repair {
+.btn-deals {
   padding: 10px 5px;
   font-size: 15px;
-  border-radius: 20px 5px;
+  border-radius: 10px ;
   background: var(--lighter);
   border: 1px solid transparent;
   transition: 0.5s ease;
 }
 
-.btn-repair:hover {
+.btn-deals:hover {
   background: var(--lighter2);
   color: #f28482;
-  border: 1px solid #f8f3f3;
+  border: 1px solid var(--lighter1);
 }
 
+.sale {
+  padding-left: 0;
+  margin-left: 0;
+}
 
 
 
