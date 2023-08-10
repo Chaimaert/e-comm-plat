@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react'
 import { PRODUCTS, PRODUCTS1 } from '../components/products';
 
+
 // context
 export const ShopContext = createContext(null);
 // function
@@ -15,7 +16,7 @@ const getDefaultCart = () => {
 };
 
 
-const shopcontext = (props) => {
+const Shopcontext = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const getTotalCartAmount = () => {
     let totalAmount = 0;
@@ -106,4 +107,4 @@ const shopcontext = (props) => {
 };
 
 
-export default shopcontext
+export default Shopcontext;

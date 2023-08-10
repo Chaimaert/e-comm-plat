@@ -9,26 +9,29 @@ import About from './pages/about'
 import Cart from './pages/cart'
 import Login from './pages/login'
 import Wishlist from './pages/wishlist'
+import Shopcontext from './components/shopcontext'
 
 
 
 
 function App() {
   return  <>
+    <Shopcontext>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />}  />
-            <Route path='shop' element={<Shop />} />
-            <Route path='contact' element={<Contact />} />
-            <Route path='blog' element={<Blog />} />
-            <Route path='about' element={<About />} />
-            <Route path='cart' element={<Cart />} />
-            <Route path='login' element={<Login />} />
-            <Route path='wishlist' element={<Wishlist />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Home />}  />
+              <Route path='shop' element={<Shop />} />
+              <Route path='contact' element={<Contact />} />
+              <Route path='blog' element={<Blog />} />
+              <Route path='about' element={<About />} />
+              <Route path='cart' element={<Cart />} />
+              <Route path='login' element={<Login />} />
+              <Route path='wishlist' element={<Wishlist />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+    </Shopcontext>
     </>
 }
 
