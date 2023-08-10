@@ -236,5 +236,30 @@ h5{
   margin-left: 0;
 }
 
+/* ------------------------------------------------ Shop Page -------------------------------------------------- */
+
+.shop {
+  background: url(/src/assets/images/newsletter.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+.btn-shop {
+  padding: 10px 5px;
+  font-size: 15px;
+  border-radius: 20px 5px;
+  background: var(--lighter);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.btn-shop:hover {
+  background: var(--lighter2);
+  color: #f28482;
+  border: 1px solid #f8f3f3;
+}
+
 
 

@@ -22,7 +22,6 @@ const home = () => {
     
     <Choices />
 
-
     <section className="featured-products p-5">
         <div className="cintainer-xxl">
           <div className="row">
