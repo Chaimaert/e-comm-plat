@@ -2,9 +2,8 @@ import { createContext, useState } from 'react'
 import { PRODUCTS, PRODUCTS1 } from '../components/products';
 
 
-// context
 export const ShopContext = createContext(null);
-// function
+
 const getDefaultCart = () => {
   const cart = [];
 
@@ -101,7 +100,7 @@ const Shopcontext = (props) => {
 
   return (
     <ShopContext.Provider value={contextValue}>
-      {props.children}
+      {/* {props.children} */}
     </ShopContext.Provider>
   );
 };

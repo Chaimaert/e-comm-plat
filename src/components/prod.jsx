@@ -1,8 +1,8 @@
-import { Shopcontext } from './shopcontext'
+// import { Shopcontext } from './shopcontext'
 
 
 const prod = (props) => {
-    const {id, name, image, price, brand} = props.data;
+    const {id, image} = props.data;
   return <>
   <div key={id} className="col-3">
     <div className="card">
