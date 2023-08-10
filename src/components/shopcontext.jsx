@@ -1,5 +1,6 @@
 import { createContext, useState } from 'react'
 import { PRODUCTS, PRODUCTS1 } from '../components/products';
+import PropTypes from 'prop-types'; 
 
 
 export const ShopContext = createContext(null);
@@ -100,9 +101,14 @@ const Shopcontext = (props) => {
 
   return (
     <ShopContext.Provider value={contextValue}>
-      {/* {props.children} */}
+      {props.children}
     </ShopContext.Provider>
   );
+};
+
+// Add propTypes validation for children
+Shopcontext.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 
