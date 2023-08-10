@@ -64,7 +64,7 @@ const home = () => {
     <section className="deals p-5">
       <div className="container-xxl">
         <div className="row">
-          <div className="col-6">
+          <div className="col-6 p-4">
             <div className="card row">
               <div className="d-flex">
               <div className="col-md-4">
@@ -73,8 +73,8 @@ const home = () => {
               <div className="col-md-8">
                 <div className="card-body">
                     <span>Hot Deals</span>
-                    <h4 className="card-title">Buy 2 items and get the third one free</h4>
-                    <p>Modern and latests products</p>
+                    <h4 className="card-title">Buy 2, get the third one free</h4>
+                    {/* <p>Modern and latests products</p> */}
                     <button className="btn-deals">Learn More</button>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const home = () => {
             </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-6 p-4">
             <div className="card row">
                 <div className="d-flex">
                   <div className="col-md-4">
@@ -90,9 +90,9 @@ const home = () => {
                   </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                      <span>Hot Deals</span>
-                      <h4 className="card-title">Buy 2 items and get the third one free</h4>
-                      <p>Modern and latests products</p>
+                      <span>Season in</span>
+                      <h4 className="card-title">All weather Attire</h4>
+                      {/* <p>Modern and latests products</p> */}
                       <button className="btn-deals">Learn More</button>
                   </div>
                 </div>
