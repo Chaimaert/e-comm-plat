@@ -1,12 +1,12 @@
-// import { Shopcontext } from './shopcontext'
-import { UseContext } from "react";
+import { useContext } from "react";
 import ReactStars from "react-rating-stars-component";
-import shopcontext ,{ ShopContext } from "./shopcontext";
+import { ShopContext } from "./shopcontext";
 
 
 const prod = (props) => {
     const {id, name, image, price, brand} = props.data;
-    const { viewProductDetails } = UseContext(ShopContext);
+    const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
+    const cartItemCount = cartItems[id];
   return <>
   <div key={id} className="col-3">
     <div className="card">
@@ -23,8 +23,18 @@ const prod = (props) => {
         />,
         <p className="price mb-3"> {price} <span className="text-danger"><strike>{price * 2}</strike></span> </p>
         <div className="d-flex align-items-center justify-content-around mb-2"></div>
-        <button onClick={() => viewProductDetails}>View Details</button>
-        <button>Add To Cart</button>
+        
+        <button 
+          className="view-btn"
+          onClick={() => viewProductDetails(id)}>
+          View Details
+        </button>
+
+        <button
+          onClick={() => addToCart(id)}>
+          Add To Cart
+          { cartItemCount > 0 && `(${cartItemCount})`}
+          </button>
       </div>
     </div>
   </div>
