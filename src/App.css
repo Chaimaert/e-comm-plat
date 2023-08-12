@@ -306,3 +306,7 @@ h5{
   font-size: 16px;
   padding: 10px;
 }
+
+.success {
+  color: #a51c30;
+}

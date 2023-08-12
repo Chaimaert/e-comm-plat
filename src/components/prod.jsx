@@ -37,9 +37,15 @@ const prod = (props) => {
               <div className="col-6 d-flex align-items-center justify-content-around">
                   <button
                       className="add-btn"
-                      onClick={() => addToCart(id)}>
+                      onClick={() => {
+                        addToCart(id);
+                        event.target.classlist.toggle("success");
+                      }
+                  }
+                  >
+            
                       Add To Cart
-                      { cartItemCount > 0 && ` (${cartItemCount}) `}
+                      { cartItemCount > 0 && `(${cartItemCount})`}
                     </button>
               </div>
         </div>
