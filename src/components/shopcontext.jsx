@@ -106,7 +106,6 @@ const Shopcontext = (props) => {
   );
 };
 
-// Add propTypes validation for children
 Shopcontext.propTypes = {
   children: PropTypes.node.isRequired,
 };

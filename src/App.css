@@ -263,6 +263,23 @@ h5{
 
 .price {
   color: #a67b5b;
+  margin: 0;
+}
+
+.view-btn {
+  color: #14213d;
+  transition: 0.5s ease;
+}
+
+.view-btn:hover {
+  color: #f28482;
+}
+
+.add-btn {
+  border-radius: 10px;
+  background-color: #efd3d7;
+  border: none;
+  padding: 10px 12px;
 }
 
 

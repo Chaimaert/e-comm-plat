@@ -2,6 +2,7 @@ import Shopitems from "../components/shopitems";
 
 
 const shop = () => {
+  
   return <>
     <section className="shop mt-2">
       <div className="container-xxl">
