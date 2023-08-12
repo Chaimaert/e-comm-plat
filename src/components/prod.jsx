@@ -1,9 +1,12 @@
 // import { Shopcontext } from './shopcontext'
+import { UseContext } from "react";
 import ReactStars from "react-rating-stars-component";
+import shopcontext ,{ ShopContext } from "./shopcontext";
 
 
 const prod = (props) => {
     const {id, name, image, price, brand} = props.data;
+    const { viewProductDetails } = UseContext(ShopContext);
   return <>
   <div key={id} className="col-3">
     <div className="card">
@@ -18,9 +21,9 @@ const prod = (props) => {
             size={24}
             activeColor="#cca27e"
         />,
-        <p className="price"> {price} <span className="text-danger"><strike>{price * 2}</strike></span> </p>
-        <div className="d-flex align-items-center"></div>
-        <button>View Details</button>
+        <p className="price mb-3"> {price} <span className="text-danger"><strike>{price * 2}</strike></span> </p>
+        <div className="d-flex align-items-center justify-content-around mb-2"></div>
+        <button onClick={() => viewProductDetails}>View Details</button>
         <button>Add To Cart</button>
       </div>
     </div>
