@@ -24,7 +24,7 @@ const prod = (props) => {
             size={24}
             activeColor="#cca27e"
         />
-        <p className="price mt-2 mb-2">{price} <span className="text-danger"><strike> {price * 2} </strike></span> </p>
+        <p className="price my-2">{price} <span className="text-danger"><strike> {price * 2} </strike></span> </p>
 
         <div className="mb-2 d-flex align-items-center justify-content-around">
               <div className="col-6 d-flex align-items-center justify-content-around">

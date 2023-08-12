@@ -284,11 +284,18 @@ h5{
 
 .shop-products .card img {
   border-radius: 10px;
+  width: 100%;
+  max-height: 220px;
 }
 
 .shop-products .card {
   border-radius: 20px;
-  max-width: 250px;
+  max-width: 230px;
+
+}
+
+.shop-products .card span {
+  color: var(--darken);
 }
 
 
