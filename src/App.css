@@ -282,4 +282,13 @@ h5{
   padding: 10px 12px;
 }
 
+.shop-products .card img {
+  border-radius: 10px;
+}
+
+.shop-products .card {
+  border-radius: 20px;
+  max-width: 250px;
+}
+
 

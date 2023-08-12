@@ -9,9 +9,11 @@ const prod = (props) => {
     const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
     const cartItemCount = cartItems[id];
   return <>
-  <div key={id} className="col-3">
+  <div key={id} className="col-3 mb-4">
     <div className="card">
-      <img src={image} className='img-fluid card-img-top' />
+      <div className="p-2">
+        <img src={image} className='img-fluid card-img-top' />
+      </div>
       <div className="card-details p-3">
         <span>{brand}</span>
         <h5 className="my-2">{name} </h5>
@@ -23,20 +25,24 @@ const prod = (props) => {
             activeColor="#cca27e"
         />
         <p className="price mt-2 mb-2">{price} <span className="text-danger"><strike> {price * 2} </strike></span> </p>
-        <div className="d-flex align-items-center justify-content-around mb-2"></div>
-        
-        <Link 
-          className="view-btn"
-          onClick={() => viewProductDetails(id)}>
-          View Details
-        </Link>
 
-        <button
-          className="add-btn"
-          onClick={() => addToCart(id)}>
-          Add To Cart
-          { cartItemCount > 0 && ` (${cartItemCount}) `}
-          </button>
+        <div className="mb-2 d-flex align-items-center justify-content-around">
+              <div className="col-6 d-flex align-items-center justify-content-around">
+                  <Link 
+                      className="view-btn"
+                      onClick={() => viewProductDetails(id)}>
+                      View Details
+                  </Link>
+              </div>
+              <div className="col-6 d-flex align-items-center justify-content-around">
+                  <button
+                      className="add-btn"
+                      onClick={() => addToCart(id)}>
+                      Add To Cart
+                      { cartItemCount > 0 && ` (${cartItemCount}) `}
+                    </button>
+              </div>
+        </div>
       </div>
     </div>
   </div>
