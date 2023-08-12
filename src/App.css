@@ -298,4 +298,11 @@ h5{
   color: var(--darken);
 }
 
+.pagination a {
+  color: #a67b5b;
+}
 
+.pagination li {
+  font-size: 16px;
+  padding: 10px;
+}
