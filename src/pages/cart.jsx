@@ -26,7 +26,17 @@ const cart = (props) => {
                 </div>
              </div>
 
-
+             <div className="cart-total d-flex justify-content-between">
+                  <div className="col-6">
+                      <button>Continue Shopping</button>
+                  </div>
+                  <div className="col-6">
+                    <h3>Total</h3>
+                  </div>
+                  <div className="col-6">
+                    
+                  </div>
+             </div>
     </section>
   </>
 };
