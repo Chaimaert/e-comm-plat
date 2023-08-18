@@ -23,7 +23,7 @@ const home = () => {
     <Choices />
 
     <section className="featured-products p-5">
-        <div className="cintainer-xxl">
+        <div className="container-xxl">
           <div className="row">
             <div className="text-center">
               <h1>Our Featured Products</h1>

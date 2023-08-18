@@ -52,7 +52,7 @@ const cartitems = (props) => {
                           </div>
                         </td>
                     </tr>
-                    <hr />
+
     </tbody>
     
    </>

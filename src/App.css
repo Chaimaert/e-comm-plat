@@ -290,7 +290,7 @@ h5{
 
 .shop-products .card {
   border-radius: 20px;
-  max-width: 230px;
+  max-width: 260px;
 
 }
 
@@ -348,4 +348,30 @@ tbody {
   color: #d68281;
   font-weight: 700;
   font-size: 14px;
+}
+
+.amount {
+  color: #d68281;
+  margin-left: 3px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.total {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.clear-cart {
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  color: var(--active);
+  margin-left: 18px;
+}
+
+.add-items{
+  color: #a51c30;
+  font-weight: 500;
 }

@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { ShopContext } from './shopcontext'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { RiFacebookCircleFill } from 'react-icons/ri'
@@ -11,6 +13,8 @@ import Mylogo from '../assets/images/Mylogo.png'
 
 const header = () => {
   const location = useLocation();
+  const { getTotalCartProducts } = useContext(ShopContext);
+  const totalProducts = getTotalCartProducts();
   return <>
     <header className="header-top-strip px-4 p-1 shadow-sm">
       <div className="container-xxl">
@@ -50,7 +54,7 @@ const header = () => {
           <div className="nav-links col-4 d-flex align-items-center justify-content-between text-center m-auto">
             <Link to={'/'} className={location.pathname === '/' ? 'active' : 'inactive'}>Home</Link>
             <Link to={'shop'} className={location.pathname === '/shop' ? 'active' : 'inactive'}>Shop</Link>
-            <Link to={'blog'} className={location.pathname === '/blog' ? 'active' : 'inactive'}>Blog</Link>
+            {/* <Link to={'blog'} className={location.pathname === '/blog' ? 'active' : 'inactive'}>Blog</Link> */}
             <Link to={'about'} className={location.pathname === '/about' ? 'active' : 'inactive'}>About</Link>
             <Link to={'contact'} className={location.pathname === '/contact' ? 'active' : 'inactive'}>Contact</Link>
           </div>
@@ -69,8 +73,10 @@ const header = () => {
                 </Link>
                 <Link to={'cart'} className={location.pathname === '/cart' ? 'active' : 'inactive'}>
                   <div className="d-flex">
-                      <PiShoppingCartSimpleFill className=" mx-2 m-auto"/>
-                      <p>Cart</p>
+                      <PiShoppingCartSimpleFill className=" mx-2 m-auto"/>                  
+                    <p>
+                      Cart <span className='text-danger'>{totalProducts > 0 && `(${totalProducts})`}</span>
+                    </p>
                   </div>  
                 </Link>
           </div>
