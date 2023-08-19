@@ -5,7 +5,7 @@ import { ShopContext } from './shopcontext'
 const cartitems = (props) => {
 
   const {id, name, image, price, brand} = props.data;
-  const { viewProductDetails, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
+  const {  addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
 
   return <>
     <tbody key={id}>
