@@ -30,27 +30,32 @@ const productdetails = () => {
                     tempora nostrum accusamus vel aliquam at officiis? 
                     Omnis sit dolorum consequuntur commodi dicta facilis delectus?</p>
               </div>
-              <button
+                    <button
                                 className="add-btn mx-2"
                                 onClick={() => {
-                                  addToCart(id);
+                                  addToCart(product.id);
 
                                   }
                                 }>+
-                             </button>
+                    </button>
 
-                             <input type="text" value={cartItems[id]} onChange={(e) => 
-                            updateCartItemCount(Number(e.target.value), id)} />
+                             <input type="text" value={cartItems[product.id]} onChange={(e) => 
+                            updateCartItemCount(Number(e.target.value), product.id)} />
 
-                             <button
+                     <button
                                 className="add-btn mx-2"
                                 onClick={() => {
-                                  removeToCart(id);
+                                  removeToCart(product.id);
 
                                   }
                                 }>-
-                             </button>
+                      </button>
 
+                    <div className="input-group p-4">
+                          <input type="text" className="form-control" placeholder="Enter coupon code ..." 
+                              aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                          <button className="input-group-text" id="basic-addon2">Search</button>
+                      </div>
         </div>
     </div>
   </div>
