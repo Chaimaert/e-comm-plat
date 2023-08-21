@@ -20,9 +20,9 @@ const productdetails = () => {
     <div className="col-6">
         <div className="p-4">
               <span className="bd-name"> {product.brand} </span>
-              <h5 className="my-3"> {product.name} </h5>
+              <h3 className="my-2">  {product.name} </h3>
               <div className="card-details">
-                  <p className="my-3">Was <strike className="text-danger"> {product.price*2} </strike> &nbsp;Now
+                  <p className="my-2">Was<strike className="text-danger"> {product.price*2} </strike> &nbsp;Now
                       <span className="price">    ${ product.price} </span>
                   </p>
 

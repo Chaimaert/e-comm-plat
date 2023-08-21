@@ -379,3 +379,13 @@ tbody {
 .bd-name {
   color: #a51c30;
 }
+
+/* ------------------------------------------------ Products Details -------------------------------------------------- */
+
+.details button {
+  background: transparent;
+  padding: 12px;
+  color: #d68281;
+  font-weight: 700;
+  font-size: 14px;
+}
