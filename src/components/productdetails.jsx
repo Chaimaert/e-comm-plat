@@ -12,7 +12,7 @@ const productdetails = () => {
   
   return <>
       
-  <div className="d-flex">
+  <div className="d-flex p-3">
     <div className="col-6 card">
       <img src={product.image} alt="" className="img-fluid p-5"/>
     </div>
@@ -65,11 +65,16 @@ const productdetails = () => {
                               <div className="col-3" key={product.id}>
                                 <div className="card h-100 m-auto p-3">
                                   <img src={product.image} alt="" className="card-img-top img-fluid m-auto p-3" />
-                                  <div className="card-details">
-                                      <div className="title mb-3">
-                                        <h5 className='mt-2'> {product.name} </h5>
-                                      </div>
-                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                        </div>
+
+                        <div className="row mt-4">
+                            {PRODUCTS1.slice(2, 6).map((product) => (
+                              <div className="col-3" key={product.id}>
+                                <div className="card h-100 m-auto p-3">
+                                  <img src={product.image} alt="" className="card-img-top img-fluid m-auto p-3" />
                                 </div>
                               </div>
                             ))}
