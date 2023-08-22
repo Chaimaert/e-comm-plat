@@ -394,3 +394,13 @@ tbody {
   color: #a51c30;
   font-weight: 400;
 }
+
+/* ------------------------------------------------ About Page -------------------------------------------------- */
+
+.about-wrapper {
+  background: url(./assets/images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
