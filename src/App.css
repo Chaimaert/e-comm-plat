@@ -398,9 +398,20 @@ tbody {
 /* ------------------------------------------------ About Page -------------------------------------------------- */
 
 .about-wrapper {
-  background: url(./assets/images/color.avif);
+  background: url(./assets/images/lila2.avif);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 30vh;
+}
+
+.know {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-weight: 400;
+}
+
+.know-us img {
+  border-radius: 30px;
+  width: 50%;
 }
