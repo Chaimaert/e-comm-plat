@@ -40,8 +40,8 @@ const productdetails = () => {
                                 }>+
                     </button>
 
-                             <input type="text" value={cartItems[product.id]} onChange={(e) => 
-                            updateCartItemCount(Number(e.target.value), product.id)} />
+                    <input type="text" value={cartItems[product.id]} onChange={(e) => 
+                      updateCartItemCount(Number(e.target.value), product.id)} />
 
                      <button
                                 className="add-btn mx-2"
@@ -57,6 +57,10 @@ const productdetails = () => {
                               aria-label="Recipient's username" aria-describedby="basic-addon2" />
                           <button className="input-group-text" id="basic-addon2">Search</button>
                       </div>
+                    
+                    <div className="card-footer">
+                      <h3 className="price my-3">More products</h3>
+                    </div>
         </div>
     </div>
   </div>
