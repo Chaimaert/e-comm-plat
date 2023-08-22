@@ -1,9 +1,15 @@
 
 
 const about = () => {
-  return (
-    <div> Home </div>
-  );
+  return <>
+    <section className="about-wrapper">
+      <div className="container-xxl">
+        <div className="row">
+          
+        </div>
+      </div>
+    </section>
+  </>
 };
 
 export default about;
