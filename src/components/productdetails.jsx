@@ -67,15 +67,10 @@ const productdetails = () => {
                                   <img src={product.image} alt="" className="card-img-top img-fluid m-auto p-3" />
                                   <div className="card-details">
                                       <div className="title mb-3">
-                                        <span> {product.brand} </span>
                                         <h5 className='mt-2'> {product.name} </h5>
                                       </div>
-                                    <div className="card-footer text-center mb-2">
-                                      <p className='mb-2'> {product.status} </p>
-                                      <p className='text-danger'> <strike> {product.rate} </strike> </p>
-                                    </div>
+                                  </div>
                                 </div>
-                              </div>
                               </div>
                             ))}
                         </div>
