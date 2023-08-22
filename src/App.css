@@ -411,7 +411,11 @@ tbody {
   font-weight: 400;
 }
 
-.know-us img {
+.about-us img {
   border-radius: 30px;
-  width: 50%;
+}
+
+.who {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }

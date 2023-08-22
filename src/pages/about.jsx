@@ -1,4 +1,5 @@
 import pic from '../assets/images/about/pic2.avif'
+import { Link } from 'react-router-dom';
 
 const about = () => {
   return <>
@@ -13,7 +14,7 @@ const about = () => {
       </div>
     </section>
 
-    <section className="know-us p-5">
+    {/* <section className="know-us p-5">
       <div className="container-xxl">
         <div className="row">
           <div className="d-felx">
@@ -36,7 +37,26 @@ const about = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
+
+    <section className="about-us p-5">
+        <div className="row">
+          <div className="col-md-6">
+            <img src={pic} alt="" className='img-fluid p-5' />
+          </div>
+          <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <h1 className='who mb-3'><b>Who are we?</b></h1>
+                <p className="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, 
+                    <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod et sint facere reprehenderit?
+                </p>
+                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, 
+                    <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod et sint facere reprehenderit?
+                </p>
+          </div>
+        </div>
+      </section>
   </>
 };
 
