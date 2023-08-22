@@ -12,12 +12,12 @@ const productdetails = () => {
   
   return <>
       
-  <div className="d-flex p-3">
+  <div className="d-flex">
     <div className="col-6 card">
       <img src={product.image} alt="" className="img-fluid p-5"/>
     </div>
 
-    <div className="col-6">
+    <div className="col-6 p-3">
         <div className="p-4">
               <span className="bd-name"> {product.brand} </span>
               <h3 className="my-2">  {product.name} </h3>
