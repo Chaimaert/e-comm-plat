@@ -436,3 +436,49 @@ tbody {
 }
 
 /* ------------------------------------------------ Contact Page -------------------------------------------------- */
+
+.map iframe{
+  height: 450px;
+  align-items: center;
+}
+
+.contact-wrapper{
+  background: url(/src/assets/images/newsletter.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-wrapper-details .card{
+  border: none;
+  background-color: var(--lighter2);
+}
+
+.contact-wrapper .text{
+  color: black;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text2 {
+  font-size: 14px;
+}
+
+.contact-message .card{
+  background: var(--lighter2);
+  border: none;
+}
+
+.contact-message label{
+  font-size: 18px;
+}
+
+.contact-message input{
+  font-size: 14px;
+  height: 40px;
+}
