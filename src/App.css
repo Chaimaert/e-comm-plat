@@ -483,3 +483,16 @@ tbody {
   font-size: 14px;
   height: 40px;
 }
+
+#button-link {
+  border-radius: 10px 5px;
+  background: transparent;
+  padding: 12px;
+  color: #a51c30;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.mail {
+  color: #a51c30;
+}

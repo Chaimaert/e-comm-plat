@@ -65,7 +65,7 @@ const contact = () => {
           <div className="row">
             <div className="col-lg-8 col-md-10 col-sm-12 m-auto">
               <div className="card p-5">
-                <h2 className="text-center mb-4">Leave Us A message</h2>
+                <h2 className="text-center mb-4 mail">Leave Us A message</h2>
                 <div className=" d-flex align-items-center justify-content-center">
                   <div className="row g-3">
                     <div className="col-md-6">
@@ -87,7 +87,7 @@ const contact = () => {
                     <div className="col-12">
                       <label
                         htmlFor="exampleFormControlInput1"
-                        className="form-label mb-3"
+                        className="form-label mb-3 mail"
                       >
                         Enter Your Email address
                       </label>
@@ -101,7 +101,7 @@ const contact = () => {
                     <div className="col-12">
                       <label
                         htmlFor="exampleFormControlTextarea1"
-                        className="form-label"
+                        className="form-label mail"
                       >
                         Type in your message
                       </label>
