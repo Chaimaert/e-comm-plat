@@ -174,9 +174,9 @@ const header = () => {
                       <Link
                         onClick={toggleMenu}
                         to="/login"
-                        className="d-flex align-items-center color-nav me-3"
+                        className="d-flex align-items-center color-nav mt-2  me-3"
                       >
-                        <MdAccountCircle className="me-1 fs-4" />
+                        <MdAccountCircle className="me-1 fs-5" />
                       </Link>
                     </div>
                     <div
@@ -187,13 +187,13 @@ const header = () => {
                       <Link
                         onClick={toggleMenu}
                         to="/cart"
-                        className="d-flex align-items-center color-nav me-3 cart-span-one"
+                        className="d-flex align-items-center color-nav mt-2  me-3 cart-span-one"
                       >
-                        <PiShoppingCartSimpleFill className="me-1 fs-4" />
+                        <PiShoppingCartSimpleFill className="me-1 fs-5" />
                         <div>
                           <p>
                             <b>
-                              <span> {totalProducts}</span>
+                              <span> ({totalProducts})</span>
                             </b>
                           </p>
                         </div>
