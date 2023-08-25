@@ -8,7 +8,6 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import { FaClipboardList } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
-import compare from "../assets/images/compare.svg";
 import wishlist from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import Mylogo from "../assets/images/Mylogo.png";
@@ -136,7 +135,7 @@ const header = () => {
                       SHOP
                     </NavLink>
                   </div>
-      
+
                   <div className="ms-auto gap-3">
                     <NavLink
                       to="/about"
@@ -169,19 +168,6 @@ const header = () => {
                   <div className="col-12 col-md-2 d-none d-md-flex d-lg-flex m-auto">
                     <div
                       className={
-                        location.pathname === "/" ? "active" : "not-active"
-                      }
-                    >
-                      <Link
-                        onClick={toggleMenu}
-                        to=""
-                        className="d-flex align-items-center color-nav me-3"
-                      >
-                        <FaClipboardList className="me-1 fs-2" />
-                      </Link>
-                    </div>
-                    <div
-                      className={
                         location.pathname === "login" ? "active" : "not-active"
                       }
                     >
@@ -190,7 +176,7 @@ const header = () => {
                         to="/login"
                         className="d-flex align-items-center color-nav me-3"
                       >
-                        <MdAccountCircle className="me-1 fs-2" />
+                        <MdAccountCircle className="me-1 fs-4" />
                       </Link>
                     </div>
                     <div
@@ -203,11 +189,11 @@ const header = () => {
                         to="/cart"
                         className="d-flex align-items-center color-nav me-3 cart-span-one"
                       >
-                        <PiShoppingCartSimpleFill className="me-1 fs-2" />
+                        <PiShoppingCartSimpleFill className="me-1 fs-4" />
                         <div>
                           <p>
                             <b>
-                              <span>{totalProducts}</span>
+                              <span> {totalProducts}</span>
                             </b>
                           </p>
                         </div>
@@ -281,18 +267,6 @@ const header = () => {
                 </div>
 
                 <div className="menu-bar__actions">
-                  <div className="mb-2">
-                    <Link
-                      to=""
-                      className={
-                        location.pathname === "/" ? "active" : "not-active"
-                      }
-                      onClick={toggleMenu}
-                    >
-                      <img src={compare} alt="compare" className="d-none" />
-                      <span>New</span>
-                    </Link>
-                  </div>
                   <div className="mb-2">
                     <Link
                       to=""
