@@ -496,3 +496,9 @@ tbody {
 .mail {
   color: #a51c30;
 }
+
+#button-link:hover {
+  background: #efd3d7;
+  color: #b66a69;
+  border: 1px solid #f8f3f3;
+}
