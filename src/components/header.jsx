@@ -32,7 +32,7 @@ const header = () => {
                 <p>The trending outfits at 100% off</p>
               </div>
 
-              <div className="col-md social-icons">
+              <div className="col-md2 social-icons ">
                 <Link className="links fs-5">
                   <AiFillInstagram />
                 </Link>
