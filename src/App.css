@@ -18,20 +18,20 @@
   --header: #f8f3f3;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'League Spartan', sans-serif;
 }
 
-h1{
+h1 {
   font-weight: 600;
   font-size: 40px;
   color: black;
 }
 
-h2{
+h2 {
   font-weight: 400;
   font-size: 24px;
 }
@@ -42,20 +42,21 @@ a {
   text-decoration: inherit;
   transition: 0.5s ease;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 
-p{
+p {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
-  margin: 0;
+  margin: 5px;
   color: black;
 }
 
-button{
+button {
   padding: 12px 10px;
   font-size: 14px;
   background: transparent;
@@ -63,25 +64,49 @@ button{
   border: 1px solid #a51c30;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-/* a {
+a {
   text-decoration: none;
   font-size: 14px;
   color: black;
 }
 
-p {
-  font-size: 14px;
-  margin: 5px;
-} */
-
 
 .logo {
   height: 70px;
   max-width: 100%;
+}
+
+.gap-30{
+  padding: 0 10px;
+}
+
+.logo {
+  max-width: 100%;
+  height: 40px;
+}
+.navbar-top{
+  background-color: white;
+}
+
+.links{
+  padding: 0 5px;
+}
+.navbar-middle{
+  background-color: var(--header);
+  transition: 0.5s ease;
+}
+
+.navbar-middle .menu-links a{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+    transition: 0.5s ease;
 }
 
 .logo:hover {
@@ -130,84 +155,87 @@ p {
     transition: 0.5s ease;
   }
 
-    #button-link:hover {
-      background-color: transparent;
-      border: 1px solid var(--primary1);
-      color: var(--primary1);
-    }
+  #button-link:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary1);
+    color: var(--primary1);
+  }
 
-    #button-linker {
-      border-radius: 10px;
-      font-size: 18px;
-      padding: 12px 24px;
-      background-color: var(--primary1);
-      color: black;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-    }
+  #button-linker {
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: var(--primary1);
+    color: black;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+  }
 
-    #button-linker:hover {
-      background-color: var(--primary);
-      border: 1px solid transparent;
-      color: white;
-    }
+  #button-linker:hover {
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    color: white;
+  }
 
-    .hero .hero-details img {
-      width: 50px;
-    }
+  .hero .hero-details img {
+    width: 50px;
+  }
 
-    .featured-products button {
-      align-items: center;
-      transition: 0.5s ease;
-      background: var(--primary2);
-      color: black;
-    }
+  .featured-products button {
+    align-items: center;
+    transition: 0.5s ease;
+    background: var(--primary2);
+    color: black;
+  }
 
-    .text-center .featured-products button:hover {
-      background: transparent;
-      color: var(--primary1);
-    }
+  .text-center .featured-products button:hover {
+    background: transparent;
+    color: var(--primary1);
+  }
 
-    .featured-products .card {
-      border-radius: 20px;
-      transition: 0.5s ease;
-      max-width: 250px;
-      padding: 12px 10px;
-      overflow: hidden;
-    }
+  .featured-products .card {
+    border-radius: 20px;
+    transition: 0.5s ease;
+    max-width: 250px;
+    padding: 12px 10px;
+    overflow: hidden;
+  }
 
-    .featured-products .card img {
-      border-radius: 20px;
-      max-width: 100%;
-      max-height: 220px;
-    }
+  .featured-products .card img {
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 220px;
+  }
 
-    .featured-products .action-bar {
-      top: 30%;
-      right: -100px;
-      transition: 0.8s ease;
-    }
+  .featured-products .action-bar {
+    top: 30%;
+    right: -100px;
+    transition: 0.8s ease;
+  }
 
-    .featured-products .card:hover .action-bar {
-      right: 80px;
-    }
+  .featured-products .card:hover .action-bar {
+    right: 80px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .featured-products .action-bar {
     display: none;
   }
+
   .new-arrivals .action-bar {
     display: none;
   }
-  h1{
+
+  h1 {
     font-size: 30px;
     font-weight: 500;
   }
+
   .logo {
     max-width: 100%;
-      height: 30px;
-    }
+    height: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -227,16 +255,15 @@ p {
   .count-handler {
     max-width: 100px;
   }
-  .banner h1, p{
+
+  .banner h1,
+  p {
     color: black;
   }
 }
 
 /* ------------------------------------------------ Header -------------------------------------------------- */
 
-.header-top-strip {
-  background-color: #fff;
-}
 
 button {
   padding: 12px 10px;
@@ -261,7 +288,6 @@ button {
 
 .social-icons a {
   color: var(--primary2);
-
 }
 
 .header-upper {

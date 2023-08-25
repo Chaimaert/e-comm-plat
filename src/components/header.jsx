@@ -10,7 +10,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import Mylogo from "../assets/images/Mylogo.png";
 
-const header = () => {
+const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const { getTotalCartProducts, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
@@ -31,16 +31,16 @@ const header = () => {
               </div>
 
               <div className="col-md social-icons">
-                <Link className="links fs-4">
+                <Link className="links fs-5">
                   <AiFillInstagram />
                 </Link>
-                <Link className="links fs-4">
+                <Link className="links fs-5">
                   <RiFacebookCircleFill />
                 </Link>
-                <Link className="links fs-4">
+                <Link className="links fs-5">
                   <AiOutlineTwitter />
                 </Link>
-                <Link className="links fs-4">
+                <Link className="links fs-5">
                   <BiLogoGmail />
                 </Link>
               </div>
@@ -49,7 +49,7 @@ const header = () => {
         </div>
       </header>
 
-      <header className="header-upper px-3">
+      <header className='navbar-middle sticky-top p-2 p-md-2 p-lg-2'>
         <div className="container-xxl">
           <div className="row">
             <div className="col-2 text-center m-auto">
@@ -154,4 +154,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
