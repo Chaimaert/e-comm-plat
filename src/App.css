@@ -519,8 +519,12 @@ tbody {
   color: black;
 }
 
+.fg {
+  font-weight: 400;
+}
+
 .login-wrapper{
-  background-color: var(--lighter1);
+  background-color: whitesmoke;
 }
 
 .login-wrapper .card{
@@ -550,14 +554,14 @@ tbody {
 .login-wrapper button{
   font-size: 18px;
   padding: 12px 24px;
-  background-color: var(--primary1);
-  color: white;
+  background-color: #f3abaa;
+  color: black;
   border: 1px solid transparent;
   transition: 0.5s ease;
 }
 
 .login-wrapper button:hover{
-  background-color: transparent;
+  background-color: #f5c0bf;
   border: 1px solid var(--primary1);
-  color: var(--primary1);
+  color: #a51c30;
 }
