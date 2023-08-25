@@ -40,7 +40,7 @@ const cart = () => {
 
             <div className="mt-4 p-3 cart-total d-flex justify-content-between">
                   <div className="col-6">
-                      <button className='shopping'>Continue Shopping</button>
+                      <Link to={'/shop'} className='shopping'>Continue Shopping</Link>
                   </div>
                   <div>
                       <h3 className='total'>Total</h3>
