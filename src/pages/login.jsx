@@ -26,10 +26,10 @@ const Login = () => {
             <div className="card">
               <div className="card-body p-5">
                 <h4 className="text-center mail">LOGIN</h4>
-                <p className="text-center mb-4">Welcome Back!!</p>
+                <p className="text-center mb-4 welc">Welcome Back</p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label mb-3 mail">
+                    <label htmlFor="email" className="form-label mail mb-3">
                       Enter Your Email address
                     </label>
                     <input
@@ -43,7 +43,7 @@ const Login = () => {
                     />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="password" className="form-label mb-3 mail">
+                    <label htmlFor="password" className="form-label mail mb-3">
                       Enter Your password
                     </label>
                     <input
@@ -69,7 +69,7 @@ const Login = () => {
                     </Link>
                   </div>
                   <div className="d-grid gap-2">
-                    <button type="submit" className="login">Login</button>
+                    <button type="submit">Login</button>
                   </div>
                 </form>
               </div>

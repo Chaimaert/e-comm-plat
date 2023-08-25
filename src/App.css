@@ -510,3 +510,54 @@ tbody {
 
 
 /* ------------------------------------------------ Login Page -------------------------------------------------- */
+
+.text-center{
+  color: #a51c30;
+}
+
+.welc {
+  color: black;
+}
+
+.login-wrapper{
+  background-color: var(--lighter1);
+}
+
+.login-wrapper .card{
+  border: 1px solid var(--lighter);
+  border-radius: 10px;
+
+}
+
+.login-wrapper label{
+  font-size: 18px;
+}
+
+.login-wrapper input{
+  font-size: 14px;
+  height: 40px;
+}
+
+.login-wrapper .form-link{
+  font-size: 14px;
+  transition: 0.5s ease;
+}
+
+.login-wrapper .form-link:hover{
+  color: var(--search);
+}
+
+.login-wrapper button{
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: var(--primary1);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.login-wrapper button:hover{
+  background-color: transparent;
+  border: 1px solid var(--primary1);
+  color: var(--primary1);
+}
