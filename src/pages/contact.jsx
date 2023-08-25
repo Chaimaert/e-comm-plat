@@ -18,7 +18,7 @@ const contact = () => {
             <div className="col-lg-6 col-md-12 p-3">
               <div className="map card m-auto embed-responsive embed-responsive-16by9">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13584.993684425126!2d-8.0196489!3d31.6544226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafedc14bd1a871%3A0x57a79633b42a2cdb!2sNoza%20Digital%20Marketing%20Agency%20(Agence%20de%20Communication%20Web)!5e0!3m2!1sen!2sma!4v1692970364432!5m2!1sen!2sma" width="600" height="450" 
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13584.993684425126!2d-8.0196489!3d31.6544226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafedc14bd1a871%3A0x57a79633b42a2cdb!2sNoza%20Digital%20Marketing%20Agency%20(Agence%20de%20Communication%20Web)!5e0!3m2!1sen!2sma!4v1692970364432!5m2!1sen!2sma"
                   allowfullscreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -31,12 +31,12 @@ const contact = () => {
                   <b>Contact Us</b>
                 </h2>
                 <p className="mb-2">
-                  <b>Address:</b> Thika town, Naltex building, 2nd floor
+                  <b>Address:</b> IDAR EL KARMA, Rte de Safi, Marrakech
                 </p>
                 <p className="mb-2">
                   <b>Phone:</b>{" "}
-                  <a className="footer-tel" href="tel:+1234567890">
-                    Call us at +1 (234) 567-890
+                  <a className="footer-tel" href="tel:+212661975556">
+                    Call us at +212661975556
                   </a>
                 </p>
                 <p className="mb-4">

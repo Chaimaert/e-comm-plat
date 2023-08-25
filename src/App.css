@@ -438,8 +438,9 @@ tbody {
 /* ------------------------------------------------ Contact Page -------------------------------------------------- */
 
 .map iframe{
-  height: 450px;
+  height: 425px;
   align-items: center;
+  border-radius: 10px;
 }
 
 .contact-wrapper{

@@ -18,7 +18,7 @@ const footer = () => {
             <div className="footer-details">
               <p className="mb-3"><b>Address : </b>IDAR EL KARMA, Rte de Safi, Marrakech</p>
               <p className="mb-3"><b>Phone : </b> Call us +212661975556</p>
-              <p className="mb-4"><b>Hours : </b> From 8 A.m to 10 P.m</p>
+              <p className="mb-4"><b>Hours : </b> From 8 A.m to 6 P.m</p>
               <p className="mb-3"><b>Follow Us</b></p>
 
               <div className="col-4 mb-3 social-icons d-flex justify-content-around">
