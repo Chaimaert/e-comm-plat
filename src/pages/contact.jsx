@@ -18,7 +18,7 @@ const contact = () => {
             <div className="col-lg-6 col-md-12 p-3">
               <div className="map card m-auto embed-responsive embed-responsive-16by9">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63826.53634427054!2d37.09345325!3d-1.04201225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e5b27c66117%3A0xb6f8a7e126152c26!2sThika!5e0!3m2!1sen!2ske!4v1668532780442!5m2!1sen!2ske"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13584.993684425126!2d-8.0196489!3d31.6544226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafedc14bd1a871%3A0x57a79633b42a2cdb!2sNoza%20Digital%20Marketing%20Agency%20(Agence%20de%20Communication%20Web)!5e0!3m2!1sen!2sma!4v1692970364432!5m2!1sen!2sma" width="600" height="450" 
                   allowfullscreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
