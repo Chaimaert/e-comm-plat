@@ -136,17 +136,7 @@ const header = () => {
                       SHOP
                     </NavLink>
                   </div>
-                  <div className="ms-auto gap-3">
-                    <NavLink
-                      to="/blog"
-                      className={
-                        location.pathname === "/blog" ? "active" : "not-active"
-                      }
-                      onClick={toggleMenu}
-                    >
-                      BLOG
-                    </NavLink>
-                  </div>
+      
                   <div className="ms-auto gap-3">
                     <NavLink
                       to="/about"
@@ -262,17 +252,6 @@ const header = () => {
                       onClick={toggleMenu}
                     >
                       SHOP
-                    </NavLink>
-                  </div>
-                  <div className="mb-2">
-                    <NavLink
-                      className={
-                        location.pathname === "/blog" ? "active" : "not-active"
-                      }
-                      to="/blog"
-                      onClick={toggleMenu}
-                    >
-                      BLOG
                     </NavLink>
                   </div>
                   <div className="mb-2">
