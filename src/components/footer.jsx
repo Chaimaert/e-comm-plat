@@ -10,12 +10,11 @@ const footer = () => {
   return  <>
     <footer className="footer p-5">
       <div className="container-xxl">
-        <div className="row">
-          <div className="col-4 d-flex flex-column ">
+        <div className="row justify-content-center justify-content-md-start">
+          <div className="col-md-4 col-lg-4 mb-4 mb-md-0">
 
-            <h3 className="mb-4">Contact us</h3>
+            <h2 className="footer-title mb-3"><b>Contact</b></h2>
 
-            <div className="footer-details">
               <p className="mb-3"><b>Address : </b>IDAR EL KARMA, Rte de Safi, Marrakech</p>
               <p className="mb-3"><b>Phone : </b> Call us +212661975556</p>
               <p className="mb-4"><b>Hours : </b> From 8 A.m to 6 P.m</p>
@@ -27,7 +26,6 @@ const footer = () => {
                 <Link><AiOutlineTwitter className="fs-4" /></Link>
                 <Link><BiLogoLinkedin className="fs-4"  /></Link>
               </div>
-            </div>
 
           </div>
           <div className="col-2">
