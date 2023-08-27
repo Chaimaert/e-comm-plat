@@ -115,9 +115,9 @@ const footer = () => {
                     Payment Methods
                   </p>
                   <div className="pay">
-                  <Link to='https://www.paypal.com/signin' target='_blank'>
-                  <img src={pay} alt="" />
-                  </Link>
+                      <Link to='https://www.paypal.com/signin' target='_blank'>
+                          <img src={pay} alt="" />
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -126,15 +126,15 @@ const footer = () => {
                   <div className="col-12 col-md-6">
                   <p className="text-center text-md-start">&copy; Developed by ROUITA CHAIMAE 2023</p>
                   </div>
-                      <div className="col-12 col-md-6">
-                      <ul className="list-inline text-center text-md-end">
-                        <li className="list-inline-item"><Link to="#" className="text-dark">Privacy Policy</Link></li>
-                        <li className="list-inline-item"><Link to="#" className="text-dark">Terms of Use</Link></li>
-                        <li className="list-inline-item"><Link to="#" className="text-dark">Contact Us</Link></li>
-                      </ul>
-                    </div>
+                  <div className="col-12 col-md-6">
+                    <ul className="list-inline text-center text-md-end">
+                      <li className="list-inline-item"><Link to="#" className="text-dark">Privacy Policy</Link></li>
+                      <li className="list-inline-item"><Link to="#" className="text-dark">Terms of Use</Link></li>
+                      <li className="list-inline-item"><Link to="#" className="text-dark">Contact Us</Link></li>
+                    </ul>
+                  </div>
               </div>
-                </div>
+        </div>
       </footer>
     </>;
 };
