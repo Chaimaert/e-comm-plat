@@ -5,7 +5,7 @@ import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { BiLogoGmail } from "react-icons/bi";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { FaClipboardList } from "react-icons/fa";
+// import { FaClipboardList } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import wishlist from "../assets/images/wishlist.svg";
@@ -33,15 +33,28 @@ const header = () => {
               </div>
 
               <div className="col-md2 social-icons ">
-                <Link className="links fs-5">
+                <Link 
+                  className="links fs-5"
+                  to="https://www.instagram.com/noza.agency/"
+                  id="footer-link"
+                  target="_blank">
                   <AiFillInstagram />
                 </Link>
-                <Link className="links fs-5">
+
+                <Link 
+                  className="links fs-5"
+                  to="https://www.facebook.com"
+                  id="footer-link">
                   <RiFacebookCircleFill />
                 </Link>
-                <Link className="links fs-5">
+
+                <Link 
+                  className="links fs-5"
+                  to="https://twitter.com"
+                  id="footer-link">
                   <AiOutlineTwitter />
                 </Link>
+                
                 <Link className="links fs-5">
                   <BiLogoGmail />
                 </Link>
