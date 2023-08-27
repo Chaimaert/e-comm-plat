@@ -19,7 +19,7 @@ const footer = () => {
               <div className='mb-3'><p><b>Address:</b> IDAR EL KARMA, Rte de Safi, Marrakech</p> </div>
               <div className='mb-3'><p><b>Phone:</b>  <a className='footer-tel' href="tel:+1234567890">Call us at +212661975556</a></p> </div>
               <div className='mb-4'><p><b>Hours:</b>  From 8 a.m To 6 p.m</p> </div>
-              <div className='mb-3'><p><b>Follow Us</b></p> </div>
+              <div className='mb-3'><p><b>Follow Us :</b></p> </div>
 
               <div className="socials social-icons  d-flex gap-3">
                 <Link
@@ -97,7 +97,7 @@ const footer = () => {
              </div>
 
              <div className="col-md-4 col-lg-4">
-                <h2 className='footer-title mb-3 mx-2'><b>Install App</b></h2>
+                <h2 className='footer-title mb-3 mx-2'><b>App</b></h2>
                 <p className='mb-3'>Available On Google Play Services & App Store</p>
                 <div className="className='mb-3 col-md-6 col-12 pay">
                     <div className='mb-3'>
