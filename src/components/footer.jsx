@@ -12,7 +12,7 @@ const footer = () => {
         <div className="container-xxl">
           <div className="row justify-content-center justify-content-md-start">
             <div className="col-md-4 col-lg-4 mb-4 mb-md-0">
-              <h2 className="footer-title mb-3">
+              <h2 className="footer-title mb-3 mx-2">
                 <b>Contact</b>
               </h2>
 
@@ -57,7 +57,7 @@ const footer = () => {
             </div>
 
             <div className="col-md-2 col-lg-2 mb-3 mb-md-0">
-              <h2 className="footer-title mb-3">
+              <h2 className="footer-title mb-3 mx-2">
                 {" "}
                 <b>About</b>{" "}
               </h2>
@@ -88,7 +88,7 @@ const footer = () => {
             </div>
 
             <div className="col-md-2 col-lg-2 mb-3 mb-md-0">
-                <h2 className='footer-title mb-3'><b>Account</b></h2>
+                <h2 className='footer-title mb-3 mx-2'><b>Account</b></h2>
                 <div className='mb-3'> <Link to='/login' id='footer-links'>Profile</Link>  </div>
                 <div className='mb-3'> <Link to='/cart' id='footer-links'>View Cart</Link>  </div>
                 <div className='mb-3'> <Link to='/contact' id='footer-links'>Help</Link>  </div>
@@ -97,7 +97,7 @@ const footer = () => {
              </div>
 
              <div className="col-md-4 col-lg-4">
-                <h2 className='footer-title mb-3'><b>Install App</b></h2>
+                <h2 className='footer-title mb-3 mx-2'><b>Install App</b></h2>
                 <p className='mb-3'>Available On Google Play Services & App Store</p>
                 <div className="className='mb-3 col-md-6 col-12 pay">
                     <div className='mb-3'>
@@ -130,7 +130,7 @@ const footer = () => {
                     <ul className="list-inline text-center text-md-end">
                       <li className="list-inline-item"><Link to="#" className="text-dark">Privacy Policy</Link></li>
                       <li className="list-inline-item"><Link to="#" className="text-dark">Terms of Use</Link></li>
-                      <li className="list-inline-item"><Link to="#" className="text-dark">Contact Us</Link></li>
+                      <li className="list-inline-item"><Link to='/contact' className="text-dark">Contact Us</Link></li>
                     </ul>
                   </div>
               </div>

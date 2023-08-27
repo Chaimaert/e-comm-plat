@@ -10,7 +10,7 @@
   --lighter2: #e4f0e9da;
   --darken: #cca27e;
   --color: orangered;
-  --search: #FF6000;
+  --search: #d68281;
   --primary1: #b9d6f2;
   --primary2: #ddb892;
   --text: #a67b5b;
@@ -389,20 +389,59 @@ button {
 
 /* ------------------------------------------------ Footer -------------------------------------------------- */
 
-footer {
-  background-color: #f8f3f3;
-}
-
-.policy {
-  color: var(--text);
-}
-
-.pay img {
+footer .pay img{
+  padding: 10px 8px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
   transition: 0.5s ease;
 }
 
-.pay img:hover {
-  transform: translateY(-8px);
+footer .pay img:hover {
+  transform: translateY(-10px);
+}
+
+footer .socials{
+  margin: 0 10px;
+}
+
+#footer-link{
+  font-size: 18px;
+  margin: 0 10px;
+  color: black;
+  transition: 0.5s ease;
+}
+
+#footer-link:hover{
+  color: var(--search);
+}
+
+footer p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#footer-links{
+  font-size: 16px;
+  color: black;
+  transition: 0.5s ease;
+}
+
+#footer-links:hover{
+  color: var(--search);
+}
+
+footer .footer-title{
+  width: 30%;
+}
+
+footer .footer-tel{
+  color: var(--darken);
+  transition: 0.5s ease;
+}
+
+footer {
+  background-color: #f8f3f3;
 }
 
 /* ------------------------------------------------ Home Page -------------------------------------------------- */
