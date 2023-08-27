@@ -39,7 +39,7 @@ const footer = () => {
                   <AiOutlineTwitter />
                 </Link>
                 <Link 
-                  to="https://www.facebook.com"
+                  to="https://www.facebook.com/Noza.agency.morocco/"
                   id="footer-link"
                   className="gap-3"
                   target="_blank">

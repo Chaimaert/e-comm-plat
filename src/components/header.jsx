@@ -36,26 +36,26 @@ const header = () => {
                 <Link 
                   className="links fs-5"
                   to="https://www.instagram.com/noza.agency/"
-                  id="footer-link"
                   target="_blank">
                   <AiFillInstagram />
                 </Link>
 
                 <Link 
                   className="links fs-5"
-                  to="https://www.facebook.com"
-                  id="footer-link">
+                  to="https://www.facebook.com/Noza.agency.morocco/"
+                  target="_blank">
                   <RiFacebookCircleFill />
                 </Link>
 
                 <Link 
                   className="links fs-5"
                   to="https://twitter.com"
-                  id="footer-link">
+                  target="_blank">
                   <AiOutlineTwitter />
                 </Link>
                 
-                <Link className="links fs-5">
+                <Link className="links fs-5"
+                target="_blank">
                   <BiLogoGmail />
                 </Link>
               </div>
