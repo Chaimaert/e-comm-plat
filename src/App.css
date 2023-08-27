@@ -434,6 +434,14 @@ footer {
 
 /* ------------------------------------------------ Home Page -------------------------------------------------- */
 
+.hero .hero-details img{
+  width: 50px;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
 .banner-details {
   background: url(/src/assets/images/backkk.jpg);
   background-position: center;
