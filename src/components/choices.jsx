@@ -9,24 +9,29 @@ import discount from '../assets/images/icons/gift-box.png'
 const choices = () => {
   return <>
   
-  <section className="hero p-2 mt-3">
+  <section className="hero p-4">
     <div className="container-xxl">
       <div className="row">
-        <div className="hero-details">
+        <div className="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 hero-details">
+          <div className="row g-4 justify-content-center justify-content-md-between align-items-center">
+            <div className='col-6 col-md-4 col-lg-2'>
+              <div className='card text-center m-auto'>
+                    <img src={courier} alt="" className='img-fluid m-auto' />
+                    <div className="card-body">
+                      <p className="card-text mb-0">Fast Orders</p>
+                  </div>
+              </div>
+            </div>
 
-          <div className="hero-details d-flex justify-content-around text-center mx-5">
-            <div className='card p-2'>
-                <div className="card-details mx-3">
-                  <img src={courier} alt="" className='img-fluid m-auto' />
-                  <p>Fast Orders</p>
-                </div>
+            <div className="col-6 col-md-4 col-lg-2">
+            <div className="card text-center m-auto">
+              <img src={truck} className="card-img-top img-fluid m-auto" alt="Quick Shipping" />
+              <div className="card-body">
+                <p className="card-text mb-0">Quick Shipping</p>
+              </div>
             </div>
-            <div className="card-details mx-3">
-                <div className='card p-2'>
-                  <img src={truck} alt="" className='img-fluid m-auto' />
-                  <p>Quick Shipping</p>
-                </div>
-            </div>
+          </div>
+
             <div className="card-details mx-3">
                 <div className='card p-2'>
                   <img src={saving} alt="" className='img-fluid m-auto' />
