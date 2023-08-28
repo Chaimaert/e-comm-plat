@@ -1,7 +1,5 @@
-import { createContext, useState } from 'react'
-import { PRODUCTS, PRODUCTS1 } from '../components/products';
-import PropTypes from 'prop-types'; 
-
+import { createContext, useState } from "react";
+import { PRODUCTS, PRODUCTS1 } from "../components/products";
 
 export const ShopContext = createContext(null);
 
@@ -11,22 +9,23 @@ const getDefaultCart = () => {
   for (let i = 0; i < PRODUCTS.length + PRODUCTS1.length; i++) {
     cart[i] = 0;
   }
-  
+
   return cart;
 };
 
-
-const Shopcontext = (props) => {
+const shopcontext = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const getTotalCartAmount = () => {
     let totalAmount = 0;
-  for (const item in cartItems) {
-    if (cartItems[item] > 0) {
-      let itemInfo = PRODUCTS.find((product) => product.id === Number(item)) || PRODUCTS1.find((product) => product.id === Number(item));
-      totalAmount += cartItems[item] * itemInfo.price;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo =
+          PRODUCTS.find((product) => product.id === Number(item)) ||
+          PRODUCTS1.find((product) => product.id === Number(item));
+        totalAmount += cartItems[item] * itemInfo.price;
+      }
     }
-  }
-  return totalAmount.toFixed(2);
+    return totalAmount.toFixed(2);
   };
 
   const getTotalCartProducts = () => {
@@ -38,26 +37,25 @@ const Shopcontext = (props) => {
     }
     return totalProducts;
   };
-  
 
   const addToCart = (productId) => {
     setCartItems((prev) => ({
       ...prev,
-      [productId]: prev[productId] + 1
+      [productId]: prev[productId] + 1,
     }));
   };
-  
+
   const removeToCart = (productId) => {
     setCartItems((prev) => ({
       ...prev,
-      [productId]: prev[productId] - 1
+      [productId]: prev[productId] - 1,
     }));
   };
-  
+
   const updateCartItemCount = (newAmount, productId) => {
     setCartItems((prev) => ({
       ...prev,
-      [productId]: newAmount
+      [productId]: newAmount,
     }));
   };
   const clearCart = () => {
@@ -66,7 +64,7 @@ const Shopcontext = (props) => {
       updatedCartItems[productId] = 0;
     }
     setCartItems(updatedCartItems);
-  };  
+  };
 
   const resetCart = () => {
     setCartItems([]);
@@ -81,7 +79,6 @@ const Shopcontext = (props) => {
   const closeProductDetails = () => {
     setSelectedProduct(null);
   };
-  
 
   const contextValue = {
     cartItems,
@@ -106,9 +103,4 @@ const Shopcontext = (props) => {
   );
 };
 
-Shopcontext.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-
-export default Shopcontext;
+export default shopcontext;

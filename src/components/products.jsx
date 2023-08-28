@@ -23,7 +23,7 @@ import img7 from '../assets/images/products/sponge.jpeg'
 import img8 from '../assets/images/products/guasha.avif'
 import img9 from '../assets/images/products/bott.jpg'
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const PRODUCTS = [
     {
         id: 0,
