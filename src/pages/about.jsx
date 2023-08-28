@@ -35,8 +35,8 @@ const about = () => {
           </div>
           <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
                 <h1 className='who mb-3'><b>Who are we ?</b></h1>
-                <p className="card-text mb-3">Noza Digital Marketing is an innovative and dynamic e-commerce platform that offers a diverse range of products catering to a wide spectrum of consumer preferences. 
-                    <br /> With a commitment to excellence and customer satisfaction, Noza Digital Marketing provides a seamless online
+                <p className="card-text mb-3">Noza Digital Marketing (NDM) is an innovative and dynamic e-commerce platform that offers a diverse range of products catering to a wide spectrum of consumer preferences. 
+                    <br /> With a commitment to excellence and customer satisfaction, NDM provides a seamless online
                      shopping experience that merges convenience with quality.
                     <br />  The platform&#39;s extensive product selection encompasses everything from electronics and fashion to home essentials and beyond,
                      ensuring that shoppers can find precisely what they&#39;re looking for. 
@@ -44,7 +44,7 @@ const about = () => {
                 <p className="card-text">Noza Digital Marketing prides itself on its user-friendly interface, secure payment options, and efficient delivery services, making it a go-to destination for those 
                     seeking to explore and purchase a variety of products in the ever-expanding digital marketplace.
                     <br /> Whether it&#39;s the latest tech gadgets, stylish apparel, or everyday necessities, 
-                    <br />  Noza Digital Marketing offers a comprehensive array of choices that resonate with modern consumers diverse needs and preferences.
+                    <br /> We offers a comprehensive array of choices that resonate with modern consumers diverse needs and preferences.
                 </p>
           </div>
         </div>
