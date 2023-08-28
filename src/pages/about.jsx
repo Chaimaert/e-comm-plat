@@ -15,13 +15,15 @@ import orders4 from '../assets/images/icons/gift-box.png'
 const about = () => {
   return <>
 
-    <section className="about-wrapper p-5 mb-3">
+    <section className="about-wrapper p-5 d-flex justify-content-center align-items-center">
       <div className="container-xxl">
         <div className="row">
-            <div className="text-center align-items-center">
-              <h1 className="know">Get to know Us</h1>
-              <p className="fs-9">Take a moment to know us better ...</p>
-            </div>
+          <div className="col-12">
+              <div className="shop-details text-center align-items-center">
+                  <h1 className="know">Get to know Us</h1>
+                  <p className="fs-9">Take a moment to know us better ...</p>
+                </div>
+          </div>
         </div>
       </div>
     </section>
