@@ -43,16 +43,14 @@ const contact = () => {
                   <b>Hours:</b> From 8 a.m To 6 p.m
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  quos iusto rerum architecto a eaque consequuntur impedit!
-                  Harum earum iste, suscipit soluta, culpa necessitatibus quia
-                  sit nulla doloremque officia cum.
+                    Have questions or need assistance? We&#39;re here to help! Contact NDM&#39;s friendly 
+                    customer support team for any inquiries you may have. Whether you need assistance with product information, 
+                    order tracking, or account-related queries
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                  hic veniam unde numquam in ullam laudantium odit explicabo
-                  itaque! Voluptate similique, accusantium consequatur provident
-                  soluta quaerat maxime adipisci vero sed.
+                    You can reach us by giving us a call at during our business hours. Your satisfaction is our priority, 
+                    and we&#39;re committed to ensuring that your experience with Noza Digital 
+                    Marketing is smooth and enjoyable. We&#39;re always happy to assist you !
                 </p>
               </div>
             </div>
