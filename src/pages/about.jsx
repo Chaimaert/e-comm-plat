@@ -90,7 +90,7 @@ const about = () => {
                           <div className="col-md-8">
                             <div className="card-body">
                               <h5 className="card-title">Melisa Ivy</h5>
-                              <p className="card-text mb-3"> The products were delivered promptly and in perfect condition.<br />Noza Digital Marketing has become my go-to online shopping destination!" <br />The user-friendly interface and secure payment options made the whole process seamless.</p>
+                              <p className="card-text mb-3"> The products were delivered promptly and in perfect condition.<br />Noza Digital Marketing has become my go-to online shopping destination. <br />The user-friendly interface and secure payment options made the whole process seamless.</p>
                               <p className="card-text"><small className="text-body-secondary">Last Updated now</small></p>
                             </div>
                           </div>
