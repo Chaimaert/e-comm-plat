@@ -35,9 +35,11 @@ const about = () => {
           </div>
           <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
                 <h1 className='who mb-3'><b>Who are we ?</b></h1>
-                <p className="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, 
-                    <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod et sint facere reprehenderit?
+                <p className="card-text mb-3">Noza Digital Marketing is an innovative and dynamic e-commerce platform that offers a diverse range of products catering to a wide spectrum of consumer preferences. 
+                    <br /> With a commitment to excellence and customer satisfaction, Noza Digital Marketing provides a seamless online
+                     shopping experience that merges convenience with quality.
+                    <br />  The platform's extensive product selection encompasses everything from electronics and fashion to home essentials and beyond,
+                     ensuring that shoppers can find precisely what they're looking for. 
                 </p>
                 <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, 
