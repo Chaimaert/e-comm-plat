@@ -1,62 +1,54 @@
-import { useContext } from "react";
+import { useContext} from 'react'
+import { ShopContext } from './shopcontext'
 import ReactStars from "react-rating-stars-component";
-import { ShopContext } from "./shopcontext";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 const prod = (props) => {
-    const {id, name, image, price, brand} = props.data;
-    const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
-    const cartItemCount = cartItems[id];
+    const {id, name, price, image, brand} = props.data;
+    const { addToCart, cartItems, viewProductDetails} = useContext(ShopContext);
+    const cartItemAmount = cartItems[id];
+    
   return <>
-  <div key={id} className="col-3 mb-4">
-    <div className="card">
-      <div className="p-2">
-        <img src={image} className='img-fluid card-img-top' />
-      </div>
-      <div className="card-details p-3">
-        <span>{brand}</span>
-        <h5 className="my-2">{name} </h5>
-        <ReactStars
-            count={5}
-            edit={false}
-            value={4}
-            size={24}
-            activeColor="#cca27e"
-        />
-        <p className="price my-2">{price} <span className="text-danger"><strike> {price * 2} </strike></span> </p>
+ <div className="col mb-5">
+            <Link key={id}  className="card h-100 m-auto">
+            <img src={image} className="card-img-top img-fluid" alt="..." />
+              <div className="card-body">
+              <p className="card-text mb-2">{brand}</p>
+                <h5>{name} </h5>
+                <ReactStars
+                    count={5}
+                    edit={false}
+                    value={4}
+                    size={24}
+                    activeColor="#EA9D5A"
+                />
+                <div className="mb-3">
+                <p className="price mb-2"><span className="red">{price} </span>&nbsp;  <strike>{price * 2}$</strike></p>
+                <Link to='/details' onClick={() => viewProductDetails(id)}>
+                <p className="text-center"><button className='fs-4' id='clear-cart'>View Details</button></p>
+                </Link>
+                </div>
+               <div className="d-flex justify-content-center">
+               <button 
+                  onClick={() => {
+                    addToCart(id);
+                    event.target.classList.toggle("red");
+                  }}
+                  className="myButton"
+                >
+                  Add To Cart
+                  {cartItemAmount > 0 && `(${cartItemAmount})`}
+                </button>
+               
+              
+               </div>
+              </div>
+            </Link>
 
-        <div className="mb-2 d-flex align-items-center justify-content-around">
-              <div className="col-6 d-flex align-items-center justify-content-around">
-                  <Link 
-                      to={'/details'}
-                      className="view-btn"
-                      onClick={() => viewProductDetails(id)}>
-                      View Details
-                  </Link>
-              </div>
-              <div className="col-6 d-flex align-items-center justify-content-around">
-                  <button
-                      className="add-btn"
-                      onClick={() => {
-                        addToCart(id);
-                        event.target.classlist.toggle("success");
-                      }
-                  }
-                  >
             
-                      Add To Cart
-                      { cartItemCount > 0 && `(${cartItemCount})`}
-                    </button>
-              </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
   </>
-} 
+}
 
 export default prod
