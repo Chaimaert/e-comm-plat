@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
-import { PRODUCTS1 } from './products'; // Assuming you're importing PRODUCTS1 correctly
+import { PRODUCTS1 } from './products';
 
 const MoreProducts = () => {
   return (
