@@ -5,7 +5,6 @@ import NewArrival from "../components/newArrival";
 import Sale from "../assets/images/blog/hot-sale.avif";
 import clothes from "../assets/images/blog/clooo.avif";
 // import { CgShoppingCart } from "react-icons/cg";
-// import banner1 from "../assets/images/banner/b10.jpg";
 // import Newsletter from "../components/newsletter";
 
 const home = () => {
@@ -115,18 +114,18 @@ const home = () => {
             </div>
 
             <div className="col-md-6 d-flex">
-              <div className="card row">
-                <div className="d-flex">
+              <div className="card mb-3">
+                <div className="row g-0">
                   <div className="col-md-4">
                     <img
                       src={clothes}
                       alt=""
-                      className="img-fluid rounded-start p-1 h-100 sale"
+                      className="img-fluid rounded-start"
                     />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <span>Season in</span>
+                    <h5 className="card-title">Season-In</h5>
                       <h4 className="card-title">All weather Attire</h4>
                       {/* <p>Modern and latests products</p> */}
                       <button className="btn-deals">Learn More</button>
