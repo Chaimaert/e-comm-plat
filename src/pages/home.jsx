@@ -4,23 +4,42 @@ import Featuredproducts from "../components/featuredproducts";
 import NewArrival from "../components/newArrival";
 import Sale from "../assets/images/blog/hot-sale.avif";
 import clothes from "../assets/images/blog/clooo.avif";
-import React from 'react'
-import { CgShoppingCart } from 'react-icons/cg'
-import banner from '../assets/images/banner/b17.jpg'
-import banner1 from '../assets/images/banner/b10.jpg'
-import Newsletter from '../components/newsletter';
+// import { CgShoppingCart } from "react-icons/cg";
+// import banner from "../assets/images/banner/b17.jpg";
+// import banner1 from "../assets/images/banner/b10.jpg";
+// import Newsletter from "../components/newsletter";
 
 const home = () => {
   return (
     <>
-      <section className="banner mb-4">
+      <section className="banner">
         <div className="container-xxl">
           <div className="row">
-            <div className="banner-details d-flex flex-column align-items-start justify-content-center">
-              <h1>Super Value Deals</h1>
-              <h2>Only with Nosa</h2>
-              <p className="spend">Spend less and save more</p>
-              <Link to={'/shop'} className="button-link mb-1">Shop Now</Link>
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="d-flex flex-column justify-content-center ">
+                <div
+                  id="carouselExampleInterval"
+                  className="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div className="carousel-inner">
+                    <div className="back-details">
+                      <h1>Super Value Deals</h1>
+                      <h2>Only with Noza</h2>
+
+                      <p className="mb-3">Spend less and save more</p>
+
+                      <Link
+                        to="/shop"
+                        className="btn btn-primary"
+                        id="button-link"
+                      >
+                        Shop Now
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
