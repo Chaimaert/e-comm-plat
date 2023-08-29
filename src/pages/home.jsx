@@ -12,6 +12,7 @@ import clothes from "../assets/images/blog/clooo.avif";
 const home = () => {
   return (
     <>
+
       <section className="banner">
         <div className="container-xxl">
           <div className="row">
@@ -47,10 +48,10 @@ const home = () => {
 
       <Choices />
 
-      <section className="featured-products p-5">
+      <section className="featured-products p-4">
         <div className="container-xxl">
           <div className="row">
-            <div className="text-center">
+            <div className="col-12 text-center">
               <h1>Our Featured Products</h1>
               <p className="md-design">Modern and Latests Designs</p>
             </div>
