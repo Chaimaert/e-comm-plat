@@ -5,7 +5,6 @@ import NewArrival from "../components/newArrival";
 import Sale from "../assets/images/blog/hot-sale.avif";
 import clothes from "../assets/images/blog/clooo.avif";
 // import { CgShoppingCart } from "react-icons/cg";
-// import banner from "../assets/images/banner/b17.jpg";
 // import banner1 from "../assets/images/banner/b10.jpg";
 // import Newsletter from "../components/newsletter";
 
@@ -86,34 +85,36 @@ const home = () => {
         </div>
       </section>
 
-      <section className="deals p-5">
+      <section className="hot-deals p-5 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6 p-4">
-              <div className="card row">
-                <div className="d-flex">
+            <div className="col-md-6 d-flex">
+              <div className="card m-auto mb-3">
+                <div className="row g-0">
                   <div className="col-md-4">
                     <img
                       src={Sale}
                       alt=""
-                      className="img-fluid rounded-start p-1 h-100 sale"
+                      className="img-fluid rounded-start"
                     />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <span>Hot Deals</span>
-                      <h4 className="card-title">
+                      <h5 className="card-title">Hot Deals</h5>
+                      <h2 className="card-text mb-2">
                         Buy 2, get the third one free
-                      </h4>
-                      {/* <p>Modern and latests products</p> */}
-                      <button className="btn-deals">Learn More</button>
+                      </h2>
+                      <p className="card-text mb-2"><small className="text-body-secondary">The latest and modern designs<br /></small></p>
+                      <Link to='shop'>
+                          <button className='mt-4'>Learn more</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-6 p-4">
+            <div className="col-md-6 d-flex">
               <div className="card row">
                 <div className="d-flex">
                   <div className="col-md-4">
