@@ -12,10 +12,9 @@ import wishlist from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import Mylogo from "../assets/images/Mylogo.png";
 
-const header = () => {
+const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const { getTotalCartProducts, getTotalCartAmount } = useContext(ShopContext);
-  const totalAmount = getTotalCartAmount();
+  const { getTotalCartProducts} = useContext(ShopContext);
   const totalProducts = getTotalCartProducts();
   const location = useLocation();
   const toggleMenu = () => {
@@ -314,4 +313,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
