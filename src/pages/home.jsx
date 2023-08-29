@@ -4,6 +4,7 @@ import Featuredproducts from "../components/featuredproducts";
 import NewArrival from "../components/newArrival";
 import Sale from "../assets/images/blog/hot-sale.avif";
 import clothes from "../assets/images/blog/clooo.avif";
+import Newsletter from "../components/newsletter";
 import blog3 from '../assets/images/blog/blog-3.jpg'
 import blog4 from '../assets/images/blog/blog-4.jpg'
 
@@ -134,32 +135,10 @@ const home = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="col-md-3 col-sm-6 mb-4">
-        <div className="card">
-          <img src={blog3} className="card-img-top img-fluid" alt="..." />
-          <div className="card-body">
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-            <Link to='about'>
-            <button className="mt-4">Learn more</button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-md-3 col-sm-6 mb-4">
-        <div className="card">
-          <img src={blog4} className="card-img-top img-fluid" alt="..." />
-          <div className="card-body">
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-            <Link to='about'>
-            <button className="mt-4">Learn more</button>
-            </Link>
-          </div>
-        </div>
-      </div>
               </div>
             </div>
+          </div>
+        </div>
       </section>
     </>
   );
