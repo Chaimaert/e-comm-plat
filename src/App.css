@@ -179,7 +179,7 @@ a {
 }
 
 .banner .back-details{
-  background: url(/src/assets/images/back.jpg);
+  background: url(/src/assets/images/backkk.jpg);
   height: 80vh;
   background-position: top 25% right 0;
   background-size: cover;
@@ -513,7 +513,7 @@ color: var(--primary1);
   font-size: 12px;
 }
 
-.banner {
+/* .banner {
   background: url(/src/assets/images/backkk.jpg);
   background-position: center;
   background-size: cover;
@@ -584,9 +584,9 @@ h5 {
 
 .featured-products .card span {
   color: var(--darken);
-}
+} */
 
-.repair {
+/* .repair {
   background: url(/src/assets/images/newsletter.jpeg);
   background-position: center;
   background-size: cover;
@@ -640,7 +640,7 @@ h5 {
 .sale {
   padding-left: 0;
   margin-left: 0;
-}
+} */
 
 /* ------------------------------------------------ Shop Page -------------------------------------------------- */
 
