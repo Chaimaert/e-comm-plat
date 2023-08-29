@@ -434,6 +434,77 @@ footer {
 
 /* ------------------------------------------------ Home Page -------------------------------------------------- */
 
+#button-link {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: var(--primary1);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+#button-link:hover{
+  background-color: transparent;
+  border: 1px solid var(--primary1);
+  color: var(--primary1);
+}
+
+#button-linker {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: var(--primary1);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+#button-linker:hover{
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: white;
+}
+
+.hero .hero-details img{
+  width: 50px;
+}
+
+.featured-products button{
+  align-items: center;
+  transition: 0.5s ease;
+  background: var(--primary2);
+  color: white;
+}
+
+.featured-products button:hover{
+background: transparent;
+color: var(--primary1);
+}
+.featured-products .card{
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-width: 250px;
+  padding: 12px 10px;
+  overflow: hidden;
+}
+
+.featured-products .card img{
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 220px;
+}
+.featured-products .action-bar{
+  top: 30%;
+  right: -100px;
+  transition: 0.8s ease;
+}
+
+.featured-products .card:hover .action-bar{
+  right: 80px;
+}
+
+
 .hero .hero-details img{
   width: 50px;
 }
@@ -442,7 +513,7 @@ footer {
   font-size: 12px;
 }
 
-.banner-details {
+.banner {
   background: url(/src/assets/images/backkk.jpg);
   background-position: center;
   background-size: cover;
