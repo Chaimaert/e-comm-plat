@@ -127,7 +127,7 @@ const home = () => {
                     <div className="card-body">
                     <h5 className="card-title">Season-In</h5>
                     <h2 className="card-text mb-2">All Weather Attire</h2>
-                    <p className="card-text mb-2"><small className="text-body-secondary">It never matter which season it is <br />We got you covered</small></p>
+                    <p className="card-text mb-2"><small className="text-body-secondary">It never matter which season it is We got you covered</small></p>
                     <Link to='shop'>
                       <button className='mt-4'>Learn more</button>
                     </Link>
