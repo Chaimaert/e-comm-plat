@@ -168,8 +168,7 @@ const home = () => {
                 <img src={blog1} className="card-img-top img-fluid" alt="..." />
                 <div className="card-body">
                   <p className="card-text">
-                    Shopping at Noza has been a delightful
-                    experience.
+                    Shopping at Noza has been a delightful experience.
                   </p>
                   <Link to="about">
                     <button className="mt-4">Learn more</button>
@@ -183,8 +182,7 @@ const home = () => {
                 <img src={blog2} className="card-img-top img-fluid" alt="..." />
                 <div className="card-body">
                   <p className="card-text">
-                    Noza  has exceeded my expectations in every
-                    way possible.
+                    Noza has exceeded my expectations in every way possible.
                   </p>
                   <Link to="about">
                     <button className="mt-4">Learn more</button>
@@ -225,6 +223,8 @@ const home = () => {
           </div>
         </div>
       </section>
+
+      <Newsletter />
     </>
   );
 };

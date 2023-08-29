@@ -124,7 +124,7 @@ const about = () => {
                           <div className="col-md-8">
                             <div className="card-body">
                               <h5 className="card-title">Phillip Omay</h5>
-                              <p className="card-text mb-3">Noza Digital Marketing has exceeded my expectations in every way possible. <br />The diverse range of products available, <br /> combined with the platform&#39;s user-friendly design, made my shopping journey enjoyable.</p>
+                              <p className="card-text mb-3">Noza has exceeded my expectations in every way possible. <br />The diverse range of products available, <br /> combined with the platform&#39;s user-friendly design, made my shopping journey enjoyable.</p>
                               <p className="card-text"><small className="text-body-secondary">Last Updated 22h ago</small></p>
                             </div>
                           </div>
@@ -141,7 +141,7 @@ const about = () => {
                           <div className="col-md-8">
                             <div className="card-body">
                               <h5 className="card-title">Melisa Ivy</h5>
-                              <p className="card-text mb-3">From electronics to fashion, I found exactly what I was looking for.<br /> The exceptional customer service and prompt delivery further solidified my trust in Noza Digital Marketing <br />It&#39;s a one-stop shop that I highly recommend to everyone!.</p>
+                              <p className="card-text mb-3">From electronics to fashion, I found exactly what I was looking for.<br /> The exceptional customer service and prompt delivery further solidified my trust in Noza <br />It&#39;s a one-stop shop that I highly recommend to everyone!.</p>
                               <p className="card-text"><small className="text-body-secondary">Last Updated 10 days ago</small></p>
                             </div>
                           </div>
@@ -158,7 +158,7 @@ const about = () => {
                         <div className="col-md-8">
                           <div className="card-body">
                             <h5 className="card-title">Alex Mark</h5>
-                            <p className="card-text mb-3">My experience with Noza Digital Marketing has been exceptional.<br />Navigating through their extensive collection of products was a breeze,I appreciated the detailed product descriptions that helped me make informed choices.</p>
+                            <p className="card-text mb-3">My experience with Noza has been exceptional.<br />Navigating through their extensive collection of products was a breeze,I appreciated the detailed product descriptions that helped me make informed choices.</p>
                             <p className="card-text"><small className="text-body-secondary">Last updated 45 mins ago</small></p>
                           </div>
                           </div>
