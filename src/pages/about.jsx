@@ -73,7 +73,7 @@ const about = () => {
                     <div className="col-md-8">
                       <div className="card-body">
                         <h5 className="card-title">Mark T.</h5>
-                        <p className="card-text mb-3"> <br />I&#39;m absolutely thrilled with my shopping experience on Noza Digital Marketing. <br />The platform offers an incredible variety of products, and I easily found everything I needed for my home.</p>
+                        <p className="card-text mb-3"> <br />I&#39;m absolutely thrilled with my shopping experience on Noza. <br />The platform offers an incredible variety of products, and I easily found everything I needed for my home.</p>
                         <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
                       </div>
                       </div>
@@ -90,7 +90,7 @@ const about = () => {
                           <div className="col-md-8">
                             <div className="card-body">
                               <h5 className="card-title">Melisa Ivy</h5>
-                              <p className="card-text mb-3"> The products were delivered promptly and in perfect condition.<br />Noza Digital Marketing has become my go-to online shopping destination. <br />The user-friendly interface and secure payment options made the whole process seamless.</p>
+                              <p className="card-text mb-3"> The products were delivered promptly and in perfect condition.<br />Noza has become my go-to online shopping destination. <br />The user-friendly interface and secure payment options made the whole process seamless.</p>
                               <p className="card-text"><small className="text-body-secondary">Last Updated now</small></p>
                             </div>
                           </div>
@@ -107,7 +107,7 @@ const about = () => {
                           <div className="col-md-8">
                             <div className="card-body">
                               <h5 className="card-title">Emily Swolf</h5>
-                              <p className="card-text mb-3">Shopping at Noza Digital Marketing has been a delightful experience. <br /> The platform&#39;s intuitive layout and wide selection of products made finding what I needed effortless <br />I was impressed by the quality of the items I purchased, and the smooth checkout process.</p>
+                              <p className="card-text mb-3">Shopping at Noza  has been a delightful experience. <br /> The platform&#39;s intuitive layout and wide selection of products made finding what I needed effortless <br />I was impressed by the quality of the items I purchased, and the smooth checkout process.</p>
                               <p className="card-text"><small className="text-body-secondary">Last Updated 2 days ago</small></p>
                             </div>
                           </div>
