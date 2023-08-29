@@ -4,6 +4,11 @@ import Featuredproducts from "../components/featuredproducts";
 import NewArrival from "../components/newArrival";
 import Sale from "../assets/images/blog/hot-sale.avif";
 import clothes from "../assets/images/blog/clooo.avif";
+import React from 'react'
+import { CgShoppingCart } from 'react-icons/cg'
+import banner from '../assets/images/banner/b17.jpg'
+import banner1 from '../assets/images/banner/b10.jpg'
+import Newsletter from '../components/newsletter';
 
 const home = () => {
   return (
