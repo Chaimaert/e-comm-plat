@@ -74,12 +74,12 @@ const home = () => {
         </div>
       </section>
 
-      <section className="new-products p-5">
+      <section className="new-arrivals p-4">
         <div className="cintainer-xxl">
           <div className="row">
-            <div className="text-center">
-              <h1 className="disc">New Arrivals</h1>
-              <p className="md-design">Your New Favourites</p>
+            <div className="d-flex align-items-center justify-content-center flex-column">
+              <h1>New Arrivals</h1>
+              <p>Your New Favourites</p>
             </div>
             <NewArrival />
           </div>
