@@ -513,6 +513,84 @@ color: var(--primary1);
   font-size: 12px;
 }
 
+.repair-details{
+  background: url(/src/assets/images/newsletter.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.repair-details button{
+  color: white;
+  background-color: var(--darker);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.repair-details button:hover{
+  border: 1px solid var(--darken);
+  background-color: transparent;
+}
+
+.new-arrivals button{
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font-size: 18px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  transition: 0.5s ease;
+  line-height: 0px;
+}
+
+.new-arrivals button:hover{
+  background-color: var(--light);
+}
+.new-arrivals .card{
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-width: 250px;
+  padding: 12px 10px;
+}
+
+.new-arrivals .card img{
+  border-radius: 20px;
+}
+
+.new-arrivals .card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+}
+.hot-deals .card{
+  padding: 12px 10px;
+}
+
+.hot-deals .card img{
+  min-height: 180px;
+  justify-content: center;
+}
+
+.hot-deals button{
+  color: white;
+  background-color: var(--darker);
+  transition: 0.5s;
+  border:  1px solid transparent;
+}
+
+.hot-deals button:hover{
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
+
 /* .banner {
   background: url(/src/assets/images/backkk.jpg);
   background-position: center;
