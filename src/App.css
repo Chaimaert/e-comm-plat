@@ -459,28 +459,17 @@ h2 {
   padding: 12px 5px;
   font-size: 15px;
   border-radius: 20px 5px;
-  background: var(--lighter);
-  border: 1px solid transparent;
-  transition: 0.5s ease;
-  margin-left: 220px;
-  margin-top: 5px;
-}
-
-#button-link:hover {
-  background: transparent;
-  color: #f28482;
-  border: 1px solid #f8f3f3;
-}
-
-#button-link {
-  padding: 12px 5px;
-  font-size: 15px;
-  border-radius: 20px 5px;
   background: #b66a69;
   border: 1px solid transparent;
   transition: 0.5s ease;
-  margin-left: 35px;
-  margin-top: 5px;
+  margin-left: 140px;
+  margin-top: 3px;
+}
+
+.button-link:hover {
+  background: transparent;
+  color: #f28482;
+  border: 1px solid #a67b5b;
 }
 
 #button-linker {
@@ -514,6 +503,7 @@ h2 {
 background: transparent;
 color: var(--primary1);
 }
+
 .featured-products .card{
   border-radius: 20px;
   transition: 0.5s ease;
@@ -527,6 +517,7 @@ color: var(--primary1);
   max-width: 100%;
   max-height: 220px;
 }
+
 .featured-products .action-bar{
   top: 30%;
   right: -100px;
@@ -536,7 +527,6 @@ color: var(--primary1);
 .featured-products .card:hover .action-bar{
   right: 80px;
 }
-
 
 .hero .hero-details img{
   width: 50px;
