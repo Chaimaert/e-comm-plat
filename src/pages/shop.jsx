@@ -1,4 +1,6 @@
 import Shopitems from "../components/shopitems";
+import Newsletter from '../components/newsletter';
+import Choices from '../components/choices'
 
 
 const shop = () => {
