@@ -28,7 +28,7 @@ const Signup = () => {
             <div className="card">
               <div className="card-body p-5">
                 <h2 className="text-center">Sign Up</h2>
-                <p className="text-center mb-3">Join us in shopping!!</p>
+                <p className="text-center mb-3">Join us !!</p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label mb-3">
