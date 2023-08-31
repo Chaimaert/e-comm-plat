@@ -584,11 +584,11 @@ color: var(--primary1);
   border:  1px solid transparent;
 }
 
-/* .hot-deals button:hover{
+.hot-deals button:hover{
   background: transparent;
   color: var(--search);
   border: 1px solid var(--darker);
-} */
+}
 
 
 /* .banner {
