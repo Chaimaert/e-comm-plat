@@ -6,6 +6,7 @@ import Choices from '../components/choices'
 const shop = () => {
   
   return <>
+
     <section className="shop-banner p-5">
       <div className="container-xxl">
         <div className="row justify-content-center align-items-center">
@@ -18,14 +19,13 @@ const shop = () => {
       </div>
     </section>
 
-    <section className="shop-products p-5">
-      <div className="container-xxl">
-        <div className="row">
-          <Shopitems  />
-        </div>
+    <section className="featured-products p-5">
+    <div className="container-xxl">
+      <div className="row">
+        <Shopitems />
       </div>
-
-    </section>
+    </div>
+  </section>
 
     <section className="pagination p-3">
       <div className="container-xxl">
