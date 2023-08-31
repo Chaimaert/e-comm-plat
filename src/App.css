@@ -565,7 +565,7 @@ color: var(--primary1);
   border-radius: 20px;
 }
 
-.new-arrivals .card:hover {
+/* .new-arrivals .card:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
 }
 .hot-deals .card{
@@ -575,7 +575,7 @@ color: var(--primary1);
 .hot-deals .card img{
   min-height: 180px;
   justify-content: center;
-}
+} */
 
 .hot-deals button{
   color: white;
