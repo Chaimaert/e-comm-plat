@@ -28,7 +28,7 @@ const home = () => {
                       <h1>Super Value Deals</h1>
                       <h2>Only with Noza</h2>
 
-                      <p className="mb-3">Spend less and save more</p>
+                      <p className=" spend mb-3">Spend less and save more</p>
 
                       <Link
                         to="/shop"
