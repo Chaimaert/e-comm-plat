@@ -6,11 +6,13 @@ import Choices from '../components/choices'
 const shop = () => {
   
   return <>
-    <section className="shop mt-2">
+    <section className="shop-banner p-5">
       <div className="container-xxl">
-        <div className="row justify-content-center">
-          <div className="repair-details text-center d-flex flex-column align-items-center p-3">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-md-8 col-lg-6 text-center">
+              <div className="shop-details">
               <h2 className="mt-5 disc">You Order and we will Deliver</h2>
+              </div>
           </div>
         </div>
       </div>
