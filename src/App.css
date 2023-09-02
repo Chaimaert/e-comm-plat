@@ -564,15 +564,16 @@ color: var(--primary1);
 }
 
 .repair-details button{
-  color: white;
-  background-color: var(--darker);
+  color: black;
+  background-color:#f19d9c;
   border: 1px solid transparent;
   transition: 0.5s ease;
 }
 
 .repair-details button:hover{
-  border: 1px solid var(--darken);
+  border: 1px solid #d68281;
   background-color: transparent;
+  color: var(--active);
 }
 
 .new-arrivals button{
