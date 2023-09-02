@@ -27,8 +27,8 @@ const ProductDetails = () => {
         <div className="col-lg-6">
           <div className="card p-3 m-auto">
             <div className="card-body">
-              <h5 className="card-title">{product.brand}</h5>
-              <h3 className="card-text">{product.name}</h3>
+              <h5 className=" brand-title">{product.brand}</h5>
+              <h3 className="descrip">{product.name}</h3>
               <p className="card-text">
                 <span className="text-danger fs-4 me-2">{product.price}$</span>
                 <strike>{product.price * 2}$</strike>

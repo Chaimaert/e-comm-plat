@@ -820,6 +820,15 @@ color: #945352;
   font-weight: 400;
 }
 
+.brand-title {
+  color: #9c3c4c;
+}
+
+.descrip {
+  font-size: 14px;
+  color:var(--darken);
+}
+
 /* ------------------------------------------------ More Products -------------------------------------------------- */
 
 .more-featured-products .card{
