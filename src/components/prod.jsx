@@ -14,7 +14,7 @@ const prod = (props) => {
             <Link key={id}  className="card h-100 m-auto">
             <img src={image} className="card-img-top img-fluid" alt="..." />
               <div className="card-body">
-              <p className="card-text mb-2">{brand}</p>
+              <p className="brand mb-2">{brand}</p>
                 <h5>{name} </h5>
                 <ReactStars
                     count={5}
@@ -24,9 +24,9 @@ const prod = (props) => {
                     activeColor="#EA9D5A"
                 />
                 <div className="mb-3">
-                <p className="price mb-2"><span className="red">{price} </span>&nbsp;  <strike>{price * 2}$</strike></p>
+                <p className="price mb-2"><span className="active">{price} </span>&nbsp;  <strike>{price * 2}$</strike></p>
                 <Link to='/details' onClick={() => viewProductDetails(id)}>
-                <p className="text-center"><button className='fs-4' id='clear-cart'>View Details</button></p>
+                <p className="text-center"><button className='fs-6 mt-3' id='clear-cart'>View Details</button></p>
                 </Link>
                 </div>
                <div className="d-flex justify-content-center">

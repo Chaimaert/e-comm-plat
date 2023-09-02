@@ -770,18 +770,22 @@ color: #945352;
   transition: 0.5s ease;
 }
 
+.brand {
+  color: #a51c30;
+}
+
 #clear-cart{
   background-color: transparent;
   border: none;
-  color: #535bf2;
+  color: rgb(17, 17, 78);
+  font-weight: 400;
   padding: 0;
   transition: 0.5s ease;
   align-items: center;
 }
 
 #clear-cart:hover{
-  color: red;
-  text-decoration: underline;
+  color: #e09895;
 }
 
 .cart button:hover{
