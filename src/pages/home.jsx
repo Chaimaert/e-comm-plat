@@ -83,7 +83,7 @@ const home = () => {
           <div className="row">
             <div className="d-flex align-items-center justify-content-center flex-column">
               <h1 className="head">New Arrivals</h1>
-              <p>Your New Favourites</p>
+              <p className="modern">Your New Favourites</p>
             </div>
             <NewArrival />
           </div>
@@ -159,8 +159,8 @@ const home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 className="mb-3">What our customers say...</h1>
-              <p className="mb-4">
+              <h1 className=" head mb-3">What our customers say...</h1>
+              <p className="modern mb-4">
                 Our customers never miss a bit on providing feedback
               </p>
             </div>
