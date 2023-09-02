@@ -819,6 +819,78 @@ color: #945352;
   font-weight: 400;
 }
 
+/* ------------------------------------------------ More Products -------------------------------------------------- */
+
+.more-featured-products .card{
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-width: 250px;
+  padding: 12px 10px;
+  overflow: hidden;
+}
+
+.more-featured-products .card img{
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 220px;
+}
+
+
+.more-featured-products .action-bar{
+  top: 30%;
+  right: -100px;
+  transition: 0.8s ease;
+}
+
+.more-featured-products .card:hover .action-bar{
+  right: 80px;
+}
+
+.more-featured-products .card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+}
+.more-featured-products .card h5:hover{
+  color: var(--primary1);
+}
+
+.more-featured-products .card-text{
+  color: var(--darken);
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.more-featured-products .h5{
+  font-weight: 500;
+  color: var(--primary1);
+  font-size: 18px;
+}
+
+.more-featured-products .price strike{
+  color: var(--darker);
+}
+
+.more-featured-products .red{
+  color: var(--primary);
+}
+
+.product-wrapper .product-details{
+  background: var(--lighter2);
+}
+
+.product-wrapper img{ 
+  border-radius: 20px;
+}
+
+.product-wrapper input{
+  font-size: 14px;
+  height: 40px;
+}
+
+.product-wrapper select{
+  font-size: 14px;
+  height: 40px;
+}
+
 /* ------------------------------------------------ About Page -------------------------------------------------- */
 
 .know {

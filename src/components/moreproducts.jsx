@@ -4,6 +4,7 @@ import { PRODUCTS1 } from './products';
 
 const MoreProducts = () => {
   return (
+    
     <section className="more-featured-products">
       <div className="container-xxl">
         <div className="row">
@@ -22,7 +23,7 @@ const MoreProducts = () => {
                     <ReactStars
                       count={5}
                       edit={false}
-                      value={product.rating} // Use the actual rating from the product object
+                      value={product.rating}
                       size={24}
                       activeColor="#EA9D5A"
                     />
