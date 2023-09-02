@@ -905,7 +905,7 @@ color: #945352;
 }
 
 .contact-message .card {
-  background: var(--lighter2);
+  background: var(--header);
   border: none;
 }
 
@@ -920,11 +920,12 @@ color: #945352;
 
 #button-link {
   border-radius: 10px 5px;
-  background: transparent;
+  background: #e0dbdb;
   padding: 12px;
   color: #a51c30;
   font-weight: 700;
   font-size: 14px;
+  margin: 50px;
 }
 
 .mail {
@@ -933,7 +934,7 @@ color: #945352;
 
 #button-link:hover {
   background: #efd3d7;
-  color: #b66a69;
+  color: black;
   border: 1px solid #f8f3f3;
 }
 
