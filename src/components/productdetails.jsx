@@ -58,10 +58,9 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card mt-2 p-4">
             <div className="d-flex justify-content-center flex-column align-items-center">
-            <h2 className="text-center mb-2">More products of the same</h2>
-            <p className="mb-2">visit the shop to get amazing deals from us!!</p>
+            <h2 className="text-center mb-4">More products of the same</h2>
             </div>
             <div className="d-none d-md-block">
               <div className="row mb-3">

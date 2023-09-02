@@ -850,17 +850,19 @@ color: #945352;
 .more-featured-products .card:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
 }
+
 .more-featured-products .card h5:hover{
   color: var(--primary1);
 }
 
 .more-featured-products .card-text{
-  color: var(--darken);
+  color: #945352;
   font-size: 14px;
   text-transform: lowercase;
 }
 
 .more-featured-products .h5{
+  padding: 15px;
   font-weight: 500;
   color: var(--primary1);
   font-size: 18px;

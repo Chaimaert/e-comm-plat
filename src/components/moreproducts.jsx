@@ -4,7 +4,7 @@ import { PRODUCTS1 } from './products';
 
 const MoreProducts = () => {
   return (
-    
+
     <section className="more-featured-products">
       <div className="container-xxl">
         <div className="row">
@@ -28,7 +28,7 @@ const MoreProducts = () => {
                       activeColor="#EA9D5A"
                     />
                     <p className="price">
-                      <span className="red">{product.price}</span>&nbsp; <strike>200$</strike>
+                      <span className="active">{product.price}</span>&nbsp; <strike>200$</strike>
                     </p>
                   </div>
                   <div className="action-bar position-absolute">
