@@ -34,7 +34,7 @@ const ProductDetails = () => {
                 <strike>{product.price * 2}$</strike>
               </p>
               <p className="card-text">{product.description}</p>
-              <p className="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod et sint facere reprehenderit?</p>
+              <p className="card-text mb-3">A good quality products with an amazing price. <br /> Only with Noza</p>
 
 
               <div className="d-flex align-items-center mb-3 col-6">
@@ -60,7 +60,7 @@ const ProductDetails = () => {
           </div>
           <div className="card mt-2 p-4">
             <div className="d-flex justify-content-center flex-column align-items-center">
-            <h2 className="text-center mb-4">More products of the same</h2>
+            <h2 className="text-center mb-4">More products</h2>
             </div>
             <div className="d-none d-md-block">
               <div className="row mb-3">
