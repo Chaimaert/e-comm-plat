@@ -66,7 +66,7 @@ const home = () => {
           <div className="row">
             <div className="repair-details text-center align-items-center">
               <h5 className=" repair mb-3">Repair Services</h5>
-              <h2 className="repair mb-1">
+              <h2 className="find mb-1">
                 Find out our big{" "}
                 <span className="text-danger disc">Discounts</span>
               </h2>

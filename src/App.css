@@ -465,6 +465,11 @@ footer {
   color: black;
 }
 
+.find {
+  font-weight: 300;
+  color: black;
+}
+
 .disc {
   font-style: italic;
 }
