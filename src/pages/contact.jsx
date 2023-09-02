@@ -5,8 +5,8 @@ const contact = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 className=" text">Reach Out to Us</h1>
-              <p className="text2 fs-3">We are only a step away from you</p>
+              <h1 className="head">Reach Out to Us</h1>
+              <p className="modern2 fs-6 mt-2">We are only a step away from you</p>
             </div>
           </div>
         </div>

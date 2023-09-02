@@ -871,6 +871,12 @@ color: #945352;
   color: var(--active);
 }
 
+.modern2 {
+  font-weight: 200;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
 .contact-wrapper {
   background: url(/src/assets/images/newsletter.jpeg);
   background-size: cover;
