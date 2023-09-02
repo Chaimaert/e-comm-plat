@@ -434,7 +434,7 @@ footer {
 
 /* ------------------------------------------------ Home Page -------------------------------------------------- */
 
-h1 {
+.head {
   font-style: italic;
   font-weight: 500;
   color: #d68281;
@@ -442,7 +442,7 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
+.only {
   font-weight: 400;
   font-size: 32px;
   margin: 10px;

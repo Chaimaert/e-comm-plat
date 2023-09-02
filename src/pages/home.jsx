@@ -13,6 +13,7 @@ import Newsletter from "../components/newsletter";
 const home = () => {
   return (
     <>
+
       <section className="banner">
         <div className="container-xxl">
           <div className="row">
@@ -25,8 +26,8 @@ const home = () => {
                 >
                   <div className="carousel-inner">
                     <div className="back-details">
-                      <h1>Super Value Deals</h1>
-                      <h2>Only with Noza</h2>
+                      <h1 className="head">Super Value Deals</h1>
+                      <h2 className="only">Only with Noza</h2>
 
                       <p className=" spend mb-3">Spend less and save more</p>
 
