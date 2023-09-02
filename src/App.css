@@ -9,7 +9,7 @@
   --lighter1: #c3dacc86;
   --lighter2: #e4f0e9da;
   --darken: #cca27e;
-  --color: orangered;
+  --color: #94414d;
   --search: #d68281;
   --primary1: #b9d6f2;
   --primary2: #ddb892;
@@ -453,6 +453,12 @@ footer {
 .spend {
   margin-left: 110px;
   font-style: italic;
+}
+
+.modern{
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 #button-link {

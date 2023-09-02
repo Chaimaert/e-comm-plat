@@ -54,7 +54,7 @@ const home = () => {
           <div className="row">
             <div className="col-12 text-center">
               <h1 className="head">Our Featured Products</h1>
-              <p>Modern and Latests Designs</p>
+              <p className="modern">Modern and Latests Designs</p>
             </div>
             <Featuredproducts />
           </div>
