@@ -9,7 +9,8 @@ const shop = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col-md-8 col-lg-6 text-center">
               <div className="shop-details">
-                <h2 className="mt-5 disc">You Order and we will Deliver</h2>
+                <h2 className="align-items-center">You Order and we will Deliver</h2>
+                <p>We are always under your command</p>
               </div>
             </div>
           </div>
