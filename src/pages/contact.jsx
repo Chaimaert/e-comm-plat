@@ -27,30 +27,29 @@ const contact = () => {
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="card p-5">
-                <h2 className="footer-title mb-3">
+                <h2 className=" head footer-title mb-3">
                   <b>Contact Us</b>
                 </h2>
                 <p className="mb-2">
-                  <b>Address:</b> IDAR EL KARMA, Rte de Safi, Marrakech
+                  <b className="act">Address:</b> IDAR EL KARMA, Rte de Safi, Marrakech
                 </p>
-                <p className="mb-2">
+                <p className="act mb-2">
                   <b>Phone:</b>{" "}
                   <a className="footer-tel" href="tel:+212661975556">
                     Call us at +212661975556
                   </a>
                 </p>
                 <p className="mb-4">
-                  <b>Hours:</b> From 8 a.m To 6 p.m
+                  <b className="act">Hours:</b> From 8 a.m To 6 p.m
                 </p>
                 <p>
-                    Have questions or need assistance? We&#39;re here to help! Contact NDM&#39;s friendly 
+                    Have questions or need assistance? We&#39;re here to help! Contact <span className="text-danger">NOZA</span> friendly 
                     customer support team for any inquiries you may have. Whether you need assistance with product information, 
                     order tracking, or account-related queries
                 </p>
                 <p>
                     You can reach us by giving us a call at during our business hours. Your satisfaction is our priority, 
-                    and we&#39;re committed to ensuring that your experience with Noza Digital 
-                    Marketing is smooth and enjoyable. We&#39;re always happy to assist you !
+                    and we&#39;re committed to ensuring that your experience with <span className="text-danger">NOZA</span> is smooth and enjoyable. We&#39;re always happy to assist you !
                 </p>
               </div>
             </div>
