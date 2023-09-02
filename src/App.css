@@ -692,7 +692,7 @@ color: #945352;
 }
 
 .shop-banner .shop-details .title-green{
-  color: var(--primary);
+  color: var(--primary1);
 }
 
 
@@ -704,7 +704,7 @@ color: #945352;
 .pagination .page-item .page-link{
   font-size: 18px;
   padding: 0 8px;
-  color: var(--darken);
+  color: var(--search);
   transition: 0.5s ease;
 }
 
@@ -796,85 +796,13 @@ color: #945352;
 
 
 .cart .total-price{
- color: var(--primary);
+ color: var(--active);
  font-weight: 600;
 }
 
 .cart-details{
   background-color: var(--lighter2);
 }
-
-/* input {
-  padding: 5px;
-  width: 40px;
-  text-align: center;
-  border-radius: 10px;
-  color: #d68281;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.cart-item img {
-  max-width: 100%;
-  height: 120px;
-  border-radius: 20px;
-}
-
-thead {
-  font-size: 16px;
-}
-
-.cart-item {
-  background: #fff;
-}
-
-tbody {
-  background: white;
-  padding: 20px;
-}
-
-.cart-item button {
-  background: transparent;
-  padding: 12px;
-  color: #d68281;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.amount {
-  color: #d68281;
-  margin-left: 3px;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.total {
-  font-weight: 400;
-  font-size: 25px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.clear-cart {
-  border: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 500;
-  color: var(--active);
-  margin-left: 18px;
-}
-
-.add-items {
-  color: #a51c30;
-  font-weight: 500;
-}
-
-.bd-name {
-  color: #a51c30;
-}
-
-.shopping {
-  color: #b66a69;
-  font-weight: 600;
-} */
 
 /* ------------------------------------------------ Products Details -------------------------------------------------- */
 
@@ -1196,8 +1124,6 @@ tbody {
   }
 }
 
-/* cart-ends-here */
-/* about starts here */
 .about-wrapper{
   background: url(/src/assets/images/about/banner.png);
   background-size: cover;
@@ -1224,23 +1150,7 @@ tbody {
   width: 5rem;
   margin: 0 20px;
 }
-/* about ends here */
 
-/* blog starts */
-.blog-wrapper{
-  background: url(/src/assets/images/banner/b19.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 30vh;
-  justify-content: center;
-  background-position: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-/* blog ends */
-
-/* contact */
 .map iframe{
   height: 450px;
   align-items: center;
