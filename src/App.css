@@ -455,10 +455,18 @@ footer {
   font-style: italic;
 }
 
-.modern{
+.modern {
   font-style: italic;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
+}
+
+.repair{
+  color: black;
+}
+
+.disc {
+  font-style: italic;
 }
 
 #button-link {

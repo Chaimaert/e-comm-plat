@@ -65,8 +65,8 @@ const home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="repair-details text-center align-items-center">
-              <h5 className=" mb-3">Repair Services</h5>
-              <h2 className="mb-3">
+              <h5 className=" repair mb-3">Repair Services</h5>
+              <h2 className="repair mb-3">
                 Find out our big{" "}
                 <span className="text-danger disc">Discounts</span>
               </h2>
