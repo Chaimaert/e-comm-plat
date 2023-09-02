@@ -664,7 +664,7 @@ color: var(--primary1);
 }
 
 #basic-addon2:hover{
-  color: var(--search);
+  color: #a51c30;
 }
 
 #news-input{
@@ -675,6 +675,7 @@ color: var(--primary1);
 
 .sign {
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
 }
 
 .special {
