@@ -650,6 +650,10 @@ color: var(--primary1);
   border: 1px solid black;
 }
 
+/* -------- News letter ---------- */
+
+
+
 /* ------------------------------------------------ Shop Page -------------------------------------------------- */
 
 .shop-banner{
@@ -1328,6 +1332,7 @@ tbody {
 
 
 /* contact ends */
+
 /* mnore products begin */
 .more-featured-products .card{
   border-radius: 20px;
