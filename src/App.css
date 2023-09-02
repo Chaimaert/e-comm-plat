@@ -346,12 +346,6 @@ a {
   }
 }
 
-
-/* button {
-  padding: 12px 10px;
-  font-size: 14px;
-} */
-
 .input-group button {
   background: transparent;
   font-size: 14px;
@@ -431,7 +425,7 @@ footer {
   background-color: #f8f3f3;
 }
 
-/* ------------------------------------------------------- News letter ------------------------------------------------------- */
+/* ------------------------------------------------ News letter -------------------------------------------------- */
 
 .news-letter{
   background-color: var(--lighter2);
@@ -780,11 +774,6 @@ color: var(--primary1);
 
 .pagination a {
   color: #a67b5b;
-}
-
-.pagination li {
-  font-size: 16px;
-  padding: 10px;
 }
 
 .success {
