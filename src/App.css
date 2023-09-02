@@ -350,7 +350,6 @@ a {
 button {
   padding: 12px 10px;
   font-size: 14px;
-  /* background-color: var(--primary2); */
 }
 
 .input-group button {
@@ -430,6 +429,39 @@ footer .footer-tel{
 
 footer {
   background-color: #f8f3f3;
+}
+
+/* ------------------------------------------------------- News letter ------------------------------------------------------- */
+
+.news-letter{
+  background-color: var(--lighter2);
+}
+
+#basic-addon2{
+  background-color: transparent;
+  text-align: center;
+  line-height: 0;
+  transition: 0.5s ease;
+  font-size: 16px;
+}
+
+#basic-addon2:hover{
+  color: #a51c30;
+}
+
+#news-input{
+  height: 3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sign {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+.special {
+  font-style: italic;
 }
 
 /* ------------------------------------------------ Home Page -------------------------------------------------- */
@@ -648,38 +680,6 @@ color: var(--primary1);
   color: black;
   background: #ffacb8;
   border: 1px solid black;
-}
-
-/* -------- News letter ---------- */
-
-.news-letter{
-  background-color: var(--lighter2);
-}
-#basic-addon2{
-  background-color: transparent;
-  text-align: center;
-  line-height: 0;
-  transition: 0.5s ease;
-  font-size: 16px;
-}
-
-#basic-addon2:hover{
-  color: #a51c30;
-}
-
-#news-input{
-  height: 3rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.sign {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 300;
-}
-
-.special {
-  font-style: italic;
 }
 
 
