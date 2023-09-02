@@ -172,7 +172,7 @@ const home = () => {
                     Shopping at Noza has been a delightful experience.
                   </p>
                   <Link to="about">
-                    <button className="mt-4">Learn more</button>
+                    <button className=" Learn mt-4">Learn more</button>
                   </Link>
                 </div>
               </div>
@@ -186,7 +186,7 @@ const home = () => {
                     Noza has exceeded my expectations in every way possible.
                   </p>
                   <Link to="about">
-                    <button className="mt-4">Learn more</button>
+                    <button className="Learn mt-4">Learn more</button>
                   </Link>
                 </div>
               </div>
@@ -201,7 +201,7 @@ const home = () => {
                     exceptional.
                   </p>
                   <Link to="about">
-                    <button className="mt-4">Learn more</button>
+                    <button className="Learn mt-4">Learn more</button>
                   </Link>
                 </div>
               </div>
@@ -216,7 +216,7 @@ const home = () => {
                     looking for.
                   </p>
                   <Link to="about">
-                    <button className="mt-4">Learn more</button>
+                    <button className="Learn mt-4">Learn more</button>
                   </Link>
                 </div>
               </div>
