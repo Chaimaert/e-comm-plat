@@ -53,7 +53,7 @@ const home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Our Featured Products</h1>
+              <h1 className="head">Our Featured Products</h1>
               <p>Modern and Latests Designs</p>
             </div>
             <Featuredproducts />
@@ -65,7 +65,7 @@ const home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="repair-details text-center align-items-center">
-              <h5 className="mb-3">Repair Services</h5>
+              <h5 className=" mb-3">Repair Services</h5>
               <h2 className="mb-3">
                 Find out our big{" "}
                 <span className="text-danger disc">Discounts</span>
@@ -82,7 +82,7 @@ const home = () => {
         <div className="cintainer-xxl">
           <div className="row">
             <div className="d-flex align-items-center justify-content-center flex-column">
-              <h1>New Arrivals</h1>
+              <h1 className="head">New Arrivals</h1>
               <p>Your New Favourites</p>
             </div>
             <NewArrival />
