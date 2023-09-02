@@ -501,21 +501,22 @@ footer {
   font-style: italic;
 }
 
-#button-link {
+#button-link1 {
   padding: 12px 5px;
   font-size: 15px;
   border-radius: 20px 5px;
-  background: #b66a69;
+  background: transparent;
+  color: #a51c30;
   border: 1px solid transparent;
   transition: 0.5s ease;
   margin-left: 140px;
   margin-top: 3px;
 }
 
-.button-link:hover {
-  background: transparent;
-  color: #f28482;
-  border: 1px solid #a67b5b;
+#button-link1:hover {
+  background: #f0bfbe;
+  color: #4d0e18;
+  border: 1px solid white;
 }
 
 #button-linker {

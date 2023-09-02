@@ -34,7 +34,7 @@ const home = () => {
                       <Link
                         to="/shop"
                         className="btn btn-primary"
-                        id="button-link"
+                        id="button-link1"
                       >
                         Shop Now
                       </Link>
