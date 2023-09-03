@@ -1,7 +1,7 @@
 import pr1 from '../assets/images/products/f6.jpg'
 import pr2 from '../assets/images/products/f2.jpg'
 import pr3 from '../assets/images/products/f3.jpg'
-import pr4 from '../assets/images/products/shoes1.avif'
+import pr4 from '../assets/images/products/nikeee.jpeg'
 import pr5 from '../assets/images/products/coffeemug2.jpeg'
 import pr6 from '../assets/images/products/dress2.jpeg'
 import pr7 from '../assets/images/products/phonecase2.avif'
@@ -55,8 +55,8 @@ export const PRODUCTS = [
         {
         id: 3,
         image: pr4,
-        name: "Men's Sportswear Shoes",
-        price: 49.90,
+        name: "Men's Sport Shoes",
+        price: 160.90,
         brand: 'Nike',
         status:'in stock',
         rate: '30% Off'
@@ -64,16 +64,16 @@ export const PRODUCTS = [
         {
         id: 4,
         image: pr5,
-        name: "Men's Tech 2.0 Short Sleeve",
+        name: "Modern tea cups",
         price: 49.90,
-        brand: 'Sfera',
+        brand: 'Saga',
         status:'in stock',
         rate: '60% Off'
         },
         {
         id: 5,
         image: img9,
-        name: "Motivational Water Bottle",
+        name: "Modern Water Bottle",
         price: 10.90,
         brand: 'GymShark',
         status:'in stock',
