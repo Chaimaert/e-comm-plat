@@ -147,9 +147,9 @@ export const PRODUCTS = [
         {
         id: 15,
         image: pro8,
-        name: "Women's Classic Fit Crewneck T-Shirt",
+        name: "Makeup brushes",
         price: 29.50,
-        brand: 'Ralph Lauren'
+        brand: 'Sephora'
         }
 ];
 
