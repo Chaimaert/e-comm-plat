@@ -1,9 +1,8 @@
 import pr1 from '../assets/images/products/f6.jpg'
 import pr2 from '../assets/images/products/f2.jpg'
-import pr3 from '../assets/images/products/f3.jpg'
 import pr4 from '../assets/images/products/nikeee.jpeg'
 import pr5 from '../assets/images/products/coffeemug2.jpeg'
-import pr6 from '../assets/images/products/dress2.jpeg'
+import pr6 from '../assets/images/products/guasha.avif'
 import pr7 from '../assets/images/products/phonecase4.jpeg'
 import pr8 from '../assets/images/products/foundation.jpeg'
 import pro1 from '../assets/images/products/headp.jpeg'
@@ -158,7 +157,7 @@ export const  PRODUCTS1 = [
     {
         id: 16,
         image: img1,
-        name: "Slim Fit Dress Shirt",
+        name: "Slim Fit T-Shirt",
         price: 49.90,
         brand: 'Calvin Klein',
         status: 'in stock',
@@ -166,7 +165,7 @@ export const  PRODUCTS1 = [
         {
         id: 17,
         image: img2,
-        name: "Beauty Jade Fcaial Roller",
+        name: "Beauty Fcaial Roller",
         price: 40.90,
         brand: 'Elle',
         status: 'in stock',
