@@ -197,7 +197,7 @@ export const  PRODUCTS1 = [
         {
         id: 21,
         image: img6,
-        name: "Women's Basic Tee",
+        name: "Nude Mug",
         price: 9.90,
         brand: 'H&M',
         status: 'in stock',
@@ -207,7 +207,7 @@ export const  PRODUCTS1 = [
         image: img7,
         name: "Beauty sponge",
         price: 39.50,
-        brand: 'Puma',
+        brand: 'The Ordinary',
         status: 'in stock',
         },
         {
@@ -215,7 +215,7 @@ export const  PRODUCTS1 = [
         image: img8,
         name: "Guasha & Roller",
         price: 29.50,
-        brand: 'Ralph Lauren',
+        brand: 'Dior',
         status: 'in stock',
         }
 ];
