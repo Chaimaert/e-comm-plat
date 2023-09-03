@@ -31,6 +31,7 @@ export const PRODUCTS = [
         name: "Slim Fit Dress Shirt",
         price: 49.90,
         brand: 'Calvin Klein',
+        description : 'A modern and beautiful dress shirt',
         },
         {
         id: 1,
