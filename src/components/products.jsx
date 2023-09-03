@@ -64,7 +64,7 @@ export const PRODUCTS = [
         {
         id: 4,
         image: pr5,
-        name: "Modern tea cups",
+        name: "Modern coffee cups",
         price: 49.90,
         brand: 'Saga',
         status:'in stock',
