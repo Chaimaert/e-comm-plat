@@ -1,6 +1,6 @@
 import pr1 from '../assets/images/products/f6.jpg'
 import pr2 from '../assets/images/products/f2.jpg'
-// import pr3 from '../assets/images/products/f3.jpg'
+import pr3 from '../assets/images/products/f3.jpg'
 import pr4 from '../assets/images/products/shoes1.avif'
 import pr5 from '../assets/images/products/coffeemug2.jpeg'
 import pr6 from '../assets/images/products/dress2.jpeg'
@@ -22,6 +22,7 @@ import img6 from '../assets/images/products/coffeemug3.jpeg'
 import img7 from '../assets/images/products/sponge.jpeg'
 import img8 from '../assets/images/products/guasha.avif'
 import img9 from '../assets/images/products/bott.jpg'
+import img10 from '../assets/images/products/beautyblender2.jpg'
 
 
 export const PRODUCTS = [
@@ -35,7 +36,7 @@ export const PRODUCTS = [
         },
         {
         id: 1,
-        image: pr2,
+        image: img10,
         name: "Men's Dri-FIT T-Shirt",
         price: 24.90,
         brand: 'Nike',
@@ -44,8 +45,8 @@ export const PRODUCTS = [
         },
         {
         id: 2,
-        image: img7,
-        name: "Wome's little Black dress",
+        image: pr2,
+        name: "Wome's Black dress",
         price: 39.90,
         brand: 'Polly',
         status:'in stock',
