@@ -2,7 +2,7 @@ import pr1 from '../assets/images/products/f6.jpg'
 import pr2 from '../assets/images/products/f2.jpg'
 import pr4 from '../assets/images/products/nikeee.jpeg'
 import pr5 from '../assets/images/products/coffeemug2.jpeg'
-import pr6 from '../assets/images/products/guasha.avif'
+import pr6 from '../assets/images/products/n6.jpg'
 import pr7 from '../assets/images/products/phonecase4.jpeg'
 import pr8 from '../assets/images/products/foundation.jpeg'
 import pro1 from '../assets/images/products/headp.jpeg'
@@ -173,15 +173,15 @@ export const  PRODUCTS1 = [
         {
         id: 18,
         image: pr6,
-        name: "Men's Dri-FIT T-Shirt",
+        name: "Men's Dri-FIT Short",
         price: 24.90,
-        brand: 'Nike',
+        brand: 'mango',
         status: 'in stock',
         },
         {
         id: 19,
         image: img5,
-        name: "Elite Modern Smart Watche",
+        name: "Elite Smart Watche",
         price: 50.99,
         brand: 'Fila',
         status: 'Out of stock',
@@ -189,7 +189,7 @@ export const  PRODUCTS1 = [
         {
         id: 20,
         image: img3,
-        name: "Modern Mugs with Thick Handle",
+        name: "Modern Mugs",
         price: 49.90,
         brand: 'Tortuna',
         status: 'in stock',
@@ -197,7 +197,7 @@ export const  PRODUCTS1 = [
         {
         id: 21,
         image: img6,
-        name: "Women's Basic Tee, Men's Rebel Bold Tee",
+        name: "Women's Basic Tee",
         price: 9.90,
         brand: 'H&M',
         status: 'in stock',
@@ -205,7 +205,7 @@ export const  PRODUCTS1 = [
         {
         id: 22,
         image: img7,
-        name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+        name: "Beauty sponge",
         price: 39.50,
         brand: 'Puma',
         status: 'in stock',
@@ -213,7 +213,7 @@ export const  PRODUCTS1 = [
         {
         id: 23,
         image: img8,
-        name: "Women's Classic Fit Crewneck T-Shirt",
+        name: "Guasha & Roller",
         price: 29.50,
         brand: 'Ralph Lauren',
         status: 'in stock',
