@@ -5,7 +5,7 @@ import pr4 from '../assets/images/products/nikeee.jpeg'
 import pr5 from '../assets/images/products/coffeemug2.jpeg'
 import pr6 from '../assets/images/products/dress2.jpeg'
 import pr7 from '../assets/images/products/phonecase4.jpeg'
-import pr8 from '../assets/images/products/shorts.avif'
+import pr8 from '../assets/images/products/foundation.jpeg'
 import pro1 from '../assets/images/products/beautyblender.avif'
 import pro2 from '../assets/images/products/watch3.avif'
 import pro3 from '../assets/images/products/bottle8.jpeg'
@@ -91,9 +91,9 @@ export const PRODUCTS = [
         {
         id: 7,
         image: pr8,
-        name: "Women's Classic Fit Crewneck T-Shirt",
+        name: "Makeup Foundation",
         price: 29.50,
-        brand: 'Ralph Lauren'
+        brand: 'makeup forever'
         },
         {
         id: 8,
