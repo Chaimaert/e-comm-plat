@@ -6,7 +6,7 @@ import pr5 from '../assets/images/products/coffeemug2.jpeg'
 import pr6 from '../assets/images/products/dress2.jpeg'
 import pr7 from '../assets/images/products/phonecase4.jpeg'
 import pr8 from '../assets/images/products/foundation.jpeg'
-import pro1 from '../assets/images/products/beautyblender.avif'
+import pro1 from '../assets/images/products/headp.jpeg'
 import pro2 from '../assets/images/products/watch3.avif'
 import pro3 from '../assets/images/products/bottle8.jpeg'
 import pro4 from '../assets/images/products/brushes1.avif'
@@ -19,7 +19,7 @@ import img2 from '../assets/images/products/massage.avif'
 import img3 from '../assets/images/products/mug.jpg'
 import img5 from '../assets/images/products/watch.jpg'
 import img6 from '../assets/images/products/coffeemug3.jpeg'
-import img7 from '../assets/images/products/sponge.jpeg'
+import img7 from '../assets/images/products/sponge2.jpeg'
 import img8 from '../assets/images/products/guasha.avif'
 import img9 from '../assets/images/products/bott.jpg'
 import img10 from '../assets/images/products/beautyblender2.jpg'
@@ -98,21 +98,21 @@ export const PRODUCTS = [
         {
         id: 8,
         image: pro1,
-        name: "Slim Fit Dress Shirt",
-        price: 49.90,
-        brand: 'Calvin Klein'
+        name: "black headphone",
+        price: 50.90,
+        brand: 'Bonzo'
         },
         {
         id: 9,
         image: pro2,
-        name: "Men's Dri-FIT T-Shirt",
+        name: "Black smartwatch",
         price: 24.90,
-        brand: 'Nike'
+        brand: 'Casio'
         },
         {
         id: 10,
         image: pro3,
-        name: "Women's Badge of Sport Tee",
+        name: "Gym bottle",
         price: 39.90,
         brand: 'Adidas'
         },
