@@ -31,26 +31,26 @@ export const PRODUCTS = [
         image: pr1,
         name: "Slim Fit Dress Shirt",
         price: 49.90,
-        brand: 'Calvin Klein',
+        brand: 'Kiabi',
         description : 'A modern and beautiful dress shirt',
         },
         {
         id: 1,
         image: img10,
-        name: "Men's Dri-FIT T-Shirt",
+        name: " Original Pro Sponge",
         price: 24.90,
-        brand: 'Nike',
+        brand: 'sephora',
         status:'in stock',
         rate: '50% Off'
         },
         {
         id: 2,
         image: pr2,
-        name: "Wome's Black dress",
+        name: "Men's colorful shirt",
         price: 39.90,
-        brand: 'Polly',
+        brand: 'Pull & Bear',
         status:'in stock',
-        rate: '50% Off'
+        rate: '20% Off'
         },
         {
         id: 3,
