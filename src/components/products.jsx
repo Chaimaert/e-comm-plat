@@ -9,7 +9,7 @@ import pr8 from '../assets/images/products/foundation.jpeg'
 import pro1 from '../assets/images/products/headp.jpeg'
 import pro2 from '../assets/images/products/watch3.avif'
 import pro3 from '../assets/images/products/bottle8.jpeg'
-import pro4 from '../assets/images/products/brushes1.avif'
+import pro4 from '../assets/images/products/brushoffer.avif'
 import pro5 from '../assets/images/products/watch2.avif'
 import pro6 from '../assets/images/products/brushes2.avif'
 import pro7 from '../assets/images/products/shoes2.jpeg'
@@ -99,7 +99,7 @@ export const PRODUCTS = [
         id: 8,
         image: pro1,
         name: "black headphone",
-        price: 50.90,
+        price: 49.90,
         brand: 'Bonzo'
         },
         {
@@ -119,9 +119,9 @@ export const PRODUCTS = [
         {
         id: 11,
         image: pro4,
-        name: "Men's 1950s Sportswear T-Shirt",
+        name: "Brush set",
         price: 49.90,
-        brand: 'Levi s'
+        brand: 'Rare'
         },
         {
         id: 12,
