@@ -11,7 +11,7 @@ import pro2 from '../assets/images/products/watch3.avif'
 import pro3 from '../assets/images/products/bottle8.jpeg'
 import pro4 from '../assets/images/products/brushoffer.avif'
 import pro5 from '../assets/images/products/watch2.avif'
-import pro6 from '../assets/images/products/brushes2.avif'
+import pro6 from '../assets/images/products/dress1.jpeg'
 import pro7 from '../assets/images/products/shoes2.jpeg'
 import pro8 from '../assets/images/products/brushes3.avif'
 import img1 from '../assets/images/products/img1.png'
@@ -126,21 +126,21 @@ export const PRODUCTS = [
         {
         id: 12,
         image: pro5,
-        name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+        name: "Men's Smartwatch",
         price: 49.90,
         brand: 'Under Armour'
         },
         {
         id: 13,
         image: pro6,
-        name: "Women's Basic Tee, Men's Rebel Bold Tee",
-        price: 9.90,
+        name: "Women's summer dress",
+        price: 19.90,
         brand: 'H&M'
         },
         {
         id: 14,
         image: pro7,
-        name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+        name: "Men's Sportwear shoes",
         price: 39.50,
         brand: 'Puma'
         },
