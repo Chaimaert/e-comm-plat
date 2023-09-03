@@ -4,7 +4,7 @@ import pr3 from '../assets/images/products/f3.jpg'
 import pr4 from '../assets/images/products/nikeee.jpeg'
 import pr5 from '../assets/images/products/coffeemug2.jpeg'
 import pr6 from '../assets/images/products/dress2.jpeg'
-import pr7 from '../assets/images/products/phonecase2.avif'
+import pr7 from '../assets/images/products/phonecase4.jpeg'
 import pr8 from '../assets/images/products/shorts.avif'
 import pro1 from '../assets/images/products/beautyblender.avif'
 import pro2 from '../assets/images/products/watch3.avif'
@@ -82,7 +82,7 @@ export const PRODUCTS = [
         {
         id: 6,
         image: pr7,
-        name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+        name: "Simple phonecase",
         price: 39.50,
         brand: 'Puma',
         status:'in stock',
