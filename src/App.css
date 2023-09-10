@@ -916,8 +916,10 @@ color: #945352;
 }
 
 .who {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
+  color: #b9aacb;
+  font-style: italic;
 }
 
 .about-wrapper {
