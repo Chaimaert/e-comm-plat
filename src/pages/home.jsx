@@ -71,7 +71,9 @@ const home = () => {
                 <span className="text-danger disc">Discounts</span>
               </h2>
               <div className="mt-3">
-                <button className="btn-repair">Explore Now</button>
+              <Link to="shop">
+                    <button className=" btn-repair mt-4">Explore Now</button>
+                  </Link>
               </div>
             </div>
           </div>
