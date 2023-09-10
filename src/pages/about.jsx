@@ -61,7 +61,7 @@ const about = () => {
             <div className="container-xxl">
               <div className="row">
                 <div className="col-12 d-flex flex-column align-items-center">
-                  <h1 className='mb-3'>What our customers say ...</h1>
+                  <h1 className='head mb-3'>What our customers say ...</h1>
                   <p className='mb-4'>Our customers never miss a bit on providing feedback</p>
                 </div>
                 <div className="col-12 col-md-6 p-3">
