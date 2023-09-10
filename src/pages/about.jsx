@@ -34,7 +34,7 @@ const about = () => {
             <img src={pic} alt="" className='img-fluid p-5' />
           </div>
           <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <h1 className='who mb-3'><b>Who are we ?</b></h1>
+                <h1 className='head mb-3'><b>Who are we ?</b></h1>
                 <p className="card-text mb-3">Noza is an innovative and dynamic e-commerce platform that offers a diverse range of products catering to a wide spectrum of consumer preferences. 
                     <br /> With a commitment to excellence and customer satisfaction, it provides a seamless online
                      shopping experience that merges convenience with quality.
