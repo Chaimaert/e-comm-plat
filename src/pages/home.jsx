@@ -72,7 +72,7 @@ const home = () => {
               </h2>
               <div className="mt-3">
               <Link to="shop">
-                    <button className=" btn-repair mt-4">Explore Now</button>
+                    <button className=" btn-repair mt-1">Explore Now</button>
                   </Link>
               </div>
             </div>
