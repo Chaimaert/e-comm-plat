@@ -56,7 +56,7 @@ export const PRODUCTS = [
         {
         id: 3,
         image: pr4,
-        name: "Men's Sport Shoes",
+        name: "Pegasus 40",
         price: 160.90,
         brand: 'Nike',
         description:'The Pegasus 40 offers a solid, stable and comfortably cushioned ride, and it&#39;s a shoe that can take a lot of mileage and a lot of pounding on the tarmac.',
