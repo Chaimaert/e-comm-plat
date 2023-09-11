@@ -5,7 +5,6 @@ import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { BiLogoGmail } from "react-icons/bi";
 import { NavLink, Link, useLocation } from "react-router-dom";
-// import { FaClipboardList } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import user from "../assets/images/user.svg";

@@ -1334,7 +1334,6 @@ position: relative;
 }
 
 .checkout .input i{
-
 position: absolute;
 top: 16px;
 left: 11px;
@@ -1342,18 +1341,15 @@ color: #989898;
 }
 
 .checkout .input input{
-
 text-indent: 25px;
 }
 
 .checkout .card-text{
-
 font-size: 13px;
 margin-left: 6px;
 }
 
 .checkout .certificate-text{
-
 font-size: 12px;
 }
 
@@ -1363,13 +1359,11 @@ font-size: 11px;
 }  
 
 .checkout .super-price{
-
 top: 0px;
 font-size: 22px;
 }
 
 .checkout .super-month{
-
 font-size: 11px;
 }
 
@@ -1398,7 +1392,6 @@ border-radius: 8px;
 }
 
 .checkout .payment-card-body{
-
 flex: 1 1 auto;
 padding: 24px 1rem !important;
 
