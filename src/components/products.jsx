@@ -154,7 +154,8 @@ export const PRODUCTS = [
         image: pro7,
         name: "Men's Sportwear shoes",
         price: 39.50,
-        brand: 'Puma'
+        brand: 'Puma',
+        description: 'Mens Basketball Shoes for Men Sneakers Men&#39;s High Top Running Trail Air Sports Athletic Male'
         },
         {
         id: 15,
