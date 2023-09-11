@@ -1244,7 +1244,7 @@ color: #945352;
     max-width: 100px;
   }
   .banner h1, p{
-    color: white;
+    color: black;
   }
 }
 
@@ -1318,7 +1318,6 @@ color: #945352;
   height: 40px;
 }
 
-/* check out */
 .checkout .card-header {
   padding: .5rem 1rem;
   margin-bottom: 0;
@@ -1418,7 +1417,6 @@ border-radius: 8px;
   background-color: #ffd7d7;
   transition: 0.5s ease;
 }
-
 
 .checkout .payment-card-body{
 
