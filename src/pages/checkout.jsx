@@ -18,7 +18,7 @@ const Checkout = () => {
     <div className="container-xxl">
       <div className="row">
 
-        <div className="col-md-6">
+        <div className="col-md-12">
         <h1 className="mb-4 fs-3">Payment Method</h1>
         <div className="accordion" id="accordionExample">
           <div className="card">
@@ -84,19 +84,19 @@ const Checkout = () => {
       </div>
 
       <div className="col-md-6 p-2">
-            <h1 className=" mt-3 mb-3 fs-3">Fill the following details for shipping.</h1>
+            <h1 className=" mt-3 mb-4 mt-2 fs-3">Fill the following details for shipping.</h1>
             <form className="row g-3 mb-3">
-              <div className="col-md-6">
+              <div className="col-md-12">
                 <label htmlFor="inputEmail4" className="form-label">Email</label>
                 <input type="email" className="form-control" id="inputEmail4" required />
               </div>
-              <div className="col-md-6">
+              <div className="col-md-12">
                 <label htmlFor="inputPassword4" className="form-label">Password</label>
                 <input type="password" className="form-control" id="inputPassword4" required />
               </div>
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">Address</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
+                <input type="text" className="form-control" id="inputAddress" placeholder="Citrine A les cristaux" />
               </div>
               <div className="col-12">
                 <label htmlFor="inputAddress2" className="form-label">Address 2</label>
@@ -106,19 +106,19 @@ const Checkout = () => {
                 <label htmlFor="inputCity" className="form-label">City</label>
                 <input type="text" className="form-control" id="inputCity" />
               </div>
-              <div className="col-md-4">
+              <div className="col-md-12">
                 <label htmlFor="inputState" className="form-label">State</label>
                 <select id="inputState" className="form-select">
                   <option selected>Choose...</option>
                   <option>...</option>
                 </select>
               </div>
-              <div className="col-md-2">
+              <div className="col-md-3">
                 <label htmlFor="inputZip" className="form-label">Zip</label>
                 <input type="text" className="form-control" id="inputZip" />
               </div>
               <div className="col-12 mt-5">
-                <button id="button-linker" type="submit" onClick={handlePay}>Proceed To Pay</button>
+                <button id="pay" type="submit" onClick={handlePay}>Proceed To Pay</button>
               </div>
             </form>
           </div>

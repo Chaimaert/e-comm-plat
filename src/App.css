@@ -1407,6 +1407,19 @@ font-size: 15px;
 border-radius: 8px;
 }
 
+#pay {
+  margin-left: 220px;
+  background-color: #fcbebd;
+  color: var(--active);
+}
+
+#pay:hover {
+  color: black;
+  border-radius: 1px solid #e7b2b1;
+  background-color: #ffd7d7;
+  transition: 0.5s ease;
+}
+
 
 .checkout .payment-card-body{
 
