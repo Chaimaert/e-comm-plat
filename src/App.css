@@ -765,7 +765,7 @@ color: #945352;
 .cart button{
   font-size: 18px;
   padding: 12px 20px;
-  background-color: #f5c5c4;
+  background-color: #f1b9b8;
   color: black;
   border: 1px solid transparent;
   transition: 0.5s ease;
@@ -777,6 +777,13 @@ color: #945352;
 
 .cop {
   color: #864745;
+}
+
+.Cart{
+  color: black;
+  text-align: center;
+  font-size: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #clear-cart{
@@ -794,9 +801,9 @@ color: #945352;
 }
 
 .cart button:hover{
-  background-color: transparent;
-  border: 1px solid #f8c7d2;
-  color: #f5c5c4;
+  background-color: #ffacb8;
+  border: 1px solid #e4abb7;
+  color: #212529;
 }
 
 .cart .total {

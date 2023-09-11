@@ -27,13 +27,13 @@ const Cart = () => {
         <div className="container-xxl p-5">
           {totalAmount > 0 ? (
             <div className="row">
-              <div className="p-2 text-center">
+              <div className="Cart p-2">
                 <h2>Cart</h2>
               </div>
-              <div className="col-12 col-md-5 text-center">
+              <div className="col-12 mx-3 col-md-5 Cart">
                 <h5>Product</h5>
               </div>
-              <div className="col-12 col-md-5 text-center">
+              <div className="col-12 mx-1 col-md-5 Cart">
                 <h5>Details</h5>
               </div>
 
