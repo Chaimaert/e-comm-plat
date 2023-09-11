@@ -89,6 +89,7 @@ export const PRODUCTS = [
         name: "Simple phonecase",
         price: 39.50,
         brand: 'Puma',
+        description: 'Slim Liquid Silicone 3 Layers Full Covered Soft Gel Rubber Case Cover 6.1 inch-Chalk white',
         status:'in stock',
         rate: '50% Off'
         },
