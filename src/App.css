@@ -251,6 +251,10 @@ a {
     color: black;
   }
 
+  #button-link1 {
+    margin-right: 170px;
+  }
+
   #button-linker {
     border-radius: 10px;
     font-size: 18px;
