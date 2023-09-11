@@ -1111,7 +1111,7 @@ color: #945352;
 /* ------------------------------------------------ Checkout Page -------------------------------------------------- */
 
 .checkout{
-  background-color: var(--lighter2);
+  background-color: #f8eaed;
 }
 
 .checkout-details label{
