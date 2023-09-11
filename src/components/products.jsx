@@ -31,7 +31,7 @@ export const PRODUCTS = [
         name: "Slim Fit Dress Shirt",
         price: 49.90,
         brand: 'Kiabi',
-        description : 'A modern and beautiful dress shirt',
+        description : 'a man&#39;s shirt worn for semiformal evening dress, usually having French cuffs and a stiff or pleated front to be fastened with studs',
         },
         {
         id: 1,
@@ -39,6 +39,7 @@ export const PRODUCTS = [
         name: " Original Pro Sponge",
         price: 24.90,
         brand: 'sephora',
+        description:'A Makeup blender sponge lets the foundation blend in the skin perfectly making it look natural with an even finish.',
         status:'in stock',
         rate: '50% Off'
         },
@@ -48,6 +49,7 @@ export const PRODUCTS = [
         name: "Men's colorful shirt",
         price: 39.90,
         brand: 'Pull & Bear',
+        description:'Broadly speaking, summer shirt fabrics need to be light, breathable and quick drying. ',
         status:'in stock',
         rate: '20% Off'
         },
@@ -57,6 +59,7 @@ export const PRODUCTS = [
         name: "Men's Sport Shoes",
         price: 160.90,
         brand: 'Nike',
+        description: '',
         status:'in stock',
         rate: '30% Off'
         },
