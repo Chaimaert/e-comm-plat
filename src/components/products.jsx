@@ -79,6 +79,7 @@ export const PRODUCTS = [
         name: "Modern Water Bottle",
         price: 10.90,
         brand: 'GymShark',
+        description: 'Water Bottle with Time Marker, Carry Strap, Leak-Proof Tritan BPA-Free, Ensure You Drink Enough Water for Fitness, Gym, Camping, Outdoor Sports',
         status:'in stock',
         rate: '20% Off'
         },
