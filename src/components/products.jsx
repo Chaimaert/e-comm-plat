@@ -238,6 +238,7 @@ export const  PRODUCTS1 = [
         name: "Guasha & Roller",
         price: 29.50,
         brand: 'Dior',
+        description: 'Facial Skin Care Set, Facial Beauty Tools, Natural Beauty Skin Care Tools, Face Roller Massager for Face, Neck, and Eye Treatment',
         status: 'in stock',
         }
 ];
