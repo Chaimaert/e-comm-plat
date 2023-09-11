@@ -162,7 +162,8 @@ export const PRODUCTS = [
         image: pro8,
         name: "Makeup brushes",
         price: 29.50,
-        brand: 'Sephora'
+        brand: 'Sephora',
+        description: 'Makeup Brush Set Premium Synthetic Powder Foundation Contour Blush Concealer Eye Shadow Blending Liner'
         }
 ];
 
