@@ -193,6 +193,7 @@ export const  PRODUCTS1 = [
         name: "Men's Dri-FIT Short",
         price: 24.90,
         brand: 'mango',
+        description: 'Essentials Men&#39;s Slim-Fit 9" Short',
         status: 'in stock',
         },
         {
@@ -201,6 +202,7 @@ export const  PRODUCTS1 = [
         name: "Elite Smart Watch",
         price: 50.99,
         brand: 'Fila',
+        description: 'Smart Watch (Answer/Make Call), 1.7" Smartwatch Fitness Tracker for Android and iOS Phones with Heart Rate Sleep Tracking, 28 Sport Modes',
         status: 'Out of stock',
         },
         {
