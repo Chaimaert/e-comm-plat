@@ -778,7 +778,7 @@ color: #945352;
 #clear-cart{
   background-color: transparent;
   border: none;
-  color: rgb(17, 17, 78);
+  color: black;
   font-weight: 400;
   padding: 0;
   transition: 0.5s ease;
@@ -786,7 +786,7 @@ color: #945352;
 }
 
 #clear-cart:hover{
-  color: #e09895;
+  color: var(--active);
 }
 
 .cart button:hover{
