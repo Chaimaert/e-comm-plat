@@ -31,7 +31,7 @@ export const PRODUCTS = [
         name: "Slim Fit Dress Shirt",
         price: 49.90,
         brand: 'Kiabi',
-        description : 'a man&#39;s shirt worn for semiformal evening dress, usually having French cuffs and a stiff or pleated front to be fastened with studs',
+        description : 'a mans shirt worn for semiformal evening dress, usually having French cuffs and a stiff or pleated front to be fastened with studs',
         },
         {
         id: 1,
@@ -147,7 +147,7 @@ export const PRODUCTS = [
         name: "Women's summer dress",
         price: 19.90,
         brand: 'H&M',
-        description: 'Women&#39;s Deep V Neck Short Sleeve Long Dresses Pleated High Waist Slit Club Party Evening Maxi Dress'
+        description: 'Womens Deep V Neck Short Sleeve Long Dresses Pleated High Waist Slit Club Party Evening Maxi Dress'
         },
         {
         id: 14,
@@ -193,7 +193,7 @@ export const  PRODUCTS1 = [
         name: "Men's Dri-FIT Short",
         price: 24.90,
         brand: 'mango',
-        description: 'Essentials Men&#39;s Slim-Fit 9" Short',
+        description: 'Essentials Mens Slim-Fit 9" Short',
         status: 'in stock',
         },
         {
