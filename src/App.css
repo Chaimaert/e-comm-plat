@@ -217,7 +217,7 @@ a {
   .banner .back-details {
     height: auto;
     background-position: center;
-    padding: 50px;
+    padding: 20px;
     align-items: center;
     text-align: center;
   }
@@ -228,11 +228,16 @@ a {
 
   .banner .back-details h2 {
     font-size: 24px;
+    margin-right: 120px;
+  }
+  .banner .back-details p {
+    margin-right: 140px;
+    font-size: small;
   }
 
   #button-link {
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 12px;
     padding: 12px 24px;
     background-color: var(--primary);
     color: black;
