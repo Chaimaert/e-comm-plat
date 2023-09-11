@@ -175,6 +175,7 @@ export const  PRODUCTS1 = [
         name: "Slim Fit T-Shirt",
         price: 49.90,
         brand: 'Calvin Klein',
+        description: 'Oversized T Shirts Tees Distorted Portrait Print Crew Neck Cotton Tops Streetwear Casual Shirt',
         status: 'in stock',
         },
         {
@@ -183,6 +184,7 @@ export const  PRODUCTS1 = [
         name: "Beauty Fcaial Roller",
         price: 40.90,
         brand: 'Elle',
+        description: '',
         status: 'in stock',
         },
         {
