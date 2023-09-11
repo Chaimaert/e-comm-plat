@@ -146,7 +146,8 @@ export const PRODUCTS = [
         image: pro6,
         name: "Women's summer dress",
         price: 19.90,
-        brand: 'H&M'
+        brand: 'H&M',
+        description: 'Women&#39;s Deep V Neck Short Sleeve Long Dresses Pleated High Waist Slit Club Party Evening Maxi Dress'
         },
         {
         id: 14,
