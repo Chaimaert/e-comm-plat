@@ -33,8 +33,7 @@ const ProductDetails = () => {
                 <span className="text-danger fs-4 me-2">{product.price}$</span>
                 <strike>{product.price * 2}$</strike>
               </p>
-              <p className="card-text">{product.description}</p>
-              <p className="card-text mb-3">A good quality products with an amazing price. <br /> Only with Noza</p>
+              <p className="card-text mb-3">{product.description}</p>
 
 
               <div className="d-flex align-items-center mb-3 col-6">
