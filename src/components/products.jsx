@@ -211,6 +211,7 @@ export const  PRODUCTS1 = [
         name: "Modern Mugs",
         price: 49.90,
         brand: 'Tortuna',
+        description: 'Hand Crafted Ceramic Stoneware Mug Set, Modern Dining Mugs - Large & Multipurpose Shape Mugs, Microwave & Dishwasher Safe',
         status: 'in stock',
         },
         {
@@ -219,6 +220,7 @@ export const  PRODUCTS1 = [
         name: "Nude Mug",
         price: 9.90,
         brand: 'H&M',
+        description: 'Mora Ceramic Large Latte Mug Set of 4, 16oz - Microwavable, Porcelain Coffee Cups With Big Handle',
         status: 'in stock',
         },
         {
