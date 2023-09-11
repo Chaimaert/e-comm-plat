@@ -184,7 +184,7 @@ export const  PRODUCTS1 = [
         name: "Beauty Fcaial Roller",
         price: 40.90,
         brand: 'Elle',
-        description: '',
+        description: 'Jade Roller & Gua Sha Facial Tools Face Roller and Gua Sha Set for Skin Care Routine and Puffiness - Green',
         status: 'in stock',
         },
         {
