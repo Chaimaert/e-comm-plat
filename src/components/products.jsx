@@ -69,6 +69,7 @@ export const PRODUCTS = [
         name: "Modern coffee cups",
         price: 49.90,
         brand: 'Saga',
+        description: 'The coffee mug feels so good wrapped in both your hands, sending its warmth right into your blood',
         status:'in stock',
         rate: '60% Off'
         },
