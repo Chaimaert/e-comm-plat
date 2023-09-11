@@ -22,9 +22,9 @@ const cartitems = (props) => {
         <div className="col-12 col-md-7">
           <div className="p-3">
             <h2 className="name mb-4">{name}</h2>
-            <p className="compo ">Product Brand : <b className='text-center mb-1'> {brand}</b></p>
-            <p className="compo ">Product Price : <b className='text-center mb-1'> ${price}</b></p>
-            <p className="compo ">Product Number : <b className='text-center mb-3'> {id}</b></p>
+            <p className="compo ">Product Brand : <b className='cop mb-1'> {brand}</b></p>
+            <p className="compo ">Product Price : <b className='cop mb-1'> ${price}</b></p>
+            <p className="compo ">Product Number : <b className='cop mb-3'> {id}</b></p>
             <p className="compo ">Items in Stock : <b className='text-danger'> {itemsInStock}</b></p>
           </div>
           <div className="p-3 d-flex justify-content-between align-items-center">
