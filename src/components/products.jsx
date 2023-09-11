@@ -139,7 +139,7 @@ export const PRODUCTS = [
         name: "Men's Smartwatch",
         price: 49.90,
         brand: 'Under Armour',
-        description: ''
+        description: 'Smart Watch for Men with Bluetooth Call, Alexa Built-in1.8 DIY Dial with Blood Oxygen Heart Rate Sleep Fitness Tracker Notification Weather 100 Sport Modes Smartwatch for Android iOS Phone'
         },
         {
         id: 13,
