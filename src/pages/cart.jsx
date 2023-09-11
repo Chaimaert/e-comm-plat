@@ -52,7 +52,7 @@ const Cart = () => {
 
                 <hr />
                 <div className="row">
-                  <div className="col-12 col-md-6 d-flex m-auto justify-content-center mt-4">
+                  <div className=" continue col-12 col-md-6 d-flex m-auto justify-content-center mt-4">
                     <button onClick={() => navigate("/shop")}>
                       {isMobile ? "Continue" : "Continue Shopping"}
                     </button>
