@@ -745,10 +745,11 @@ color: #945352;
   border: none;
   font-size: 18px;
   transition: 0.5s ease;
+  color: #94414d;
 }
 
 #cart-delete:hover{
-  color: var(--search);
+  color: var(--primary);
 }
 
 .cart-col-2 input{
@@ -758,14 +759,14 @@ color: #945352;
 }
 
 .cart{
-  background: var(--lighter1);
+  background: #e6cdd0;
 }
 
 .cart button{
   font-size: 18px;
   padding: 12px 24px;
-  background-color: var(--primary1);
-  color: white;
+  background-color: #f5c5c4;
+  color: black;
   border: 1px solid transparent;
   transition: 0.5s ease;
 }
