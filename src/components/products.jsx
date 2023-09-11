@@ -181,7 +181,7 @@ export const  PRODUCTS1 = [
         {
         id: 19,
         image: img5,
-        name: "Elite Smart Watche",
+        name: "Elite Smart Watch",
         price: 50.99,
         brand: 'Fila',
         status: 'Out of stock',
