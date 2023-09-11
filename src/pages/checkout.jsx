@@ -84,7 +84,7 @@ const Checkout = () => {
       </div>
 
       <div className="col-md-6 p-2">
-            <h1 className=" mt-3 mb-4 mt-2 fs-3">Fill the following details for shipping.</h1>
+            <h1 className=" mt-3 mb-4 mt-2 fs-3">Fill the following details for shipping : </h1>
             <form className="row g-3 mb-3">
               <div className="col-md-12">
                 <label htmlFor="inputEmail4" className="form-label">Email</label>

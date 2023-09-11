@@ -347,6 +347,28 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .cart-item-container {
+    flex-wrap: nowrap;
+  }
+
+  .cart-item-image {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+
+  .cart-item-details {
+    margin-right: 10px;
+  }
+
+  .count-handler {
+    max-width: 100px;
+  }
+  .banner h1, p{
+    color: black;
+  }
+}
+
 .input-group button {
   background: transparent;
   font-size: 14px;
@@ -1224,28 +1246,6 @@ color: #945352;
   font-size: 1.5rem;
   padding: 0;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .cart-item-container {
-    flex-wrap: nowrap;
-  }
-
-  .cart-item-image {
-    max-width: 100px;
-    margin-right: 10px;
-  }
-
-  .cart-item-details {
-    margin-right: 10px;
-  }
-
-  .count-handler {
-    max-width: 100px;
-  }
-  .banner h1, p{
-    color: black;
-  }
 }
 
 .more-featured-products .card{
