@@ -130,14 +130,16 @@ export const PRODUCTS = [
         image: pro4,
         name: "Brush set",
         price: 49.90,
-        brand: 'Rare'
+        brand: 'Rare',
+        description: 'Makeup Brush, BESTOPE PRO Premium Synthetic Foundation Concealers Eye Shadows'
         },
         {
         id: 12,
         image: pro5,
         name: "Men's Smartwatch",
         price: 49.90,
-        brand: 'Under Armour'
+        brand: 'Under Armour',
+        description: ''
         },
         {
         id: 13,
