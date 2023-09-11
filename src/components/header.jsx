@@ -8,7 +8,6 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 // import { FaClipboardList } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
-import wishlist from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import Mylogo from "../assets/images/Mylogo.png";
 
@@ -279,18 +278,6 @@ const Header = () => {
                 </div>
 
                 <div className="menu-bar__actions">
-                  <div className="mb-2">
-                    <Link
-                      to=""
-                      className={
-                        location.pathname === "/" ? "active" : "not-active"
-                      }
-                      onClick={toggleMenu}
-                    >
-                      <img src={wishlist} alt="wishlist" className="d-none" />
-                      <span>Wishlist</span>
-                    </Link>
-                  </div>
                   <div className="mb-2">
                     <Link
                       to="/login"
