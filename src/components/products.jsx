@@ -229,6 +229,7 @@ export const  PRODUCTS1 = [
         name: "Beauty sponge",
         price: 39.50,
         brand: 'The Ordinary',
+        description:'Makeup Blender with Holder, Non-Latex Beauty Sponge with Case of Premium Silicone for Blending Liquid Foundations Cosmetics, Travel Sponge Holders, Soft and Skin-Friendly - Purple',
         status: 'in stock',
         },
         {
