@@ -716,7 +716,7 @@ color: #945352;
 /* ------------------------------------------------ Cart Page -------------------------------------------------- */
 
 .cart-header{
-  background-color: var(--lighter1);
+  background-color: var(--header);
 }
 .cart-col-1{
   width: 40%;
