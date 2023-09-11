@@ -21,7 +21,7 @@ const cartitems = (props) => {
         </div>
         <div className="col-12 col-md-7">
           <div className="p-3">
-            <h2>{name}</h2>
+            <h2 className="name mb-4">{name}</h2>
             <p className="cart-item-id">Product Brand: <b className='text-center mb-1'>{brand}</b></p>
             <p className="cart-item-id">Product Price: <b className='text-center mb-1'>${price}</b></p>
             <p className="cart-item-id">Product Number: <b className='text-center mb-3'>{id}</b></p>

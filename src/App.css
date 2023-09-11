@@ -764,7 +764,7 @@ color: #945352;
 
 .cart button{
   font-size: 18px;
-  padding: 12px 24px;
+  padding: 12px 20px;
   background-color: #f5c5c4;
   color: black;
   border: 1px solid transparent;
@@ -791,8 +791,8 @@ color: #945352;
 
 .cart button:hover{
   background-color: transparent;
-  border: 1px solid var(--primary1);
-  color: var(--primary1);
+  border: 1px solid #f8c7d2;
+  color: #f5c5c4;
 }
 
 .cart .total {
@@ -800,6 +800,12 @@ color: #945352;
   right: 0;
 }
 
+.name {
+  font-size: 400;
+  color: var(--active);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
 
 .cart .total-price{
  color: var(--active);
