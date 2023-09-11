@@ -807,6 +807,10 @@ color: #945352;
   font-style: italic;
 }
 
+.compo {
+  color: black;
+}
+
 .cart .total-price{
  color: var(--active);
  font-weight: 600;
