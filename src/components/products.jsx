@@ -98,28 +98,32 @@ export const PRODUCTS = [
         image: pr8,
         name: "Makeup Foundation",
         price: 29.50,
-        brand: 'makeup forever'
+        brand: 'makeup forever',
+        description: 'Flawless Finish Foundation, Improves Uneven Skin Tone, Lightweight, Medium Coverage & Semi-Matte,'
         },
         {
         id: 8,
         image: pro1,
         name: "black headphone",
         price: 49.90,
-        brand: 'Bonzo'
+        brand: 'Bonzo',
+        description: 'Headphones with Microphone, Lightweight Folding Stereo Bass Headphones with 1.5M No-Tangle Cord, Portable Wired Headphones for Smartphone Tablet Computer'
         },
         {
         id: 9,
         image: pro2,
         name: "Black smartwatch",
         price: 24.90,
-        brand: 'Casio'
+        brand: 'Casio',
+        description: 'GPS Smartwatch with Bright Touchscreen Display, Up to 6 Days of Battery Life, Slate Aluminum Bezel with Shadow Gray Case and Slate Silicone Band'
         },
         {
         id: 10,
         image: pro3,
         name: "Gym bottle",
         price: 39.90,
-        brand: 'Adidas'
+        brand: 'Adidas',
+        description: 'FLASK Sports Water Bottle - 22 Oz 3 Lids (Straw Lid), Leak Proof - Stainless Steel Gym & Sport Bottles for Men, Women & Kids'
         },
         {
         id: 11,
