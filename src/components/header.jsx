@@ -197,7 +197,7 @@ const Header = () => {
                       <Link
                         onClick={toggleMenu}
                         to="/cart"
-                        className="d-flex align-items-center color-nav mt-2  me-3 "
+                        className="d-flex align-items-center color-nav mt-2  me-3 cart-span-one"
                       >
                         <PiShoppingCartSimpleFill className="me-1 fs-5" />
                         <div>
