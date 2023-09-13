@@ -663,15 +663,15 @@ color: #945352;
 
 .hot-deals button{
   color: black;
-  background-color: var(--darker);
+  background-color: var(--search);
   transition: 0.5s;
   border:  1px solid transparent;
 }
 
 .hot-deals button:hover{
   background: transparent;
-  color: var(--search);
-  border: 1px solid var(--darker);
+  color: #94414d;
+  border: 1px solid var(--active);
 }
 
 .Learn {
