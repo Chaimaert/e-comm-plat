@@ -670,7 +670,7 @@ color: #945352;
 
 .hot-deals button:hover{
   background: transparent;
-  color: #94414d;
+  color: #35060d;
   border: 1px solid var(--active);
 }
 
