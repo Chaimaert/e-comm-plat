@@ -144,12 +144,12 @@ a {
 
 .cart-span span {
   position: absolute;
-  background-color: #d68281;
-  color: white;
-  font-size: 0.8rem;
+  color: #d68281;
+  font-size: 0.7rem;
   padding: 0.2em 0.6em;
   border-radius: 50%;
-  right: 3px;
+  margin-top: 10px;
+  left: 25px;
 }
 
 .cart-span-2{
