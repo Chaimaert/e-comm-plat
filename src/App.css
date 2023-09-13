@@ -155,12 +155,11 @@ a {
 .cart-span-2{
   position: absolute;
   right: 50px;
-  top: 10px;
   font-size: 1rem;
   border-radius: 50%;
-  /* background-color:transparent; */
   color: black;
-  padding: 0.2em 0.6em;
+  border: none;
+  padding: 0 9px;
 }
 
 #color-link{
