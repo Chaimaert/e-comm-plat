@@ -662,7 +662,7 @@ color: #945352;
 }
 
 .hot-deals button{
-  color: white;
+  color: black;
   background-color: var(--darker);
   transition: 0.5s;
   border:  1px solid transparent;
