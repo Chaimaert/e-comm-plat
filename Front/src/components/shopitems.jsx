@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { PRODUCTS } from './products';
-import { PRODUCTS1 } from './products';
+import { PRODUCTS } from '../data/products';
+import { PRODUCTS1 } from '../data/products';
 import Prod from './prod';
 
 
