@@ -1,32 +1,32 @@
-// import pr1 from '../assets/images/products/f6.jpg'
-// import pr2 from '../assets/images/products/f2.jpg'
-// import pr4 from '../assets/images/products/nikeee.jpeg'
-// import pr5 from '../assets/images/products/coffeemug2.jpeg'
-// import pr6 from '../assets/images/products/n6.jpg'
-// import pr7 from '../assets/images/products/phonecase4.jpeg'
-// import pr8 from '../assets/images/products/foundation.jpeg'
-// import pro1 from '../assets/images/products/headp.jpeg'
-// import pro2 from '../assets/images/products/watch3.avif'
-// import pro3 from '../assets/images/products/bottle8.jpeg'
-// import pro4 from '../assets/images/products/brushoffer.avif'
-// import pro5 from '../assets/images/products/watch2.avif'
-// import pro6 from '../assets/images/products/dress1.jpeg'
-// import pro7 from '../assets/images/products/shoes2.jpeg'
-// import pro8 from '../assets/images/products/brushes3.avif'
-// import img1 from '../assets/images/products/img1.png'
-// import img2 from '../assets/images/products/massage.avif'
-// import img3 from '../assets/images/products/mug.jpg'
-// import img5 from '../assets/images/products/watch.jpg'
-// import img6 from '../assets/images/products/coffeemug3.jpeg'
-// import img7 from '../assets/images/products/sponge2.jpeg'
-// import img8 from '../assets/images/products/guasha.avif'
-// import img9 from '../assets/images/products/bott.jpg'
-// import img10 from '../assets/images/products/beautyblender2.jpg'
+import pr1 from '../assets/images/products/f6.jpg'
+import pr2 from '../assets/images/products/f2.jpg'
+import pr4 from '../assets/images/products/nikeee.jpeg'
+import pr5 from '../assets/images/products/coffeemug2.jpeg'
+import pr6 from '../assets/images/products/n6.jpg'
+import pr7 from '../assets/images/products/phonecase4.jpeg'
+import pr8 from '../assets/images/products/foundation.jpeg'
+import pro1 from '../assets/images/products/headp.jpeg'
+import pro2 from '../assets/images/products/watch3.avif'
+import pro3 from '../assets/images/products/bottle8.jpeg'
+import pro4 from '../assets/images/products/brushoffer.avif'
+import pro5 from '../assets/images/products/watch2.avif'
+import pro6 from '../assets/images/products/dress1.jpeg'
+import pro7 from '../assets/images/products/shoes2.jpeg'
+import pro8 from '../assets/images/products/brushes3.avif'
+import img1 from '../assets/images/products/img1.png'
+import img2 from '../assets/images/products/massage.avif'
+import img3 from '../assets/images/products/mug.jpg'
+import img5 from '../assets/images/products/watch.jpg'
+import img6 from '../assets/images/products/coffeemug3.jpeg'
+import img7 from '../assets/images/products/sponge2.jpeg'
+import img8 from '../assets/images/products/guasha.avif'
+import img9 from '../assets/images/products/bott.jpg'
+import img10 from '../assets/images/products/beautyblender2.jpg'
 
 
-const products = [
+export const Products = [
     {
-        id: "0",
+        id: 0,
         image: pr1,
         name: "Slim Fit Dress Shirt",
         price: 49.90,
@@ -34,7 +34,7 @@ const products = [
         description : 'a mans shirt worn for semiformal evening dress, usually having French cuffs and a stiff or pleated front to be fastened with studs',
         },
         {
-        id: "1",
+        id: 1,
         image: img10,
         name: " Original Pro Sponge",
         price: 24.90,
@@ -168,7 +168,7 @@ const products = [
 ];
 
 // eslint-disable-next-line react-refresh/only-export-components
-const  products1 = [
+export const  PRODUCTS1 = [
     {
         id: 16,
         image: img1,
