@@ -50,7 +50,7 @@ const products = [
   },
   {
     _id: "6",
-    image: img9,
+    image: '../assets/images/products/bott.jpg',
     name: "Modern Water Bottle",
     price: 10.90,
     brand: 'GymShark',
@@ -60,7 +60,7 @@ const products = [
   },
   {
     _id: "7",
-    image: pr7,
+    image: '../assets/images/products/phonecase4.jpeg',
     name: "Simple phonecase",
     price: 39.50,
     brand: 'Puma',
@@ -70,28 +70,76 @@ const products = [
   },
   {
     _id: "8",
-    image: pr8,
+    image: '../assets/images/products/foundation.jpeg',
     name: "Makeup Foundation",
     price: 29.50,
     brand: 'makeup forever',
     description: 'Flawless Finish Foundation, Improves Uneven Skin Tone, Lightweight, Medium Coverage & Semi-Matte,'
   },
   {
-    _id: "8",
-    image: pro1,
+    _id: "9",
+    image: '../assets/images/products/headp.jpeg',
     name: "black headphone",
     price: 49.90,
     brand: 'Bonzo',
     description: 'Headphones with Microphone, Lightweight Folding Stereo Bass Headphones with 1.5M No-Tangle Cord, Portable Wired Headphones for Smartphone Tablet Computer'
   },
   {
-    id: 9,
-    image: pro2,
+    _id: "10",
+    image: '../assets/images/products/watch3.avif',
     name: "Black smartwatch",
     price: 24.90,
     brand: 'Casio',
     description: 'GPS Smartwatch with Bright Touchscreen Display, Up to 6 Days of Battery Life, Slate Aluminum Bezel with Shadow Gray Case and Slate Silicone Band'
-  }
+  },
+  {
+    _id: "11",
+    image: '../assets/images/products/bottle8.jpeg',
+    name: "Gym bottle",
+    price: 39.90,
+    brand: 'Adidas',
+    description: 'FLASK Sports Water Bottle - 22 Oz 3 Lids (Straw Lid), Leak Proof - Stainless Steel Gym & Sport Bottles for Men, Women & Kids'
+    },
+    {
+    _id: "12",
+    image: '../assets/images/products/brushoffer.avif',
+    name: "Brush set",
+    price: 49.90,
+    brand: 'Rare',
+    description: 'Makeup Brush, BESTOPE PRO Premium Synthetic Foundation Concealers Eye Shadows'
+    },
+    {
+    _id: "13",
+    image: '../assets/images/products/watch2.avif',
+    name: "Men's Smartwatch",
+    price: 49.90,
+    brand: 'Under Armour',
+    description: 'Smart Watch for Men with Bluetooth Call, Alexa Built-in1.8 DIY Dial with Blood Oxygen Heart Rate Sleep Fitness Tracker Notification Weather 100 Sport Modes Smartwatch for Android iOS Phone'
+    },
+    {
+    _id: "14",
+    image: '../assets/images/products/dress1.jpeg',
+    name: "Women's summer dress",
+    price: 19.90,
+    brand: 'H&M',
+    description: 'Womens Deep V Neck Short Sleeve Long Dresses Pleated High Waist Slit Club Party Evening Maxi Dress'
+    },
+    {
+    _id: "15",
+    image: '../assets/images/products/shoes2.jpeg',
+    name: "Men's Sportwear shoes",
+    price: 39.50,
+    brand: 'Puma',
+    description: 'Mens Basketball Shoes for Men Sneakers Men&#39;s High Top Running Trail Air Sports Athletic Male'
+    },
+    {
+    _id: "16",
+    image: '../assets/images/products/brushes3.avif',
+    name: "Makeup brushes",
+    price: 29.50,
+    brand: 'Sephora',
+    description: 'Makeup Brush Set Premium Synthetic Powder Foundation Contour Blush Concealer Eye Shadow Blending Liner'
+    }
 ]
 
 export default products;
