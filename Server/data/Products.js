@@ -39,7 +39,7 @@ const products = [
     rate: '30% Off'
   },
   {
-    id: 4,
+    _id: "5",
     image: '../assets/images/products/coffeemug2.jpeg',
     name: "Modern coffee cups",
     price: 49.90,
@@ -48,6 +48,50 @@ const products = [
     status:'in stock',
     rate: '60% Off'
   },
+  {
+    _id: "6",
+    image: img9,
+    name: "Modern Water Bottle",
+    price: 10.90,
+    brand: 'GymShark',
+    description: 'Water Bottle with Time Marker, Carry Strap, Leak-Proof Tritan BPA-Free, Ensure You Drink Enough Water for Fitness, Gym, Camping, Outdoor Sports',
+    status:'in stock',
+    rate: '20% Off'
+  },
+  {
+    _id: "7",
+    image: pr7,
+    name: "Simple phonecase",
+    price: 39.50,
+    brand: 'Puma',
+    description: 'Slim Liquid Silicone 3 Layers Full Covered Soft Gel Rubber Case Cover 6.1 inch-Chalk white',
+    status:'in stock',
+    rate: '50% Off'
+  },
+  {
+    _id: "8",
+    image: pr8,
+    name: "Makeup Foundation",
+    price: 29.50,
+    brand: 'makeup forever',
+    description: 'Flawless Finish Foundation, Improves Uneven Skin Tone, Lightweight, Medium Coverage & Semi-Matte,'
+  },
+  {
+    _id: "8",
+    image: pro1,
+    name: "black headphone",
+    price: 49.90,
+    brand: 'Bonzo',
+    description: 'Headphones with Microphone, Lightweight Folding Stereo Bass Headphones with 1.5M No-Tangle Cord, Portable Wired Headphones for Smartphone Tablet Computer'
+  },
+  {
+    id: 9,
+    image: pro2,
+    name: "Black smartwatch",
+    price: 24.90,
+    brand: 'Casio',
+    description: 'GPS Smartwatch with Bright Touchscreen Display, Up to 6 Days of Battery Life, Slate Aluminum Bezel with Shadow Gray Case and Slate Silicone Band'
+  }
 ]
 
 export default products;
