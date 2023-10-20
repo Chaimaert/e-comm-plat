@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ShopContext } from './shopcontext';
-import { PRODUCTS } from '../data/products';
+import { PRODUCTS, PRODUCTS1 } from '../data/products';
 
 const ProductDetails = () => {
   const { selectedProduct, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
@@ -8,7 +8,7 @@ const ProductDetails = () => {
   // Set selectedProduct to 0
   const productId = selectedProduct || 0;
   
-  const product = PRODUCTS.find((p) => p.id === productId);
+  const product = PRODUCTS.find((p) => p.id === productId) || PRODUCTS1.find((p) => p.id === productId);
   
   if (!product) {
     return null;
@@ -79,7 +79,7 @@ const ProductDetails = () => {
               <div className="row mb-4">
                 <div className="col-6 col-md-4 col-lg-8 mx-auto">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                    {PRODUCTS.slice(2, 6).map((product) => (
+                    {PRODUCTS1.slice(2, 6).map((product) => (
                       <div key={product.id} className="col">
                         <div className="card h-100">
                           <img src={product.image} className="card-img-top" alt="..." />
