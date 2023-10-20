@@ -1,5 +1,5 @@
 import  express  from "express";
-import  products  from "./data/Products.js";
+import products from "./data/Products.js";
 
 const app = express();
 
@@ -9,8 +9,9 @@ app.get("/api/products", (req, res) => {
 })
 
 // single product from the server
-app.get("/api/product", (req, res) => {
-  const product = PRODUCTS.find((p) => p.id === productId) || PRODUCTS1.find((p) => p.id === productId);
+app.get("/api/products/:id", (req, res) => {
+  const product = products.find((p) => p._id === req.params.id);
+  res.json(product);
 })
 
 app.get("/", (req,res) => {
