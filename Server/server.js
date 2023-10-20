@@ -1,12 +1,12 @@
 import  express  from "express";
-// import Products from  "./data/products"
+import  products  from "./data/Products.js";
 
 const app = express();
 
 // To load products from the server
-// app.get("/api/products", (req, res) => {
-//   res.json(Products);
-// })
+app.get("/api/products", (req, res) => {
+  res.json(products);
+})
 
 app.get("/", (req,res) => {
   res.send("API is Running ...");
