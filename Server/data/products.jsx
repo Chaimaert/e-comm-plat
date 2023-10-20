@@ -169,7 +169,7 @@ export const Products = [
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const  PRODUCTS1 = [
-    {
+      {
         id: 16,
         image: img1,
         name: "Slim Fit T-Shirt",

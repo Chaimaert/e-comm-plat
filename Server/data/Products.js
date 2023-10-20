@@ -140,6 +140,83 @@ const products = [
     brand: 'Sephora',
     description: 'Makeup Brush Set Premium Synthetic Powder Foundation Contour Blush Concealer Eye Shadow Blending Liner'
     }
-]
+];
 
-export default products;
+const products1 = [
+  {
+    _id: "17",
+    image: '../assets/images/products/img1.png',
+    name: "Slim Fit T-Shirt",
+    price: 49.90,
+    brand: 'Calvin Klein',
+    description: 'Oversized T Shirts Tees Distorted Portrait Print Crew Neck Cotton Tops Streetwear Casual Shirt',
+    status: 'in stock',
+    },
+    {
+    _id: "18",
+    image: '../assets/images/products/massage.avif',
+    name: "Beauty Fcaial Roller",
+    price: 40.90,
+    brand: 'Elle',
+    description: 'Jade Roller & Gua Sha Facial Tools Face Roller and Gua Sha Set for Skin Care Routine and Puffiness - Green',
+    status: 'in stock',
+    },
+    {
+    _id: "19",
+    image: '../assets/images/products/n6.jpg',
+    name: "Men's Dri-FIT Short",
+    price: 24.90,
+    brand: 'mango',
+    description: 'Essentials Mens Slim-Fit 9" Short',
+    status: 'in stock',
+    },
+    {
+    _id: "20",
+    image: '../assets/images/products/watch.jpg',
+    name: "Elite Smart Watch",
+    price: 50.99,
+    brand: 'Fila',
+    description: 'Smart Watch (Answer/Make Call), 1.7" Smartwatch Fitness Tracker for Android and iOS Phones with Heart Rate Sleep Tracking, 28 Sport Modes',
+    status: 'Out of stock',
+    },
+    {
+    _id: "21",
+    image: '../assets/images/products/mug.jpg',
+    name: "Modern Mugs",
+    price: 49.90,
+    brand: 'Tortuna',
+    description: 'Hand Crafted Ceramic Stoneware Mug Set, Modern Dining Mugs - Large & Multipurpose Shape Mugs, Microwave & Dishwasher Safe',
+    status: 'in stock',
+    },
+    {
+    _id: "22",
+    image: '../assets/images/products/coffeemug3.jpeg',
+    name: "Nude Mug",
+    price: 9.90,
+    brand: 'H&M',
+    description: 'Mora Ceramic Large Latte Mug Set of 4, 16oz - Microwavable, Porcelain Coffee Cups With Big Handle',
+    status: 'in stock',
+    },
+    {
+    _id: "23",
+    image: '../assets/images/products/sponge2.jpeg',
+    name: "Beauty sponge",
+    price: 39.50,
+    brand: 'The Ordinary',
+    description:'Makeup Blender with Holder, Non-Latex Beauty Sponge with Case of Premium Silicone for Blending Liquid Foundations Cosmetics, Travel Sponge Holders, Soft and Skin-Friendly - Purple',
+    status: 'in stock',
+    },
+    {
+    _id: "24",
+    image: '../assets/images/products/guasha.avif',
+    name: "Guasha & Roller",
+    price: 29.50,
+    brand: 'Dior',
+    description: 'Facial Skin Care Set, Facial Beauty Tools, Natural Beauty Skin Care Tools, Face Roller Massager for Face, Neck, and Eye Treatment',
+    status: 'in stock',
+    }
+];
+
+
+export default products; products1;
+
