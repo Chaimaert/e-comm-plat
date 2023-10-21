@@ -3,18 +3,21 @@ import Prod from './prod';
 import axios from "axios";
 
 function ShopItems() {  
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+
     const fetchProducts = async () => {
       try {
         const { data } = await axios.get("/api/products");
-        console.log("Fetched data:", data); // Add this line
+        console.log("Fetched data:", data);
         setProducts(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
+    
     fetchProducts();
   }, []);
   

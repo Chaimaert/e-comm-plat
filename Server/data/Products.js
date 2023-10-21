@@ -1,7 +1,7 @@
 
 const products = [
   {
-    _id: "1",
+    id: "1",
     name: "Slim Fit Dress Shirt",
     image: '../assets/images/products/f6.jpg',
     description : 'a mans shirt worn for semiformal evening dress, usually having French cuffs and a stiff or pleated front to be fastened with studs',
@@ -9,7 +9,7 @@ const products = [
     brand: 'Kiabi',
   },
   {
-    _id: "2",
+    id: "2",
     name: " Original Pro Sponge",
     image:  '../assets/images/products/beautyblender2.jpg',
     description:'A Makeup blender sponge lets the foundation blend in the skin perfectly making it look natural with an even finish.',
@@ -19,7 +19,7 @@ const products = [
     rate: '50% Off'
   },
   {
-    _id: "3",
+    id: "3",
     image: '../assets/images/products/f2.jpg',
     name: "Men's colorful shirt",
     price: 39.90,
@@ -29,7 +29,7 @@ const products = [
     rate: '20% Off'
   },
   {
-    _id: "4",
+    id: "4",
     image: '../assets/images/products/nikeee.jpeg',
     name: "Pegasus 40",
     price: 160.90,
@@ -39,7 +39,7 @@ const products = [
     rate: '30% Off'
   },
   {
-    _id: "5",
+    id: "5",
     image: '../assets/images/products/coffeemug2.jpeg',
     name: "Modern coffee cups",
     price: 49.90,
@@ -49,7 +49,7 @@ const products = [
     rate: '60% Off'
   },
   {
-    _id: "6",
+    id: "6",
     image: '../assets/images/products/bott.jpg',
     name: "Modern Water Bottle",
     price: 10.90,
@@ -59,7 +59,7 @@ const products = [
     rate: '20% Off'
   },
   {
-    _id: "7",
+    id: "7",
     image: '../assets/images/products/phonecase4.jpeg',
     name: "Simple phonecase",
     price: 39.50,
@@ -69,7 +69,7 @@ const products = [
     rate: '50% Off'
   },
   {
-    _id: "8",
+    id: "8",
     image: '../assets/images/products/foundation.jpeg',
     name: "Makeup Foundation",
     price: 29.50,
@@ -77,7 +77,7 @@ const products = [
     description: 'Flawless Finish Foundation, Improves Uneven Skin Tone, Lightweight, Medium Coverage & Semi-Matte,'
   },
   {
-    _id: "9",
+    id: "9",
     image: '../assets/images/products/headp.jpeg',
     name: "black headphone",
     price: 49.90,
@@ -85,7 +85,7 @@ const products = [
     description: 'Headphones with Microphone, Lightweight Folding Stereo Bass Headphones with 1.5M No-Tangle Cord, Portable Wired Headphones for Smartphone Tablet Computer'
   },
   {
-    _id: "10",
+    id: "10",
     image: '../assets/images/products/watch3.avif',
     name: "Black smartwatch",
     price: 24.90,
@@ -93,7 +93,7 @@ const products = [
     description: 'GPS Smartwatch with Bright Touchscreen Display, Up to 6 Days of Battery Life, Slate Aluminum Bezel with Shadow Gray Case and Slate Silicone Band'
   },
   {
-    _id: "11",
+    id: "11",
     image: '../assets/images/products/bottle8.jpeg',
     name: "Gym bottle",
     price: 39.90,
@@ -101,7 +101,7 @@ const products = [
     description: 'FLASK Sports Water Bottle - 22 Oz 3 Lids (Straw Lid), Leak Proof - Stainless Steel Gym & Sport Bottles for Men, Women & Kids'
     },
     {
-    _id: "12",
+    id: "12",
     image: '../assets/images/products/brushoffer.avif',
     name: "Brush set",
     price: 49.90,
@@ -109,7 +109,7 @@ const products = [
     description: 'Makeup Brush, BESTOPE PRO Premium Synthetic Foundation Concealers Eye Shadows'
     },
     {
-    _id: "13",
+    id: "13",
     image: '../assets/images/products/watch2.avif',
     name: "Men's Smartwatch",
     price: 49.90,
@@ -117,7 +117,7 @@ const products = [
     description: 'Smart Watch for Men with Bluetooth Call, Alexa Built-in1.8 DIY Dial with Blood Oxygen Heart Rate Sleep Fitness Tracker Notification Weather 100 Sport Modes Smartwatch for Android iOS Phone'
     },
     {
-    _id: "14",
+    id: "14",
     image: '../assets/images/products/dress1.jpeg',
     name: "Women's summer dress",
     price: 19.90,
@@ -125,7 +125,7 @@ const products = [
     description: 'Womens Deep V Neck Short Sleeve Long Dresses Pleated High Waist Slit Club Party Evening Maxi Dress'
     },
     {
-    _id: "15",
+    id: "15",
     image: '../assets/images/products/shoes2.jpeg',
     name: "Men's Sportwear shoes",
     price: 39.50,
@@ -133,7 +133,7 @@ const products = [
     description: 'Mens Basketball Shoes for Men Sneakers Men&#39;s High Top Running Trail Air Sports Athletic Male'
     },
     {
-    _id: "16",
+    id: "16",
     image: '../assets/images/products/brushes3.avif',
     name: "Makeup brushes",
     price: 29.50,
@@ -141,7 +141,7 @@ const products = [
     description: 'Makeup Brush Set Premium Synthetic Powder Foundation Contour Blush Concealer Eye Shadow Blending Liner'
     },
     {
-      _id: "17",
+      id: "17",
       image: '../assets/images/products/img1.png',
       name: "Slim Fit T-Shirt",
       price: 49.90,
@@ -150,7 +150,7 @@ const products = [
       status: 'in stock',
       },
       {
-      _id: "18",
+      id: "18",
       image: '../assets/images/products/massage.avif',
       name: "Beauty Fcaial Roller",
       price: 40.90,
@@ -159,7 +159,7 @@ const products = [
       status: 'in stock',
       },
       {
-      _id: "19",
+      id: "19",
       image: '../assets/images/products/n6.jpg',
       name: "Men's Dri-FIT Short",
       price: 24.90,
@@ -168,7 +168,7 @@ const products = [
       status: 'in stock',
       },
       {
-      _id: "20",
+      id: "20",
       image: '../assets/images/products/watch.jpg',
       name: "Elite Smart Watch",
       price: 50.99,
@@ -177,7 +177,7 @@ const products = [
       status: 'Out of stock',
       },
       {
-      _id: "21",
+      id: "21",
       image: '../assets/images/products/mug.jpg',
       name: "Modern Mugs",
       price: 49.90,
@@ -186,7 +186,7 @@ const products = [
       status: 'in stock',
       },
       {
-      _id: "22",
+      id: "22",
       image: '../assets/images/products/coffeemug3.jpeg',
       name: "Nude Mug",
       price: 9.90,
@@ -195,7 +195,7 @@ const products = [
       status: 'in stock',
       },
       {
-      _id: "23",
+      id: "23",
       image: '../assets/images/products/sponge2.jpeg',
       name: "Beauty sponge",
       price: 39.50,
@@ -204,7 +204,7 @@ const products = [
       status: 'in stock',
       },
       {
-      _id: "24",
+      id: "24",
       image: '../assets/images/products/guasha.avif',
       name: "Guasha & Roller",
       price: 29.50,

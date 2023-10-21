@@ -3,6 +3,7 @@ import { ShopContext } from './shopcontext';
 import { PRODUCTS, PRODUCTS1 } from '../data/products';
 
 const ProductDetails = () => {
+  
   const { selectedProduct, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
 
   // Set selectedProduct to 0
