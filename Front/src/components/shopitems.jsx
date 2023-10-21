@@ -1,24 +1,28 @@
-
 import { useEffect, useState } from 'react';
 import Prod from './prod';
 import axios from "axios";
 
+function ShopItems() {  
+  const [products, setProducts] = useState([]);
 
-const shopitems = () => {
-
-  const [products, setProducts] = useState([])
-
-  useEffect(()=> {
-    const fetchproducts = async() => {
-      const {data} = axios.get("/api/products");
-      setProducts(data);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const { data } = await axios.get("/api/products");
+        console.log("Fetched data:", data); // Add this line
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     };
+    fetchProducts();
+  }, []);
+  
 
-  },[])
 
   return <>
   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-  {[...PRODUCTS, ...PRODUCTS1].map((product) => (
+  {[...products].map((product) => (
     <Prod key={product.id} data={product} />
   ))}
   
@@ -26,4 +30,4 @@ const shopitems = () => {
   </>
 }
 
-export default shopitems
+export default ShopItems
