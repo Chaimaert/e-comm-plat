@@ -1,5 +1,9 @@
 import  express  from "express";
 import products from "./data/Products.js";
+import dotenv from "dotenv";
+
+
+dotenv.config()
 
 const app = express();
 
