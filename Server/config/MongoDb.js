@@ -6,11 +6,15 @@ const connectDatabase = async () => {
     const connection = await mongoose.connect(process.env.MONGO_URL, {
       useUnifiedTopology:true,
       useNewUrlParser:true,
-    })
+    });
+
+    console.log("Mongo connected")
 
   } catch (error) {
-    console.log(`Error: ${error.message}`)
-    process.exit(1)
+    console.log(`Error: ${error.message}`);
+    process.exit(1);
   }
 
 }
+
+export default connectDatabase;
