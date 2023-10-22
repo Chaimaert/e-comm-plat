@@ -1,11 +1,18 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { PRODUCTS } from '../data/products';
+// import { PRODUCTS } from '../data/products';
+import { useEffect, useState } from 'react';
 import Prod from './prod';
+import axios from "axios";
 
 
 const shopItems = () => {
+  const [products, setProducts] = useState([])
 
-  return <>
+  useEffect(()=>{
+
+  },[])
+
+  return <> 
   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
   {[...PRODUCTS].map((product) => (
     <Prod key={product.id} data={product} />
@@ -13,6 +20,7 @@ const shopItems = () => {
   
         </div>
   </>
+  
 }
 
 export default shopItems

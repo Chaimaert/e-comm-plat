@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 const prod = (props) => {
+
     const {id, name, price, image, brand} = props.data;
     const { addToCart, cartItems, viewProductDetails} = useContext(ShopContext);
     const cartItemAmount = cartItems[id];
     
   return <>
  <div className="col mb-5">
+  
             <Link key={id}  className="card h-100 m-auto">
             <img src={image} className="card-img-top img-fluid" alt="..." />
               <div className="card-body">
