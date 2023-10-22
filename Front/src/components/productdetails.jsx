@@ -2,23 +2,27 @@ import { useContext } from 'react';
 import { useState, useEffect } from 'react';
 import { ShopContext } from './shopcontext';
 import axios from 'axios';
+import products from '../../../Server/data/Products';
+import { useParams } from 'react-router-dom';
 // import { PRODUCTS, PRODUCTS1 } from '../data/products';
 
 const ProductDetails = () => {
-  const { selectedProduct, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
+  const { addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
 
   // Set selectedProduct to 0
-  const productId = selectedProduct || 0;
+  // const productId = selectedProduct || 0;
+
+  const { id } = useParams();
   
-  const [product, setProduct] = useState([])
+  const [product, setProduct] = useState({})
 
   useEffect(()=>{
     const fetchproduct = async() => {
-      const {data} = await axios.get("http://localhost:5000/api/products")
+      const {data} = await axios.get(`http://localhost:5000/api/products/${id}`)
       setProduct(data)
     }
     fetchproduct();
-  },[])
+  },[id]);
   
   if (!product) {
     return null;
@@ -75,7 +79,7 @@ const ProductDetails = () => {
               <div className="row mb-3">
                 <div className="col-6 col-md-4 col-lg-8 mx-auto">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                    {PRODUCTS.slice(3, 7).map((product) => (
+                    {products.slice(3, 7).map((product) => (
                       <div key={product.id} className="col">
                         <div className="card h-100">
                           <img src={product.image} className="card-img-top" alt="..." />
@@ -89,7 +93,7 @@ const ProductDetails = () => {
               <div className="row mb-4">
                 <div className="col-6 col-md-4 col-lg-8 mx-auto">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                    {PRODUCTS1.slice(2, 6).map((product) => (
+                    {products.slice(2, 6).map((product) => (
                       <div key={product.id} className="col">
                         <div className="card h-100">
                           <img src={product.image} className="card-img-top" alt="..." />

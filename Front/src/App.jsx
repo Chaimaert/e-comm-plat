@@ -44,7 +44,7 @@ function App() {
         <Route path='cart' element={<Cart />} />
         <Route path='checkout' element={<Checkout />} />
         <Route path='details' element={<Details />} />
-        <Route path='products/:id' Component={ProductDetails} />
+        <Route path='/products/:id' Component={ProductDetails} />
       </Route>
     </Routes>
     </BrowserRouter>
