@@ -1,6 +1,8 @@
 import { useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { ShopContext } from './shopcontext';
-import { PRODUCTS, PRODUCTS1 } from '../data/products';
+import axios from 'axios';
+// import { PRODUCTS, PRODUCTS1 } from '../data/products';
 
 const ProductDetails = () => {
   const { selectedProduct, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
@@ -8,7 +10,15 @@ const ProductDetails = () => {
   // Set selectedProduct to 0
   const productId = selectedProduct || 0;
   
-  const product = PRODUCTS.find((p) => p.id === productId) || PRODUCTS1.find((p) => p.id === productId);
+  const [product, setProduct] = useState([])
+
+  useEffect(()=>{
+    const fetchproduct = async() => {
+      const {data} = await axios.get("http://localhost:5000/api/products")
+      setProduct(data)
+    }
+    fetchproduct();
+  },[])
   
   if (!product) {
     return null;
