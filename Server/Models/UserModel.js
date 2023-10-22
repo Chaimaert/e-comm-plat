@@ -4,21 +4,21 @@ const userSchema = mongoose.Schema({
 
   name: {
     type:String,
-    require:true
+    require:true,
   },
   email: {
     type:String,
     require:true,
-    unique:true
+    unique:true,
   },
   password: {
     type:String,
-    require:true
+    require:true,
   },
   isAdmin: {
     type:Boolean,
     require:true,
-    default:false
+    default:false,
   }
 },
 
@@ -28,6 +28,6 @@ const userSchema = mongoose.Schema({
 
 )
 
-const User = mongoose.model("User", userSchema)
+const User = mongoose.model("User", userSchema);
 
 export default User;
