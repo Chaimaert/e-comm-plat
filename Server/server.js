@@ -1,4 +1,5 @@
 import  express  from "express";
+import cors from 'cors'; 
 import products from "./data/Products.js";
 import dotenv from "dotenv";
 
@@ -6,6 +7,9 @@ import dotenv from "dotenv";
 dotenv.config()
 
 const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
 
 // To load products from the server
 app.get("/api/products", (req, res) => {
