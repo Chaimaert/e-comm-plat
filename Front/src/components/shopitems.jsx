@@ -9,12 +9,14 @@ const shopItems = () => {
   const [products, setProducts] = useState([])
 
   useEffect(()=>{
-
+    const fetchproducts = async() = {
+      
+    }
   },[])
 
   return <> 
   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-  {[...PRODUCTS].map((product) => (
+  {[...products].map((product) => (
     <Prod key={product.id} data={product} />
   ))}
   
