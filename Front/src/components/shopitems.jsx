@@ -9,9 +9,11 @@ const shopItems = () => {
   const [products, setProducts] = useState([])
 
   useEffect(()=>{
-    const fetchproducts = async() = {
-      
+    const fetchproducts = async() => {
+      const {data} = await axios.get("/api/products")
+      setProducts(data)
     }
+    fetchproducts();
   },[])
 
   return <> 
