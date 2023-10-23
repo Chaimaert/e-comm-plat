@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
-import products from "./data/Products.js";
 import dotenv from "dotenv";
 import connectDatabase from "./config/MongoDb.js";
+import ImportData from "./DataImport.js";
 
 dotenv.config();
 connectDatabase();
@@ -12,16 +12,9 @@ const app = express();
 // Enable CORS for all routes
 app.use(cors());
 
-// To load products from the server
-app.get("/api/products", (req, res) => {
-  res.json(products);
-});
+// API
+app.use("/api/import", ImportData)
 
-// single product from the server
-app.get("/api/products/:id", (req, res) => {
-  const product = products.find((p) => p.id === req.params.id);
-  res.json(product);
-});
 
 app.get("/", (req, res) => {
   res.send("API is Running ...");

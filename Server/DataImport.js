@@ -1,6 +1,6 @@
 import express from "express";
-import User from './Models/UserModel';
-import users from './data/users';
+import User from './Models/UserModel.js';
+import users from './data/users.js';
 
 const ImportData = express.Router()
 
