@@ -19,7 +19,16 @@ const orderSchema = mongoose.Schema({
           ref:"Product",
       },
     },
-  ]
+  ],
+  ShippingAddress: [
+    {
+      address: { type: String, require:true },
+      city: { type: String, require:true,},
+      postalCode:  { type: Number, require:true },
+      country: { type: String, require:true },
+    },
+  ],
+
 },
 
 {
