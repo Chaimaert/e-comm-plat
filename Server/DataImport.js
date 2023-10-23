@@ -5,7 +5,7 @@ import users from './data/users.js';
 const ImportData = express.Router()
 
 ImportData.post("/user", async (req,res)=> {
-  await User.Remove({});
+  await User.remove({});
   const importUser = await User.insertMany(users);
   res.send({ importUser });
 });
