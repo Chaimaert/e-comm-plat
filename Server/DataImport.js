@@ -9,3 +9,6 @@ ImportData.post("/user", async (req,res)=> {
   const importUser = await User.insertMany(users);
   res.send({ importUser });
 });
+
+
+export default ImportData;
