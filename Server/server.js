@@ -12,6 +12,15 @@ const app = express();
 // Enable CORS for all routes
 app.use(cors());
 
+const corsOptions = {
+  origin: 'http://localhost:5000',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+};
+
+// Enable CORS using these options
+app.use(cors(corsOptions));
+
 // API
 app.use("/api/import", ImportData)
 
