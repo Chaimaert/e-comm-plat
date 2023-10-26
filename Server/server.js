@@ -22,7 +22,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // API
-app.use("/api/import", ImportData)
+app.use("/api/import", ImportData);
 
 
 app.get("/", (req, res) => {
