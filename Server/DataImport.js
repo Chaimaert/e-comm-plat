@@ -1,7 +1,7 @@
 import express from "express";
 import User from './Models/UserModel.js';
 import users from './data/users.js';
-import products from './data/products.js';
+import products from './data/Products.js';
 
 const ImportData = express.Router();
 
