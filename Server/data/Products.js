@@ -17,7 +17,7 @@ const products = [
     price: 24.9,
     brand: "sephora",
     status: "in stock",
-    rate: "50% Off",
+    rate: "0.5",
   },
 
   {
@@ -28,7 +28,7 @@ const products = [
     description:
       "Broadly speaking, summer shirt fabrics need to be light, breathable and quick drying. ",
     status: "in stock",
-    rate: "20% Off",
+    rate: "0.2",
   },
 
   {
@@ -39,7 +39,7 @@ const products = [
     description:
       "The Pegasus 40 offers a solid, stable and comfortably cushioned ride, and it&#39;s a shoe that can take a lot of mileage and a lot of pounding on the tarmac.",
     status: "in stock",
-    rate: "30% Off",
+    rate: "0.3",
   },
 
   {
@@ -50,7 +50,7 @@ const products = [
     description:
       "The coffee mug feels so good wrapped in both your hands, sending its warmth right into your blood",
     status: "in stock",
-    rate: "60% Off",
+    rate: "0.6",
   },
 
   {
@@ -61,7 +61,7 @@ const products = [
     description:
       "Water Bottle with Time Marker, Carry Strap, Leak-Proof Tritan BPA-Free, Ensure You Drink Enough Water for Fitness, Gym, Camping, Outdoor Sports",
     status: "in stock",
-    rate: "20% Off",
+    rate: "0.2",
   },
 
   {
@@ -72,7 +72,7 @@ const products = [
     description:
       "Slim Liquid Silicone 3 Layers Full Covered Soft Gel Rubber Case Cover 6.1 inch-Chalk white",
     status: "in stock",
-    rate: "50% Off",
+    rate: "0.5",
   },
 
   {
