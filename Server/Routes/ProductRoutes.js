@@ -11,7 +11,15 @@ productRoute.get(
     const products = await Product.find({});
     res.json(products);
   })
+);
 
+productRoute.get(
+  "/:id", 
+  asyncHandler(
+  async(req, res) => {
+    const products = await Product.find({});
+    res.json(products);
+  })
 );
 
 export default productRoute;
