@@ -13,3 +13,5 @@ const errorHandler = (req, res, next) => {
     stack: process.env.NODE_ENV === "production" ? null : errorHandler.stack,
   });
 };
+
+export {notFound, errorHandler};
