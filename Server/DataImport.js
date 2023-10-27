@@ -7,11 +7,12 @@ import asyncHandler from "express-async-handler";
 
 const ImportData = express.Router();
 
-ImportData.post("/user", async (req,res)=> {
+ImportData.post("/user", 
+ asyncHandler(async (req,res)=> {
   await User.deleteOne({});
   const importUser = await User.insertMany(users);
   res.send({ importUser });
-}
+}) 
 
 );
 
