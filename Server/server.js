@@ -21,7 +21,7 @@ const corsOptions = {
 };
 
 // Enable CORS using these options
-app.use(cors(corsOptions));
+app.use(cors());
 
 // API
 app.use("/api/import", ImportData);
