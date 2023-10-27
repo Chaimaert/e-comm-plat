@@ -7,7 +7,7 @@ const productRoute =  express.Router();
 productRoute.get(
   "/", 
   asyncHandler(
-  async() => {
+  async(req, res) => {
     const products = await Product.find({});
     res.json(products);
   })

@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDatabase from "./config/MongoDb.js";
 import ImportData from "./DataImport.js";
+import productRoute from "./Routes/ProductRoutes.js";
 
 dotenv.config();
 connectDatabase();
@@ -23,6 +24,7 @@ app.use(cors(corsOptions));
 
 // API
 app.use("/api/import", ImportData);
+app.use("/api/products", productRoute);
 
 
 app.get("/", (req, res) => {
