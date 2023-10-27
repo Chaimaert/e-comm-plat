@@ -16,10 +16,13 @@ ImportData.post("/user",
 
 );
 
-ImportData.post("/products", async (req,res)=> {
+ImportData.post("/products",
+ asyncHandler(async (req,res)=> {
   await Product.deleteOne({});
   const importProduct = await Product.insertMany(products);
   res.send({ importProduct });
-});
+})
+
+); 
 
 export default ImportData;
