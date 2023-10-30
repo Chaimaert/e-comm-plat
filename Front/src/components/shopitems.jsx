@@ -1,30 +1,29 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 // import { PRODUCTS } from '../data/products';
-import { useEffect, useState } from 'react';
-import Prod from './prod';
-import axios from "axios";
-
+import { useEffect } from "react";
+import Prod from "./prod";
+import { useDispatch, useSelector } from "react-redux";
+import { listProduct } from "../Redux/Actions/ProductActions";
 
 const shopItems = () => {
-  const [products, setProducts] = useState([])
+  const dispatch = useDispatch();
 
-  useEffect(()=>{
-    const fetchproducts = async() => {
-      const {data} = await axios.get("http://localhost:5000/api/products")
-      setProducts(data)
-    }
-    fetchproducts();
-  },[])
+const productList = useSelector((state) => state.productList);
+const { products } = productList;
 
-  return <> 
-  <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-  {[...products].map((product) => (
-    <Prod key={product.id} data={product} />
-  ))}
-  
-        </div>
-  </>
-  
-}
+  useEffect(() => {
+    dispatch(listProduct());
+  }, [dispatch]);
 
-export default shopItems
+  return (
+    <>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        {[...products].map((product) => (
+          <Prod key={product.id} data={product} />
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default shopItems;
