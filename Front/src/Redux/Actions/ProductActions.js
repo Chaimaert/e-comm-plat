@@ -11,6 +11,7 @@ export const listProduct = () => async (dispatch) => {
     dispatch({ type: PRODUCT_LIST_REQUEST });
 
     const { data } = await axios.get("http://localhost:5000/api/products");
+
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -18,7 +19,7 @@ export const listProduct = () => async (dispatch) => {
       payload:
         error.response && error.response.data.message
           ? error.response.data.message
-          : error.lessage,
+          : error.message,
     });
   }
 };
