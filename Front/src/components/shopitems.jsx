@@ -18,6 +18,22 @@ const { loading, error, products } = productList;
   return (
     <>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        {
+          loading ? (<p>Loading...</p>) : error ? (<p>Error: {error}</p>)
+          :
+          (
+            <>
+            
+            
+            
+            
+            
+            
+            
+            
+            </>
+          )
+        }
         {[...products].map((product) => (
           <Prod key={product.id} data={product} />
         ))}
