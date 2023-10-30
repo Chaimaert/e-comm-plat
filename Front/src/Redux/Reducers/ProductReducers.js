@@ -5,9 +5,8 @@ import {
 } from "../constants/ProductConstants";
 
 export const productListReducer = (
-  state = { products: [], loading: false, error: null },
-  action
-) => {
+  state =  { products: [] }, action) => {
+
   switch (action.type) {
     case PRODUCT_LIST_REQUEST:
       return { loading: true, products: [] };
@@ -17,5 +16,6 @@ export const productListReducer = (
       return { loading: false, error: action.payload };
     default:
       return state;
+
   }
 };
