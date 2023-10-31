@@ -28,7 +28,7 @@ const ProductDetails = () => {
     return null;
   }
   const cartItemAmount = cartItems[product.id];
-
+  
   <input
   className="form-control text-center"
   type="number"
@@ -60,7 +60,7 @@ const ProductDetails = () => {
 
               <div className="d-flex align-items-center mb-3 col-6">
                 <button className="btn btn-outline-secondary me-2" onClick={() => addToCart(product.id)}>+</button>
-                <input className="form-control text-center" type="number" value={cartItems[product.id]} onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)} />
+                <input className="form-control text-center color-black" type="number" value={cartItems[product.id]} onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)} />
                 <button className="btn btn-outline-secondary ms-2" onClick={() => removeToCart(product.id)}>-</button>
               </div>
 
