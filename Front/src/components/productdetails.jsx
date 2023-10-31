@@ -18,7 +18,7 @@ const ProductDetails = () => {
 
   useEffect(()=>{
     const fetchproduct = async() => {
-      const {data} = await axios.get(`http://localhost:5000/api/products/${id}`)
+      const {data} = await axios.get(`http://localhost:5000/api/products`)
       setProduct(data)
     }
     fetchproduct();
@@ -28,6 +28,14 @@ const ProductDetails = () => {
     return null;
   }
   const cartItemAmount = cartItems[product.id];
+
+  <input
+  className="form-control text-center"
+  type="number"
+  value={Number(cartItems[product.id]) || 0}
+  onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)}
+/>
+
 
   return (
     <div className="container p-5">
@@ -90,7 +98,7 @@ const ProductDetails = () => {
                 </div>
               </div>
 
-              <div className="row mb-4">
+              {/* <div className="row mb-4">
                 <div className="col-6 col-md-4 col-lg-8 mx-auto">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
                     {products.slice(2, 6).map((product) => (
@@ -102,7 +110,7 @@ const ProductDetails = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
