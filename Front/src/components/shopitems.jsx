@@ -19,9 +19,9 @@ const shopItems = () => {
     <>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         {loading ? (
-          <Loading/>
+          <p>Loading...</p>
         ) : error ? (
-          <Message variant="alert-danger">{error}</Message>
+          <p>Error: {error}</p>
         ) : (
           <>
             {[...products].map((product) => (
