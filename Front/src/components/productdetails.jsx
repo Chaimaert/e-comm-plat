@@ -1,39 +1,19 @@
 import { useContext } from 'react';
-import {  useEffect } from 'react';
 import { ShopContext } from './shopcontext';
-import axios from 'axios';
-import products from '../../../Server/data/Products';
-import { useParams } from 'react-router-dom';
-// import { PRODUCTS, PRODUCTS1 } from '../data/products';
+import { PRODUCTS, PRODUCTS1 } from './products';
 
-const ProductDetails = (product) => {
-  const { addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
+const ProductDetails = () => {
+  const { selectedProduct, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
 
   // Set selectedProduct to 0
-  // const productId = selectedProduct || 0;
-
-  const { id } = useParams();
+  const productId = selectedProduct || 0;
   
-
-  useEffect(()=>{
-    const fetchproduct = async() => {
-      const {data} = await axios.get(`http://localhost:5000/api/products/`)
-      setProduct(data)
-      console.log(data);
-    }
-    fetchproduct();
-  },[id]);
+  const product = PRODUCTS.find((p) => p.id === productId) || PRODUCTS1.find((p) => p.id === productId);
   
-   
+  if (!product) {
+    return null;
+  }
   const cartItemAmount = cartItems[product.id];
-  
-  <input
-  className="form-control text-center"
-  type="number"
-  value={Number(cartItems[product.id]) || 0}
-  onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)}
-/>
-
 
   return (
     <div className="container p-5">
@@ -58,7 +38,7 @@ const ProductDetails = (product) => {
 
               <div className="d-flex align-items-center mb-3 col-6">
                 <button className="btn btn-outline-secondary me-2" onClick={() => addToCart(product.id)}>+</button>
-                <input className="form-control text-center color-black" type="number" value={cartItems[product.id]} onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)} />
+                <input className="form-control text-center" type="number" value={cartItems[product.id]} onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)} />
                 <button className="btn btn-outline-secondary ms-2" onClick={() => removeToCart(product.id)}>-</button>
               </div>
 
@@ -85,7 +65,7 @@ const ProductDetails = (product) => {
               <div className="row mb-3">
                 <div className="col-6 col-md-4 col-lg-8 mx-auto">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                    {products.slice(3, 7).map((product) => (
+                    {PRODUCTS.slice(3, 7).map((product) => (
                       <div key={product.id} className="col">
                         <div className="card h-100">
                           <img src={product.image} className="card-img-top" alt="..." />
@@ -96,10 +76,10 @@ const ProductDetails = (product) => {
                 </div>
               </div>
 
-              {/* <div className="row mb-4">
+              <div className="row mb-4">
                 <div className="col-6 col-md-4 col-lg-8 mx-auto">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                    {products.slice(2, 6).map((product) => (
+                    {PRODUCTS1.slice(2, 6).map((product) => (
                       <div key={product.id} className="col">
                         <div className="card h-100">
                           <img src={product.image} className="card-img-top" alt="..." />
@@ -108,7 +88,7 @@ const ProductDetails = (product) => {
                     ))}
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
