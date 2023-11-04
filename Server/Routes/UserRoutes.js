@@ -19,7 +19,7 @@ userRouter.post(
         email: user.email,
         isAdmin: user.isAdmin,
         token: generateToken(user._id),
-        createAt: user.createAt,
+        createdAt: user.createdAt,
       });
     } else {
       res.status(401).json({ message: "Invalid Email or Password" });
