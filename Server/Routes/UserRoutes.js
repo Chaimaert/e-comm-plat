@@ -42,10 +42,10 @@ userRouter.get(
         email: user.email,
         isAdmin: user.isAdmin,
         createdAt: user.createdAt,
-      })
+      });
     }else {
-      res.status(401);
-      throw new Error( "Invalid Email or Password" );
+      res.status(404);
+      throw new Error( "User not Found" );
     }
   })
 );
