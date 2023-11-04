@@ -2,10 +2,10 @@ import express from "express";
 import asyncHandler from "express-async-handler";
 import User from "../Models/UserModel.js"
 
-const userRoute =  express.Router();
+const userRouter =  express.Router();
 
 // Login
-productRoute.get(
+userRouter.get(
   "/login", 
   asyncHandler(
   async(req, res) => {
@@ -29,4 +29,4 @@ productRoute.get(
 );
 
 
-export default userRoute;
+export default userRouter;
