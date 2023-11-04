@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useState, useEffect } from 'react';
+import {  useEffect } from 'react';
 import { ShopContext } from './shopcontext';
 import axios from 'axios';
 import products from '../../../Server/data/Products';
