@@ -4,12 +4,13 @@ import dotenv from "dotenv";
 import connectDatabase from "./config/MongoDb.js";
 import ImportData from "./DataImport.js";
 import productRoute from "./Routes/ProductRoutes.js";
+import UserRoutes from "./Routes/UserRoutes.js";
 import { errorHandler, notFound } from "./Middleware/Error.js";
 
 dotenv.config();
 connectDatabase();
-
 const app = express();
+app.use(express.json());
 
 // Enable CORS for all routes
 app.use(cors());
@@ -26,7 +27,7 @@ app.use(cors());
 // API
 app.use("/api/import", ImportData);
 app.use("/api/products", productRoute);
-app.use("/api/users", userRouter);
+app.use("/api/users", UserRoutes);
 
 //ERROR HANDLER
 app.use(notFound);

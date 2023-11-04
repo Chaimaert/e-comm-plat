@@ -4,8 +4,8 @@ import User from "../Models/UserModel.js";
 
 const userRouter = express.Router();
 
-// Login
-userRouter.get(
+// User login (POST request)
+userRouter.post(
   "/login",
   asyncHandler(async (req, res) => {
     const { email, password } = req.body;
@@ -21,8 +21,7 @@ userRouter.get(
         createAt: user.createAt,
       });
     } else {
-      res.status(401);
-      throw new Error("Invalid Email or Password");
+      res.status(401).json({ message: "Invalid Email or Password" });
     }
   })
 );
