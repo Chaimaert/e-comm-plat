@@ -6,7 +6,7 @@ import products from '../../../Server/data/Products';
 import { useParams } from 'react-router-dom';
 // import { PRODUCTS, PRODUCTS1 } from '../data/products';
 
-const ProductDetails = () => {
+const ProductDetails = (product) => {
   const { addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
 
   // Set selectedProduct to 0
@@ -14,19 +14,17 @@ const ProductDetails = () => {
 
   const { id } = useParams();
   
-  const [product, setProduct] = useState({})
 
   useEffect(()=>{
     const fetchproduct = async() => {
-      const {data} = await axios.get(`http://localhost:5000/api/products`)
+      const {data} = await axios.get(`http://localhost:5000/api/products/`)
       setProduct(data)
+      console.log(data);
     }
     fetchproduct();
   },[id]);
   
-  if (!product) {
-    return null;
-  }
+   
   const cartItemAmount = cartItems[product.id];
   
   <input
