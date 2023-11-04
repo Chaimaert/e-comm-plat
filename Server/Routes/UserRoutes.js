@@ -6,11 +6,15 @@ const userRoute =  express.Router();
 
 // Login
 productRoute.get(
-  "/", 
+  "/login", 
   asyncHandler(
   async(req, res) => {
-    const products = await Product.find({});
-    res.json(products);
+    const { email, password } = req.body;
+    const user = await User.findOne({ email });
+
+    if (condition) {
+      
+    }
   })
 );
 
