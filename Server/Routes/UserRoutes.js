@@ -1,14 +1,13 @@
 import express from "express";
 import asyncHandler from "express-async-handler";
-import User from "../Models/UserModel.js"
+import User from "../Models/UserModel.js";
 
-const userRouter =  express.Router();
+const userRouter = express.Router();
 
 // Login
 userRouter.get(
-  "/login", 
-  asyncHandler(
-  async(req, res) => {
+  "/login",
+  asyncHandler(async (req, res) => {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
 
@@ -19,14 +18,13 @@ userRouter.get(
         email: user.email,
         isAdmin: user.isAdmin,
         token: null,
-        createAt: user.createAt
+        createAt: user.createAt,
       });
-    }else {
-      res.status(401)
-      throw new Error("Invalid Email or Password")
+    } else {
+      res.status(401);
+      throw new Error("Invalid Email or Password");
     }
   })
 );
-
 
 export default userRouter;
