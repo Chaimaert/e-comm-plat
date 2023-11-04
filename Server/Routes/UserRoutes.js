@@ -1,6 +1,7 @@
 import express from "express";
 import asyncHandler from "express-async-handler";
 import User from "../Models/UserModel.js";
+import generateToken from '../utils/generateToken.js';
 
 const userRouter = express.Router();
 
@@ -17,7 +18,7 @@ userRouter.post(
         name: user.name,
         email: user.email,
         isAdmin: user.isAdmin,
-        token: null,
+        token: generateToken,
         createAt: user.createAt,
       });
     } else {
