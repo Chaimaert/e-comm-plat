@@ -2,7 +2,7 @@ import express from "express";
 import asyncHandler from "express-async-handler";
 import Product from "../Models/ProductModel.js"
 
-const productRoute =  express.Router();
+const userRoute =  express.Router();
 
 // To get all the products
 
@@ -32,4 +32,4 @@ productRoute.get(
   })
 );
 
-export default productRoute;
+export default userRoute;
