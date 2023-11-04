@@ -23,7 +23,8 @@ userRouter.post(
         createdAt: user.createdAt,
       });
     } else {
-      res.status(401).json({ message: "Invalid Email or Password" });
+      res.status(401);
+      throw new Error( "Invalid Email or Password" );
     }
   })
 );
@@ -40,9 +41,11 @@ userRouter.get(
         name: user.name,
         email: user.email,
         isAdmin: user.isAdmin,
-        token: generateToken(user._id),
         createdAt: user.createdAt,
       })
+    }else {
+      res.status(401);
+      throw new Error( "Invalid Email or Password" );
     }
   })
 );
