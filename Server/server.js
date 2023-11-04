@@ -26,6 +26,7 @@ app.use(cors());
 // API
 app.use("/api/import", ImportData);
 app.use("/api/products", productRoute);
+app.use("/api/users", userRoute);
 
 //ERROR HANDLER
 app.use(notFound);
