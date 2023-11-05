@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = ({location, history}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const redirect = location.search ? location.search.split("=")[1]:"/";
+  const redirect = location.search ? location.search.split("=")[1]:"/"; 
 
-  userLogin = useSelector((state) => state.userLogin);
+  const userLogin = useSelector((state) => state.userLogin);
   const {error, loading, userInfo } = userLogin;
 
   useEffect(() => {
     if (userInfo) {
-      history.push();
+      history.push(redirect);
     }
-  }, []);
+  }, [userInfo, history, redirect]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
