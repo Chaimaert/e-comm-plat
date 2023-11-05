@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -8,7 +8,14 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-userLogin = useSelector((state) => state.)
+userLogin = useSelector((state) => state.userLogin)
+const {error, loading, userInfo } = userLogin;
+
+useEffect(() =>{
+  if (condition) {
+    
+  }
+},[]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
