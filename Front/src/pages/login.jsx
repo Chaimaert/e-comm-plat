@@ -4,15 +4,14 @@ import { Link, redirect } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
-  // userLogin = useSelector((state) => state.userLogin);
-  // const {error, loading, userInfo } = userLogin;
+  userLogin = useSelector((state) => state.userLogin);
+  const {error, loading, userInfo } = userLogin;
 
   useEffect(() => {
-    // if (userInfo) {
-    //   history.push();
-    // }
+    if (userInfo) {
+      history.push();
+    }
   }, []);
 
   const handleSubmit = (event) => {
