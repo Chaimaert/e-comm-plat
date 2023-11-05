@@ -37,6 +37,12 @@ userRouter.post(
 
 
     const userExist = await User.findOne({ email });
+
+      if (userExist) {
+        res.status(400);
+        throw new Error("User already exists!");
+      }
+
   })
 );
 
