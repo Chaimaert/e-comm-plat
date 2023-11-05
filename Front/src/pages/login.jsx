@@ -16,6 +16,7 @@ const Login = () => {
       setError("Login successful");
       setEmail("");
       setPassword("");
+      <Link to="/shop"></Link>
     }
   };
 
