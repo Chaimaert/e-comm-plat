@@ -20,15 +20,7 @@ const Login = ({location, history}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // if (password == "") {
-    //   setError("Please enter correct details!");
-    // } else {
-    //   // TODO: Send signup request to server
-    //   setError("Login successful");
-    //   setEmail("");
-    //   setPassword("");
-    //   <Link to="/shop"></Link>;
-    // }
+    
   };
 
 
