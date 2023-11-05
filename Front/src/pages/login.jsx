@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, redirect } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -8,26 +7,26 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-userLogin = useSelector((state) => state.userLogin)
-const {error, loading, userInfo } = userLogin;
+  // userLogin = useSelector((state) => state.userLogin);
+  // const {error, loading, userInfo } = userLogin;
 
-useEffect(() =>{
-  if (condition) {
-    
-  }
-},[]);
+  useEffect(() => {
+    // if (userInfo) {
+    //   history.push();
+    // }
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (password == "") {
-      setError("Please enter correct details!");
-    } else {
-      // TODO: Send signup request to server
-      setError("Login successful");
-      setEmail("");
-      setPassword("");
-      <Link to="/shop"></Link>
-    }
+    // if (password == "") {
+    //   setError("Please enter correct details!");
+    // } else {
+    //   // TODO: Send signup request to server
+    //   setError("Login successful");
+    //   setEmail("");
+    //   setPassword("");
+    //   <Link to="/shop"></Link>;
+    // }
   };
 
   return (
@@ -42,7 +41,7 @@ useEffect(() =>{
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label htmlFor="name" className="form-label mail mb-3">
-                       Name
+                      Name
                     </label>
                     <input
                       type="string"
@@ -56,7 +55,7 @@ useEffect(() =>{
                   </div>
                   <div className="mb-4">
                     <label htmlFor="email" className="form-label mail mb-3">
-                     Email address
+                      Email address
                     </label>
                     <input
                       type="email"
@@ -70,7 +69,7 @@ useEffect(() =>{
                   </div>
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label mail mb-3">
-                       password
+                      password
                     </label>
                     <input
                       type="password"
@@ -90,7 +89,10 @@ useEffect(() =>{
                   </div>
                   <div className="d-flex justify-content-between align-items-center mb-3">
                     <p className="m-0">Dont have an account ?</p>
-                    <Link to="/signup" className="form-link mail">
+                    <Link
+                      to={redirect ? `/signup?redirect=${redirect}` : "/signup"}
+                      className="form-link mail"
+                    >
                       Sign up
                     </Link>
                   </div>
