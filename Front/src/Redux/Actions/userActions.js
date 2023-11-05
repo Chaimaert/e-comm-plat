@@ -1,11 +1,10 @@
 import axios from "axios";
-import { USER_LOGIN_REQUEST } from "../constants/UserConstants";
-
-
-
+import { USER_LOGIN_FAIL, USER_LOGIN_REQUEST,
+         USER_LOGIN_SUCCESS } 
+         from "../constants/UserConstants";
 
 //LOGIN
-export const login = (email,password) => async (dispatch) => {
+export const login = (email, password) => async (dispatch) => {
   try {
     dispatch({ type: USER_LOGIN_REQUEST });
 
@@ -15,12 +14,16 @@ export const login = (email,password) => async (dispatch) => {
       },
     };
 
-    const { data } = await axios.post("http://localhost:5000/api/users/login",);
+    const { data } = await axios.post(
+      "http://localhost:5000/api/users/login",
+      { email, password },
+      config
+    );
 
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
-      type: PRODUCT_LIST_FAIL,
+      type: USER_LOGIN_FAIL,
       payload:
         error.response && error.response.data.message
           ? error.response.data.message
