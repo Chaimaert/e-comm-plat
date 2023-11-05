@@ -33,6 +33,9 @@ const Login = ({ location, history }) => {
               <div className="card-body p-5">
                 <h4 className="text-center mail">LOGIN</h4>
                 <p className="text-center mb-4 welc">Welcome Back</p>
+
+                {error && <Message variant="alert-danger">{error}</Message>}
+
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label htmlFor="email" className="form-label mail mb-3">
