@@ -30,9 +30,23 @@ const Signup = () => {
                 <h2 className="text-center">Sign Up</h2>
                 <p className="text-center mb-3">Join us !!</p>
                 <form onSubmit={handleSubmit}>
+                <div className="mb-4">
+                    <label htmlFor="name" className="form-label mail mb-3">
+                       Name
+                    </label>
+                    <input
+                      type="string"
+                      className="form-control"
+                      id="name"
+                      placeholder="enter name here ..."
+                      value={name}
+                      onChange={(event) => setName(event.target.value)}
+                      required
+                    />
+                  </div>
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label mb-3">
-                      Enter Your Email address
+                    <label htmlFor="email" className="form-label mail mb-3">
+                       Email address
                     </label>
                     <input
                       type="email"
@@ -45,8 +59,8 @@ const Signup = () => {
                     />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="password" className="form-label mb-3">
-                      Enter Your password
+                    <label htmlFor="password" className="form-label mail mb-3">
+                       password
                     </label>
                     <input
                       type="password"
@@ -61,9 +75,9 @@ const Signup = () => {
                   <div className="mb-3">
                     <label
                       htmlFor="confirmPassword"
-                      className="form-label mb-3"
+                      className="form-label mail mb-3"
                     >
-                      Confirm Your password
+                      Confirm password
                     </label>
                     <input
                       type="password"
