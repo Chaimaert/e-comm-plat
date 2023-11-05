@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const redirect = location.search ? location.search.split("=")[1]:"/";
 
   userLogin = useSelector((state) => state.userLogin);
   const {error, loading, userInfo } = userLogin;
@@ -27,7 +29,6 @@ const Login = () => {
     // }
   };
 
-  const redirect = location.search ? location.search.split("=")[1]:"/"
 
   return (
     <section className="login-wrapper p-5">
