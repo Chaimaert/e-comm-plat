@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { login } from "../Redux/Actions/UserActions";
 
-const Login = ({location, history}) => {
+const Login = ({ location, history }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const dispatch = useDispatch()  
-  const redirect = location.search ? location.search.split("=")[1]:"/"; 
+  const dispatch = useDispatch();
+  const redirect = location.search ? location.search.split("=")[1] : "/";
 
   const userLogin = useSelector((state) => state.userLogin);
-  const {error, loading, userInfo } = userLogin;
+  const { error, loading, userInfo } = userLogin;
 
   useEffect(() => {
     if (userInfo) {
@@ -20,9 +21,8 @@ const Login = ({location, history}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+    dispatch(login, (email, password));
   };
-
 
   return (
     <section className="login-wrapper p-5">
