@@ -30,9 +30,8 @@ userRouter.post(
 );
 
 //REGISTER
-userRouter.get(
-  "/profile",
-  protect,
+userRouter.post(
+  "/",
   asyncHandler(async (req, res) => {
     const user = await User.findById(req.user._id);
     if (user) {
