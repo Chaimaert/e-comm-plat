@@ -31,7 +31,7 @@ const Login = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label htmlFor="name" className="form-label mail mb-3">
-                      Enter Your Name
+                       Name
                     </label>
                     <input
                       type="string"
@@ -45,7 +45,7 @@ const Login = () => {
                   </div>
                   <div className="mb-4">
                     <label htmlFor="email" className="form-label mail mb-3">
-                      Enter Your Email address
+                     Email address
                     </label>
                     <input
                       type="email"
@@ -59,7 +59,7 @@ const Login = () => {
                   </div>
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label mail mb-3">
-                      Enter Your password
+                       password
                     </label>
                     <input
                       type="password"
