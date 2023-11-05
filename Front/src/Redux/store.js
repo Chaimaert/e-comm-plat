@@ -13,6 +13,11 @@ const initialState = {};
 
 const middleware = [thunk];
 
+// login
+const userInfoFromLocalStorage = localStorage.getItem("userInfo")
+? JSON.parse(localStorage.getItem("userInfo"))
+: null;
+
 const store = createStore(
   reducer,
   initialState,
