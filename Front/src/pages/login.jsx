@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Login = ({location, history}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const dispatch = useDispatch()  
   const redirect = location.search ? location.search.split("=")[1]:"/"; 
 
   const userLogin = useSelector((state) => state.userLogin);
