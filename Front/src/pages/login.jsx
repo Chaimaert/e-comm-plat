@@ -27,6 +27,8 @@ const Login = () => {
     // }
   };
 
+  const redirect = location.search ? location.search.split("=")[1]:"/"
+
   return (
     <section className="login-wrapper p-5">
       <div className="container-xxl">
