@@ -36,6 +36,9 @@ userSchema.methods.matchPassword = async function (enterPassword) {
   return await bcrypt.compare(enterPassword, this.password);
 };
 
+//REGISTRATION
+
+
 
 
 const User = mongoose.model("User", userSchema);
