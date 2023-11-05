@@ -3,7 +3,6 @@ import { Link, redirect } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
@@ -39,20 +38,6 @@ const Login = () => {
                 <h4 className="text-center mail">LOGIN</h4>
                 <p className="text-center mb-4 welc">Welcome Back</p>
                 <form onSubmit={handleSubmit}>
-                  <div className="mb-4">
-                    <label htmlFor="name" className="form-label mail mb-3">
-                      Name
-                    </label>
-                    <input
-                      type="string"
-                      className="form-control"
-                      id="name"
-                      placeholder="enter name here ..."
-                      value={name}
-                      onChange={(event) => setName(event.target.value)}
-                      required
-                    />
-                  </div>
                   <div className="mb-4">
                     <label htmlFor="email" className="form-label mail mb-3">
                       Email address
