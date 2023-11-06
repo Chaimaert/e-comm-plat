@@ -2,8 +2,14 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { login } from "../Redux/Actions/UserActions";
+import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
 import Loading from "../components/loadingError/Loading";
+
+Login.propTypes = {
+  location: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired,
+};
 
 const Login = ({ location, history }) => {
   const [email, setEmail] = useState("");
@@ -37,7 +43,7 @@ const Login = ({ location, history }) => {
                 <p className="text-center mb-4 welc">Welcome Back</p>
 
                 {error && <Message variant="alert-danger">{error}</Message>}
-                {loading && <Loading/>}
+                {loading && <Loading />}
 
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
