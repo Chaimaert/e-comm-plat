@@ -25,7 +25,7 @@ const Login = ({ location, history }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(login, (email, password));
+    dispatch(login(email, password));
   };
 
   Login.propTypes = {
