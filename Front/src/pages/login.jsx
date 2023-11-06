@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
 import Loading from "../components/loadingError/Loading";
 
-
 const Login = ({ location, history }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,21 +16,24 @@ const Login = ({ location, history }) => {
   const userLogin = useSelector((state) => state.userLogin);
   const { error, loading, userInfo } = userLogin;
 
+  Login.propTypes = {
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired,
+  };
+
   useEffect(() => {
-    if (userInfo) {
+    if (userInfo && history && redirect) {
       history.push(redirect);
     }
   }, [userInfo, history, redirect]);
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(login(email, password));
   };
 
-  Login.propTypes = {
-    location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired,
-  };
+
 
   return (
     <section className="login-wrapper p-5">
