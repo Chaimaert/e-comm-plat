@@ -11,7 +11,7 @@ const Login = ({ location, history }) => {
   const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
-  const redirect = location && location.search ? location.search.split("=")[1] : "/";
+  const redirect = location && location.search ? location.search.split("=")[1] : '/';
 
   const userLogin = useSelector((state) => state.userLogin);
   const { error, loading, userInfo } = userLogin;
@@ -22,7 +22,7 @@ const Login = ({ location, history }) => {
   };
 
   useEffect(() => {
-    if (userInfo && history && redirect) {
+    if (userInfo && history) {
       history.push(redirect);
     }
   }, [userInfo, history, redirect]);
@@ -32,7 +32,6 @@ const Login = ({ location, history }) => {
     event.preventDefault();
     dispatch(login(email, password));
   };
-
 
 
   return (

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
@@ -31,20 +30,6 @@ const Signup = () => {
                 <h2 className="text-center">Sign Up</h2>
                 <p className="text-center mb-3">Join us !!</p>
                 <form onSubmit={handleSubmit}>
-                <div className="mb-4">
-                    <label htmlFor="name" className="form-label mail mb-3">
-                       Name
-                    </label>
-                    <input
-                      type="string"
-                      className="form-control"
-                      id="name"
-                      placeholder="enter name here ..."
-                      value={name}
-                      onChange={(event) => setName(event.target.value)}
-                      required
-                    />
-                  </div>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label mail mb-3">
                        Email address
