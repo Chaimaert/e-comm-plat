@@ -6,17 +6,13 @@ import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
 import Loading from "../components/loadingError/Loading";
 
-Login.propTypes = {
-  location: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired,
-};
 
 const Login = ({ location, history }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
-  const redirect = location.search ? location.search.split("=")[1] : "/";
+  const redirect = location && location.search ? location.search.split("=")[1] : "/";
 
   const userLogin = useSelector((state) => state.userLogin);
   const { error, loading, userInfo } = userLogin;
@@ -30,6 +26,11 @@ const Login = ({ location, history }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(login, (email, password));
+  };
+
+  Login.propTypes = {
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired,
   };
 
   return (
