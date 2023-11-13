@@ -1,24 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import {  register } from "../Redux/Actions/UserActions";
+import { useDispatch, useSelector } from "react-redux";
+import Message from "../components/loadingError/Error";
+import Loading from "../components/loadingError/Loading";
 
-const Signup = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [error, setError] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (password !== confirmPassword) {
-      setError("Passwords do not match");
-    } else {
-      // TODO: Send signup request to server
-      setError("Signup successful");
-      setEmail("");
-      setPassword("");
-      setConfirmPassword("");
-    }
-  };
+const Signup = ({location, history}) => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+  
+    const dispatch = useDispatch();
+    const redirect = location && location.search ? location.search.split("=")[1] : '/';
+  
+    const userLogin = useSelector((state) => state.userLogin);
+    const { error, loading, userInfo } = userLogin;
+  
+    register.propTypes = {
+      location: PropTypes.object.isRequired,
+      history: PropTypes.object.isRequired,
+    };
+  
+    useEffect(() => {
+      if (userInfo && history) {
+        history.push(redirect);
+      }
+    }, [userInfo, history, redirect]);
+    
+  
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      dispatch(register(name, email, password));
+    };
 
   return (
     <section className="login-wrapper p-5">
