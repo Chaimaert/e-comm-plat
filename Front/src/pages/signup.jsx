@@ -43,6 +43,10 @@ const Signup = ({location, history}) => {
               <div className="card-body p-5">
                 <h2 className="text-center">Sign Up</h2>
                 <p className="text-center mb-3">Join us !!</p>
+
+                {error && <Message variant="alert-danger">{error}</Message>}
+                {loading && <Loading />}
+
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label mail mb-3">
