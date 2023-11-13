@@ -14,8 +14,8 @@ const Signup = ({location, history}) => {
     const dispatch = useDispatch();
     const redirect = location && location.search ? location.search.split("=")[1] : '/';
   
-    const userLogin = useSelector((state) => state.userLogin);
-    const { error, loading, userInfo } = userLogin;
+    const userRegister = useSelector((state) => state.userLogin);
+    const { error, loading, userInfo } = userRegister;
   
     register.propTypes = {
       location: PropTypes.object.isRequired,
@@ -48,6 +48,20 @@ const Signup = ({location, history}) => {
                 {loading && <Loading />}
 
                 <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                    <label htmlFor="email" className="form-label mail mb-3">
+                       Username
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="name"
+                      placeholder="enter name here ..."
+                      value={name}
+                      onChange={(event) => setName(event.target.value)}
+                      required
+                    />
+                  </div>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label mail mb-3">
                        Email address
@@ -76,25 +90,7 @@ const Signup = ({location, history}) => {
                       required
                     />
                   </div>
-                  <div className="mb-3">
-                    <label
-                      htmlFor="confirmPassword"
-                      className="form-label mail mb-3"
-                    >
-                      Confirm password
-                    </label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="confirmPassword"
-                      placeholder="rewrite password here..."
-                      value={confirmPassword}
-                      onChange={(event) =>
-                        setConfirmPassword(event.target.value)
-                      }
-                      required
-                    />
-                  </div>
+
                   {error && <div className="alert alert-danger">{error}</div>}
                   <div className="d-flex justify-content-between align-items-center mb-3">
                     <p>Have an account?</p>
