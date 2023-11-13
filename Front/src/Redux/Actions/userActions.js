@@ -52,12 +52,13 @@ export const register = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/users/login",
+      "http://localhost:5000/api/users",
       { email, password },
       config
     );
 
     dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
+    dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
 
     localStorage.setItem("userInfo", JSON.stringify(data));  
 
