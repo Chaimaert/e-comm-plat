@@ -94,7 +94,9 @@ const Signup = ({location, history}) => {
                   {error && <div className="alert alert-danger">{error}</div>}
                   <div className="d-flex justify-content-between align-items-center mb-3">
                     <p>Have an account?</p>
-                    <Link to="/login" className="form-link">
+                    <Link 
+                    to={redirect ? `/login?redirect=${redirect}` : "/login"} 
+                    className="form-link">
                       Log In
                     </Link>
                   </div>
