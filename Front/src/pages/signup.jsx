@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import {  register } from "../Redux/Actions/UserActions";
 import { useDispatch, useSelector } from "react-redux";
+import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
 import Loading from "../components/loadingError/Loading";
 
-const Signup = ({location, history}) => {
+const Signup = ({ location, history }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -17,7 +17,7 @@ const Signup = ({location, history}) => {
     const userRegister = useSelector((state) => state.userLogin);
     const { error, loading, userInfo } = userRegister;
   
-    register.propTypes = {
+    Signup.propTypes = {
       location: PropTypes.object.isRequired,
       history: PropTypes.object.isRequired,
     };
