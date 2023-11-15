@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { login } from "../Redux/Actions/UserActions";
 import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
@@ -9,7 +10,7 @@ import Loading from "../components/loadingError/Loading";
 const Login = ({ location, history }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const redirect = location && location.search ? location.search.split("=")[1] : '/';
 
@@ -22,14 +23,13 @@ const Login = ({ location, history }) => {
   };
 
   useEffect(() => {
-    if (userInfo && history) {
-      history.push(redirect);
-    }
+ 
   }, [userInfo, history, redirect]);
   
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    navigate("/")
     dispatch(login(email, password));
   };
 
