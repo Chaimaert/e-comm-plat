@@ -12,6 +12,8 @@ const Signup = ({ location, history }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
   
+    const navigate = useNavigate();
+
     const dispatch = useDispatch();
     const redirect = location && location.search ? location.search.split("=")[1] : '/';
   
@@ -32,6 +34,7 @@ const Signup = ({ location, history }) => {
   
     const handleSubmit = (event) => {
       event.preventDefault();
+      navigate("/");
       dispatch(register(name, email, password));
     };
 

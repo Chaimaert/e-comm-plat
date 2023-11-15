@@ -29,7 +29,7 @@ const Login = ({ location, history }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate("/")
+    navigate("/");
     dispatch(login(email, password));
   };
 
