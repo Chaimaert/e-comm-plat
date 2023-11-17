@@ -13,13 +13,12 @@ const Checkout = () => {
   const totalProducts = getTotalCartProducts();
   
   const cart = useSelector((state) => state.cart)
-  const { shippingAddress } = cart;
-
-  const [address, setAddress ] = useState(shippingAddress.address);
-  const [city, setCity] = useState(shippingAddress.city);
-  const [postalCode, setpostalCode ] = useState(shippingAddress.postalCode);
-  const [country, setCountry ] = useState(shippingAddress.country);
-
+  const { shippingAddress } = cart || {}; 
+  
+  const [address, setAddress] = useState(shippingAddress?.address || '');
+  const [city, setCity] = useState(shippingAddress?.city || '');
+  const [postalCode, setPostalCode] = useState(shippingAddress?.postalCode || '');
+  const [country, setCountry] = useState(shippingAddress?.country || '');
   const dispatch = useDispatch();
 
   const handlePay = () => {
@@ -130,7 +129,7 @@ const Checkout = () => {
                 <input type="text" className="form-control" id="inputPostalCode"
                   value={postalCode}
                   required
-                  onChange={(e) => setpostalCode(e.target.value)}
+                  onChange={(e) => setPostalCode(e.target.value)}
                 />
               </div>
               <div className="col-md-3">
