@@ -7,11 +7,12 @@ import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
 import Loading from "../components/loadingError/Loading";
 
-const Login = ({ location, history }) => {
+const Login = ({ location }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const redirect = location && location.search ? location.search.split("=")[1] : '/';
 
   const userLogin = useSelector((state) => state.userLogin);
@@ -19,18 +20,19 @@ const Login = ({ location, history }) => {
 
   Login.propTypes = {
     location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired,
   };
 
   useEffect(() => {
  
-  }, [userInfo, history, redirect]);
+  }, [userInfo, redirect]);
   
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    navigate("/");
-    dispatch(login(email, password));
+    await dispatch(login(email, password));
+    if(userInfo) {
+      navigate("/");
+    }
   };
 
 
@@ -85,7 +87,7 @@ const Login = ({ location, history }) => {
                   <div className="d-flex justify-content-between align-items-center mb-3">
                     <p className="m-0">Dont have an account ?</p>
                     <Link
-                      to={redirect ? `/signup?redirect=${redirect}` : "/signup"}
+                      to={"/signup"}
                       className="form-link mail"
                     >
                       Sign up

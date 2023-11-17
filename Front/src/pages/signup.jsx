@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import Message from "../components/loadingError/Error";
 import Loading from "../components/loadingError/Loading";
 
-const Signup = ({ location, history }) => {
+const Signup = ({ location }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -22,20 +22,18 @@ const Signup = ({ location, history }) => {
   
     Signup.propTypes = {
       location: PropTypes.object.isRequired,
-      history: PropTypes.object.isRequired,
     };
   
     useEffect(() => {
-      if (userInfo && history) {
-        history.push(redirect);
-      }
-    }, [userInfo, history, redirect]);
+    }, [userInfo, redirect]);
     
   
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault();
-      navigate("/");
-      dispatch(register(name, email, password));
+      await dispatch(register(name, email, password));
+      if(userInfo) {
+        navigate("/");
+      }
     };
 
   return (
@@ -99,7 +97,7 @@ const Signup = ({ location, history }) => {
                   <div className="d-flex justify-content-between align-items-center mb-3">
                     <p>Have an account?</p>
                     <Link 
-                    to={redirect ? `/login?redirect=${redirect}` : "/login"} 
+                    to={"/login"} 
                     className="form-link">
                       Log In
                     </Link>
