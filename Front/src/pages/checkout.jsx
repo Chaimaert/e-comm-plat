@@ -14,9 +14,9 @@ const Checkout = () => {
   const {shippingAddress} = cart;
 
   const [address, setAddress ] = useState(shippingAddress.address);
-  const [city, setCity] = useState("");
-  const [postalCode, setpostalCode ] = useState("");
-  const [country, setCountry ] = useState("");
+  const [city, setCity] = useState(shippingAddress.city);
+  const [postalCode, setpostalCode ] = useState(shippingAddress.postalCode);
+  const [country, setCountry ] = useState(shippingAddress.country);
 
   const handlePay = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
