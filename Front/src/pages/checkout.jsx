@@ -2,6 +2,7 @@ import { useContext} from 'react'
 import pay from '../assets/images/pay/pay.png'
 import { ShopContext } from '../components/shopcontext';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 
 const Checkout = () => {
@@ -9,7 +10,10 @@ const Checkout = () => {
   const totalAmount = getTotalCartAmount();
   const totalProducts = getTotalCartProducts();
   
-  const [address, setAddress ] = useState("");
+  const cart = useSelector((state) => state.cart)
+  const {shippingAddress} = cart;
+
+  const [address, setAddress ] = useState(shippingAddress.address);
   const [city, setCity] = useState("");
   const [postalCode, setpostalCode ] = useState("");
   const [country, setCountry ] = useState("");
