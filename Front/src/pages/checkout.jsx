@@ -11,8 +11,8 @@ const Checkout = () => {
   
   const [address, setAddress ] = useState("");
   const [city, setCity] = useState("");
-  const [state, setState ] = useState("");
-  const [zip, setZip ] = useState("");
+  const [postalCode, setpostalCode ] = useState("");
+  const [country, setCountry ] = useState("");
 
   const handlePay = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
@@ -94,22 +94,35 @@ const Checkout = () => {
             <form className="row g-3 mb-3">
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">Address</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="Citrine A les cristaux" />
+                <input type="text" className="form-control" id="inputAddress" placeholder="Citrine A les cristaux"
+                  value={address} 
+                  required
+                  onChange={(e) => setAddress(e.target.value)}
+                />
               </div>
               <div className="col-md-6">
                 <label htmlFor="inputCity" className="form-label">City</label>
-                <input type="text" className="form-control" id="inputCity" />
+                <input type="text" className="form-control" id="inputCity"
+                  value={city}
+                  required
+                  onChange={(e) => setCity(e.target.value)}
+                />
               </div>
-              <div className="col-md-12">
-                <label htmlFor="inputState" className="form-label">State</label>
-                <select id="inputState" className="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
+              <div className="col-md-6">
+                <label htmlFor="inputCity" className="form-label">PostalCode</label>
+                <input type="text" className="form-control" id="inputPostalCode"
+                  value={postalCode}
+                  required
+                  onChange={(e) => setpostalCode(e.target.value)}
+                />
               </div>
               <div className="col-md-3">
-                <label htmlFor="inputZip" className="form-label">Zip</label>
-                <input type="text" className="form-control" id="inputZip" />
+                <label htmlFor="inputZip" className="form-label">Country</label>
+                <input type="text" className="form-control" id="inputCountry"
+                  value={country}
+                  required
+                  onChange={(e) => setCountry(e.target.value)}
+                />
               </div>
               <div className="col-12 mt-5">
                 <button id="pay" type="submit" onClick={handlePay}>Proceed To Pay</button>
