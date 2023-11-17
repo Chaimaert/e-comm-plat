@@ -18,6 +18,10 @@ const Checkout = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
     resetCart();
   };
+
+  const submitHandler = (e) =>{
+    e.preventDefault();
+  };
   
   return <>
   <section className="checkout p-5">
