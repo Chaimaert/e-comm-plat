@@ -2,8 +2,8 @@ import { useContext} from 'react'
 import pay from '../assets/images/pay/pay.png'
 import { ShopContext } from '../components/shopcontext';
 import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { saveShippingAddress } from '../Redux/Actions/CartActions';
+import { useSelector } from 'react-redux';
+// import { saveShippingAddress } from '../Redux/Actions/CartActions';
 
 
 const Checkout = () => {
@@ -19,17 +19,17 @@ const Checkout = () => {
   const [city, setCity] = useState(shippingAddress?.city || '');
   const [postalCode, setPostalCode] = useState(shippingAddress?.postalCode || '');
   const [country, setCountry] = useState(shippingAddress?.country || '');
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const handlePay = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
     resetCart();
   };
 
-  const submitHandler = (e) =>{
-    e.preventDefault();
-    dispatch(saveShippingAddress);
-  };
+  // const submitHandler = (e) =>{
+  //   e.preventDefault();
+  //   dispatch(saveShippingAddress({address,city,postalCode,country}));
+  // };
   
   return <>
 
@@ -106,7 +106,7 @@ const Checkout = () => {
             <h1 className=" mt-3 mb-4 mt-2 fs-3">Fill the following details for shipping : </h1>
             <form 
             className="row g-3 mb-3"
-            onSubmit={submitHandler}
+            // onSubmit={submitHandler}
             >
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">Address</label>
