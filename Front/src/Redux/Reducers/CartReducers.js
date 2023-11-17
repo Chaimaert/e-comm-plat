@@ -10,5 +10,7 @@ export const cartReducer = (
         ...state,
         shippingAddress: action.payload,
       };
+      default :
+      return state;
   }
 };
