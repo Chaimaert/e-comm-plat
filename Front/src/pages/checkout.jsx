@@ -2,21 +2,25 @@ import { useContext} from 'react'
 import pay from '../assets/images/pay/pay.png'
 import { ShopContext } from '../components/shopcontext';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { saveShippingAddress } from '../Redux/Actions/CartActions';
 
 
 const Checkout = () => {
+
   const { getTotalCartProducts, getTotalCartAmount, resetCart } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const totalProducts = getTotalCartProducts();
   
   const cart = useSelector((state) => state.cart)
-  const {shippingAddress} = cart;
+  const { shippingAddress } = cart;
 
   const [address, setAddress ] = useState(shippingAddress.address);
   const [city, setCity] = useState(shippingAddress.city);
   const [postalCode, setpostalCode ] = useState(shippingAddress.postalCode);
   const [country, setCountry ] = useState(shippingAddress.country);
+
+  const dispatch = useDispatch();
 
   const handlePay = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
@@ -25,9 +29,11 @@ const Checkout = () => {
 
   const submitHandler = (e) =>{
     e.preventDefault();
+    dispatch(saveShippingAddress);
   };
   
   return <>
+
   <section className="checkout p-5">
     <div className="container-xxl">
       <div className="row">
