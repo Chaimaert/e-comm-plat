@@ -1,6 +1,7 @@
 import { useContext} from 'react'
 import pay from '../assets/images/pay/pay.png'
 import { ShopContext } from '../components/shopcontext';
+import { useState } from 'react';
 
 
 const Checkout = () => {
@@ -8,6 +9,11 @@ const Checkout = () => {
   const totalAmount = getTotalCartAmount();
   const totalProducts = getTotalCartProducts();
   
+  const [address, setAddress ] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState ] = useState("");
+  const [zip, setZip ] = useState("");
+
   const handlePay = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
     resetCart();
@@ -86,21 +92,9 @@ const Checkout = () => {
       <div className="col-md-6 p-2">
             <h1 className=" mt-3 mb-4 mt-2 fs-3">Fill the following details for shipping : </h1>
             <form className="row g-3 mb-3">
-              <div className="col-md-12">
-                <label htmlFor="inputEmail4" className="form-label">Email</label>
-                <input type="email" className="form-control" id="inputEmail4" required />
-              </div>
-              <div className="col-md-12">
-                <label htmlFor="inputPassword4" className="form-label">Password</label>
-                <input type="password" className="form-control" id="inputPassword4" required />
-              </div>
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">Address</label>
                 <input type="text" className="form-control" id="inputAddress" placeholder="Citrine A les cristaux" />
-              </div>
-              <div className="col-12">
-                <label htmlFor="inputAddress2" className="form-label">Address 2</label>
-                <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
               </div>
               <div className="col-md-6">
                 <label htmlFor="inputCity" className="form-label">City</label>
