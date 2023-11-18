@@ -101,7 +101,6 @@ const Checkout = () => {
             <h1 className=" mt-3 mb-4 mt-2 fs-3">Fill the following details for shipping : </h1>
             <form 
             className="row g-3 mb-3"
-            // onSubmit={submitHandler}
             >
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">Address</label>
