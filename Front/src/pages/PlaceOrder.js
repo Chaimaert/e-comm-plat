@@ -7,7 +7,8 @@ const PlaceOrderScreen = () => {
 
 
   const  dispatch = useDispatch();
-  const cart = useSelector((state))
+  const cart = useSelector((state) => state.cart)
+  const userLogin = useSelector((state) => state.userLogin)
 
   const placeOrderHandler = (e) => {
     e.preventDefault();
