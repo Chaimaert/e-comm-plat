@@ -61,9 +61,11 @@ const PlaceOrderScreen = () => {
               </div>
               <div className="col-md-8 center">
                 <h5>
-                  <strong>Order Info</strong>
+                  <strong>Deliver to</strong>
                 </h5>
-                <p>shipping: {cart.shippingAddress.country}</p>
+                <p>
+                  Address: {cart.shippingAddress.city}, {cart.shippingAddress.address}
+                  </p>
               </div>
             </div>
           </div>
