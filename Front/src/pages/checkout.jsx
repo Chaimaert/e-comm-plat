@@ -3,6 +3,7 @@ import pay from '../assets/images/pay/pay.png'
 import { ShopContext } from '../components/shopcontext';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Navigate } from 'react-router-dom';
 // import { saveShippingAddress } from '../Redux/Actions/CartActions';
 
 
@@ -11,6 +12,7 @@ const Checkout = () => {
   const { getTotalCartProducts, getTotalCartAmount, resetCart } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const totalProducts = getTotalCartProducts();
+
   
   const cart = useSelector((state) => state.cart)
   const { shippingAddress } = cart || {}; 
@@ -24,6 +26,7 @@ const Checkout = () => {
   const handlePay = () => {
     window.alert(`Thank you for your purchase of ${totalProducts} products for a total of $${totalAmount}. Your request has been received and is being processed.`);
     resetCart();
+    Navigate("/PlaceOrderScreen");
   };
   
   return <>
@@ -135,7 +138,7 @@ const Checkout = () => {
                 />
               </div>
               <div className="col-12 mt-5">
-                <button id="pay" type="submit" onClick={handlePay}>Proceed To Pay</button>
+                <button id="pay" type="submit" onClick={handlePay} >Proceed To Pay</button>
               </div>
             </form>
           </div>
