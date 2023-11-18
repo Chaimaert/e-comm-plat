@@ -4,7 +4,7 @@ import { ShopContext } from '../components/shopcontext';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-// import { saveShippingAddress } from '../Redux/Actions/CartActions';
+import { Link } from 'react-router-dom';
 
 
 const Checkout = () => {
@@ -140,6 +140,12 @@ const Checkout = () => {
               <div className="col-12 mt-5">
                 <button id="pay" type="submit" onClick={handlePay} >Proceed To Pay</button>
               </div>
+              <Link
+                      to={"/PlaceOrderScreen"}
+                      className="form-link mail"
+                    >
+                      Order
+                    </Link>
             </form>
           </div>
         </div>

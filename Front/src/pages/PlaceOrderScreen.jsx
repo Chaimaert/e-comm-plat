@@ -1,81 +1,41 @@
-// import { Link } from "react-router-dom";
-import Header from "../components/header";
-import { useSelector } from "react-redux";
+import { useContext } from "react";
+import { PRODUCTS } from "../data/products";
+import { PRODUCTS1 } from "../data/products";
+import { ShopContext } from "../components/shopcontext";
+import CartItem from "../components/cartitems";
 
 const PlaceOrderScreen = () => {
-  window.scrollTo(0, 0);
-
-  // const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart);
-  const userLogin = useSelector((state) => state.userLogin);
-  const { userInfo } = userLogin;
-
-  // const placeOrderHandler = (e) => {
-  //   e.preventDefault();
-  // };
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
+  const totalAmount = getTotalCartAmount();
 
   return (
     <>
-      <Header />
-      <div className="container">
-        <div className="row order-detail">
-          <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
+      <section className="cart">
+        <div className="container-xxl p-5">
+          {totalAmount > 0 ? (
             <div className="row">
-              <div className="cold-md-4 center">
-                <div className="alert-success order-box">
-                  <i className="fas fa-user"></i>
-                </div>
+              <div className="col-12 mx-3 col-md-5 Cart">
+                <h5>Product</h5>
               </div>
-              <div className="col-md-8 center">
-                <h5>
-                  <strong>Customer</strong>
-                </h5>
-                <p>{userInfo.name}</p>
-                <p>{userInfo.email}</p>
+              <div className="col-12 mx-1 col-md-5 Cart">
+                <h5>Details</h5>
+              </div>
+
+              <div className="p-3">
+                {[...PRODUCTS, ...PRODUCTS1].map((product) => {
+                  if (cartItems[product.id] !== 0) {
+                    return <CartItem key={product.id} data={product} />;
+                  } else {
+                    return null;
+                  }
+                })}
               </div>
             </div>
-          </div>
-          {/* 2 */}
-          <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
-            <div className="row">
-              <div className="cold-md-4 center">
-                <div className="alert-success order-box">
-                  <i className="fas fa-user"></i>
-                </div>
-              </div>
-              <div className="col-md-8 center">
-                <h5>
-                  <strong>Order Info</strong>
-                </h5>
-                <p>shipping: {cart.shippingAddress.country}</p>
-              </div>
-            </div>
-          </div>
-          {/* 3 */}
-          <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
-            <div className="row">
-              <div className="cold-md-4 center">
-                <div className="alert-success order-box">
-                  <i className="fas fa-user"></i>
-                </div>
-              </div>
-              <div className="col-md-8 center">
-                <h5>
-                  <strong>Deliver to</strong>
-                </h5>
-                <p>
-                  Address: {cart.shippingAddress.city}, {" "}
-                   {cart.shippingAddress.address}, {" "} 
-                   {cart.shippingAddress.postalCode}
-                  </p>
-              </div>
-            </div>
-          </div>
+          ) : (
+            <div></div>
+          )}
         </div>
-
-
-
-      </div>
+      </section>
     </>
   );
 };
