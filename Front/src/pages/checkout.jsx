@@ -19,6 +19,8 @@ const Checkout = () => {
   const [city, setCity] = useState(shippingAddress?.city || '');
   const [postalCode, setPostalCode] = useState(shippingAddress?.postalCode || '');
   const [country, setCountry] = useState(shippingAddress?.country || '');
+
+  const [paymentMethod, setPaymentMethod] = useState("Paypal");
   // const dispatch = useDispatch();
 
   const handlePay = () => {
@@ -60,7 +62,7 @@ const Checkout = () => {
             </div>
           </div>
           <div className="card m-auto">
-            <div className="card-header p-0">
+            {/* <div className="card-header p-0">
               <button className="btn col-12 btn-light btn-block text-start p-3 rounded-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <div className="d-flex align-items-center justify-content-between">
                   <div className="col-6">
@@ -71,7 +73,7 @@ const Checkout = () => {
                   </div>
                 </div>
               </button>
-            </div>
+            </div> */}
             <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div className="card-body payment-card-body">
                 <span className="font-weight-normal card-text">Card Number</span>
