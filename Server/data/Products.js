@@ -2,7 +2,7 @@ const products = [
   
   {
     name: "Slim Fit Dress Shirt",
-    image: "../assets/images/products/f6.jpg",
+    image: "/images/products/f6.jpg",
     description:
       "a mans shirt worn for semiformal evening dress, usually having French cuffs and a stiff or pleated front to be fastened with studs",
     price: 49.9,
@@ -11,7 +11,7 @@ const products = [
 
   {
     name: " Original Pro Sponge",
-    image: "../assets/images/products/beautyblender2.jpg",
+    image: "/images/products/beautyblender2.jpg",
     description:
       "A Makeup blender sponge lets the foundation blend in the skin perfectly making it look natural with an even finish.",
     price: 24.9,
@@ -21,7 +21,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/f2.jpg",
+    image: "../data/images/products/f2.jpg",
     name: "Men's colorful shirt",
     price: 39.9,
     brand: "Pull & Bear",
@@ -32,7 +32,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/nikeee.jpeg",
+    image: "../data/images/products/nikeee.jpeg",
     name: "Pegasus 40",
     price: 160.9,
     brand: "Nike",
@@ -43,7 +43,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/coffeemug2.jpeg",
+    image: "../data/images/products/coffeemug2.jpeg",
     name: "Modern coffee cups",
     price: 49.9,
     brand: "Saga",
@@ -54,7 +54,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/bott.jpg",
+    image: "../data/images/products/bott.jpg",
     name: "Modern Water Bottle",
     price: 10.9,
     brand: "GymShark",
@@ -65,7 +65,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/phonecase4.jpeg",
+    image: "../data/images/products/phonecase4.jpeg",
     name: "Simple phonecase",
     price: 39.5,
     brand: "Puma",
@@ -76,7 +76,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/foundation.jpeg",
+    image: "../data/images/products/foundation.jpeg",
     name: "Makeup Foundation",
     price: 29.5,
     brand: "makeup forever",
@@ -85,7 +85,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/headp.jpeg",
+    image: "../data/images/products/headp.jpeg",
     name: "black headphone",
     price: 49.9,
     brand: "Bonzo",
@@ -94,7 +94,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/watch3.avif",
+    image: "../data/images/products/watch3.avif",
     name: "Black smartwatch",
     price: 24.9,
     brand: "Casio",
@@ -103,7 +103,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/bottle8.jpeg",
+    image: "../data/images/products/bottle8.jpeg",
     name: "Gym bottle",
     price: 39.9,
     brand: "Adidas",
@@ -112,7 +112,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/brushoffer.avif",
+    image: "../data/images/products/brushoffer.avif",
     name: "Brush set",
     price: 49.9,
     brand: "Rare",
@@ -121,7 +121,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/watch2.avif",
+    image: "../data/images/products/watch2.avif",
     name: "Men's Smartwatch",
     price: 49.9,
     brand: "Under Armour",
@@ -130,7 +130,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/dress1.jpeg",
+    image: "../data/images/products/dress1.jpeg",
     name: "Women's summer dress",
     price: 19.9,
     brand: "H&M",
@@ -139,7 +139,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/shoes2.jpeg",
+    image: "../data/images/products/shoes2.jpeg",
     name: "Men's Sportwear shoes",
     price: 39.5,
     brand: "Puma",
@@ -148,7 +148,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/brushes3.avif",
+    image: "../data/images/products/brushes3.avif",
     name: "Makeup brushes",
     price: 29.5,
     brand: "Sephora",
@@ -157,7 +157,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/img1.png",
+    image: "../data/images/products/img1.png",
     name: "Slim Fit T-Shirt",
     price: 49.9,
     brand: "Calvin Klein",
@@ -167,7 +167,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/massage.avif",
+    image: "../data/images/products/massage.avif",
     name: "Beauty Fcaial Roller",
     price: 40.9,
     brand: "Elle",
@@ -177,7 +177,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/n6.jpg",
+    image: "../data/images/products/n6.jpg",
     name: "Men's Dri-FIT Short",
     price: 24.9,
     brand: "mango",
@@ -186,7 +186,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/watch.jpg",
+    image: "../data/images/products/watch.jpg",
     name: "Elite Smart Watch",
     price: 50.99,
     brand: "Fila",
@@ -196,7 +196,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/mug.jpg",
+    image: "../data/images/products/mug.jpg",
     name: "Modern Mugs",
     price: 49.9,
     brand: "Tortuna",
@@ -206,7 +206,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/coffeemug3.jpeg",
+    image: "../data/images/products/coffeemug3.jpeg",
     name: "Nude Mug",
     price: 9.9,
     brand: "H&M",
@@ -216,7 +216,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/sponge2.jpeg",
+    image: "../data/images/products/sponge2.jpeg",
     name: "Beauty sponge",
     price: 39.5,
     brand: "The Ordinary",
@@ -226,7 +226,7 @@ const products = [
   },
 
   {
-    image: "../assets/images/products/guasha.avif",
+    image: "../data/images/products/guasha.avif",
     name: "Guasha & Roller",
     price: 29.5,
     brand: "Dior",
