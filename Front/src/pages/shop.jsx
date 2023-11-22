@@ -1,9 +1,9 @@
 import Shopitems from "../components/shopitems";
 import Newsletter from "../components/newsletter";
 
-const shop = ({match}) => {
+const shop = () => {
 
-  const keyword = match.params.keyword;
+  const {keyword} = props;
 
   return (
     <>

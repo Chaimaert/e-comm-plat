@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useHistory } from "react-redux";
+import { createBrowserHistory } from "history";
 import { ShopContext } from "./shopcontext";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
@@ -12,9 +12,10 @@ import user from "../assets/images/user.svg";
 import Mylogo from "../assets/images/Mylogo.png";
 
 const Header = () => {
-  
+
+  const history = createBrowserHistory();
   const [keyword, setKeyword] = useState();
-  let history = useHistory();
+
 
   const [showMenu, setShowMenu] = useState(false);
   const { getTotalCartProducts } = useContext(ShopContext);
