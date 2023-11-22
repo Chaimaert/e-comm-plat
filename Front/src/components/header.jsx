@@ -24,6 +24,13 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
 
+  const submitHandler = () => {
+    e.preventDefault()
+    if(keyword.trim()) {
+      history.push('/search')
+    }
+  }
+
   return (
     <>
       <header className="navbar-top p-2">
