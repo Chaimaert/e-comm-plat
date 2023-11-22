@@ -13,7 +13,6 @@ import Checkout from "./pages/checkout";
 import "./App.css";
 import ShopContext from "./components/shopcontext";
 import Details from "./pages/details";
-import PlaceOrderScreen from "./pages/PlaceOrderScreen";
 
 
 function ScrollToTop() {
@@ -44,7 +43,6 @@ function App() {
               <Route path="cart" element={<Cart />} />
               <Route path="checkout" element={<Checkout />} />
               <Route path="details" element={<Details />} />
-              <Route path="PlaceOrderScreen" element={<PlaceOrderScreen />} />
             </Route>
           </Routes>
         </BrowserRouter>

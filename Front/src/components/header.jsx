@@ -221,16 +221,19 @@ const Header = () => {
             {showMenu && (
               <div className="col-md-10 d-md-none mt-3">
                 <div className="input-group mb-3">
+                  <form onSubmit={submitHandler}>
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Find products ..."
                     aria-label="Find products ..."
                     aria-describedby="basic-addon2"
+                    onChange={(e) => setKeyword(e.target.value)}
                   />
                   <button className="input-group-text" id="basic-addon2">
                     search
                   </button>
+                  </form>    
                 </div>
                 <div className="menu-links mt-2">
                   <div className="mb-2">
