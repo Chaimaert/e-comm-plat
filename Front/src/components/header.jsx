@@ -11,6 +11,9 @@ import user from "../assets/images/user.svg";
 import Mylogo from "../assets/images/Mylogo.png";
 
 const Header = () => {
+
+  const [ keyword, setKeyword ] = useState();
+
   const [showMenu, setShowMenu] = useState(false);
   const { getTotalCartProducts} = useContext(ShopContext);
   const totalProducts = getTotalCartProducts();
