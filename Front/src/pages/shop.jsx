@@ -1,7 +1,7 @@
 import Shopitems from "../components/shopitems";
 import Newsletter from "../components/newsletter";
 
-const shop = () => {
+const shop = ({match}) => {
   return (
     <>
       <section className="shop-banner p-5">

@@ -11,6 +11,7 @@ import blog4 from "../assets/images/blog/blog-4.jpg";
 import Newsletter from "../components/newsletter";
 
 const home = () => {
+
   return (
     <>
 
