@@ -2,6 +2,9 @@ import Shopitems from "../components/shopitems";
 import Newsletter from "../components/newsletter";
 
 const shop = ({match}) => {
+
+  const keyword = match.params.keyword;
+
   return (
     <>
       <section className="shop-banner p-5">
@@ -20,7 +23,7 @@ const shop = ({match}) => {
       <section className="featured-products p-5">
         <div className="container-xxl">
           <div className="row">
-            <Shopitems />
+            <Shopitems keyword={keyword}/>
           </div>
         </div>
       </section>
