@@ -12,6 +12,7 @@ import user from "../assets/images/user.svg";
 import Mylogo from "../assets/images/Mylogo.png";
 
 const Header = () => {
+  
   const [keyword, setKeyword] = useState();
   let history = useHistory();
 
@@ -30,6 +31,7 @@ const Header = () => {
     } else {
       history.push("/");
     }
+  };
 
     return (
       <>
@@ -327,6 +329,6 @@ const Header = () => {
       </>
     );
   };
-};
+
 
 export default Header;
