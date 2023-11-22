@@ -24,7 +24,7 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
 
-  const submitHandler = () => {
+  const submitHandler = (e) => {
     e.preventDefault()
     if(keyword.trim()) {
       history.push('/search')
