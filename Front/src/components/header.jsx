@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import {useHistory} from "react-redux";
 import { ShopContext } from "./shopcontext";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
@@ -13,6 +14,7 @@ import Mylogo from "../assets/images/Mylogo.png";
 const Header = () => {
 
   const [ keyword, setKeyword ] = useState();
+  let history = useHistory();
 
   const [showMenu, setShowMenu] = useState(false);
   const { getTotalCartProducts} = useContext(ShopContext);
