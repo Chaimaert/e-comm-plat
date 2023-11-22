@@ -1,9 +1,16 @@
 import Shopitems from "../components/shopitems";
 import Newsletter from "../components/newsletter";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 const shop = () => {
 
   const {keyword} = props;
+  const const dispatch = useDispatch();
+
+  useEffect(() => {
+    
+  })
 
   return (
     <>
